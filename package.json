@@ -1,0 +1,39 @@
+{
+  "title": "Catalogue of Mental Heath",
+  "name": "THE CATALOGUE OF MENTAL HEALTH MEASURES",
+  "version": "1.8",
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "description": "An open source Bootstrap 4 admin theme.",
+  "keywords": [
+    "Mental Health",
+    "Longitudinal Study",
+    "Wellbeing",
+    "ESRC",
+    "Catalogue",
+    "Bristol Cohort",
+    "Cohort study"
+  ],
+  "homepage": "https://cataloguementalhealth.ac.uk",
+  "bugs": {
+    "email": "support@delosis.com"
+  },
+  "license": "MIT",
+  "author": "Delosis",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.8.1",
+    "bootstrap": "4.3.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-purgecss": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-strip-debug": "^3.0.0",
+    "twitter-search-query-parser": "^1.0.0"
+  },
+  "devDependencies": {
+    "merge-stream": "^2.0.0"
+  }
+}

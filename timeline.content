@@ -1,0 +1,7 @@
+<div id="lineCont"> 
+  <div id="line"></div>
+  <div id="span">Date Placeholder</div>
+  <table id="dataTable"></table>
+</div>
+<div id="mainCont">
+</div>

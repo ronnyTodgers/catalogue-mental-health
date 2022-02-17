@@ -1,0 +1,423 @@
+/* purgecss start ignore */
+.searchResult {
+  max-height:25vh;
+  min-height:250px;
+  cursor:pointer;
+}
+
+/*ie11 hack*/
+_:-ms-fullscreen, :root .searchResult { height: 250px; }
+_:-ms-fullscreen, :root table.dtr-column.dataTable > tbody > tr > td.control::before, table.dtr-column.dataTable > tbody > tr > th.control::before {top:50%;}
+
+.searchResult:hover{
+  box-shadow: 0 0 3pt 2pt #34915e !important;
+}
+.filterSlider .slider.slider-horizontal {
+ display:block;
+ width:100%;
+ clear:both;
+}
+
+.filterSlider .tooltip {
+ opacity:80;
+}
+
+.filterSlider .slider-selection, .filterSlider .slider-handle {
+  background:#34915e;
+}
+
+
+
+
+
+.searchResult .card-body {
+ overflow-y:hidden;   
+-ms-overflow-y:hidden;
+}
+#filter-records {
+  position: absolute;
+  background: white;
+  width: 80%;
+  top: 80px;
+  z-index: 9999;
+}
+
+
+#timeline .lineCont,#lineCont {
+  width: 100%;
+  min-height: 3.7rem;
+}
+#timeline .line,#line {
+  height: 6px;
+  background: #a09375;
+  border-radius: 5px;
+  margin: 3rem auto 3rem;
+  top: 50%;
+  position: relative;
+}
+#timeline #span {
+  visibility:hidden;
+  width: 70%;
+  margin: auto;
+  margin-top: 25%;
+  text-align: center;
+  color: white;
+}
+#timeline .circle {
+  width: 20px;
+  height: 20px;
+  background: #a09375;
+  border-radius: 15px;
+  position: absolute;
+  top: -7px;
+  border: 3px solid #b1e5a8;
+  cursor: pointer;
+}
+#timeline .circle:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #b1e5a8;
+  position: absolute;
+  border-radius: 100%;
+  top: 2px;
+  left: 2px;
+  display: none;
+}
+
+#timeline .circle:first-of-type .popupSpan:first-of-type {
+  left:-20px;
+  transform: none;
+  text-align:left;
+}
+#timeline .circle:first-of-type .popupSpan:first-of-type:before {
+  content:↑;
+}
+#timeline .circle:last-of-type .popupSpan:first-of-type {
+  right:0px;
+  left:unset;
+  transform: none;
+  padding-right:0;
+}
+
+#timeline .popupSpan {
+  height: auto;
+  padding: 10px;
+  white-space: nowrap;
+  display: block;
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  display: none;
+  transition: font-size 0.5s ease-out;
+  margin-left :50%;
+  left: 0;
+  text-align: center;
+  transform: translate(-50%,0);
+  pointer-events:none;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+
+}
+#timeline .popupSpan.label {
+  line-height: 1.1rem;
+}
+
+#groupLine.line{
+  background: #34915e;
+}
+#groupLine.line .circle{
+  background: #34915e;
+}
+
+#timeline .circle.hover:before, #timeline .circle.active:before {
+  display: table;
+}
+#timeline .circle.active .popupSpan:not(.treeShown) {
+  display: table;
+}
+
+
+#timeline .circle .tree {
+ bottom:-0.5rem;top:unset; transition: font-size 1s; color:  #34915e; font-size:0rem; display:table;
+}
+#timeline .circle .treeShown {
+ font-size:2.5rem;top:unset; bottom:-0.5rem;
+}
+
+#timeline .circle.labelled .popupSpan:not(.tree) {
+  display:table;
+}
+
+#timeline #mainCont {
+  height: 80%;
+  width: 100%;
+  font-size: 62px;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+#timeline #mainCont span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 30%;
+  transition: all 0.2s ease-out;
+}
+#timeline #mainCont span.right {
+  left: 200%;
+}
+#timeline #mainCont span.center {
+  left: 0% !important;
+}
+#timeline #mainCont span.left {
+  left: -100%;
+}
+
+#timeline .labelLine {
+  position: absolute;
+  width: 1px;
+  background: #a09375;
+  height:40px;
+}
+
+#timeline .labelLine.below{
+    top: 0px;
+    margin-top:5px;
+}
+#timeline .labelLine.above{
+    bottom: 0px;
+    margin-bottom:5px;
+}
+
+@media (max-width: 1200px) {
+  #timeline .labelLine.hideable {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  #timeline #labelLine4 .popupSpan {
+    transform: translate(-15%, 0);
+  }
+}
+
+
+
+#timeline .labelLine .popupSpan {
+   color: #a09375;
+   font-size: 0.7rem;
+   line-height: 0.8rem;
+   max-width: 9rem;
+   min-width: 5.5rem;
+   display: block;
+   white-space: normal;
+}
+
+#timeline .labelLine.below .popupSpan{
+  top: 35px;
+  bottom: unset;
+}
+
+#timeline .labelLine.above .popupSpan {
+  top: unset;
+  bottom: 35px;
+}
+#timeline .labelLine.above .popupSpan.square {
+    bottom: -12px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    min-width:20px;
+    background-color: #a09375;
+}
+
+#label0.labelLine {
+  margin-left:-9px;
+}
+
+pre {
+  border:3px solid black;
+  color:black;
+  background:#eeeeee;
+  font-size:130%;
+  padding:1em;
+}
+
+.pre-container {
+  position: relative;
+}
+
+.comment {
+  background:#2e16ce;
+  color:white;
+  font-weight:bold;
+  padding:8px;
+  top: none;
+  right: none;
+}
+
+.revealer {
+  border:6px outset #059a00;
+  background: #46c242;
+  color: #79fe74;
+  font-weight: bold;
+  text-decoration: none;
+  padding:4px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 0;
+}
+
+.revealer:hover {
+  border-style: inset;
+  z-index:50;
+}
+
+.revealer span{ /*CSS for enlarged image*/
+  position: absolute;
+  visibility: hidden;
+  background: transparent;
+}
+
+.revealer span pre{ /*CSS for enlarged image*/
+  border: 3px dashed green;
+  color: black;
+  font-size:105%;
+  background-color: #eeee00;
+  margin-left: 0px;
+  text-indent: 0px;
+}
+
+.revealer:hover span{ /*CSS for enlarged image on hover*/
+  visibility: visible;
+  top: 0px;
+  right: 0px; /*position where enlarged image should offset horizontally */
+}
+
+
+div.csl-bib-body {
+  background: #ffffff;
+}
+
+div.csl-entry {
+  margin-top:0.5em;
+  border:2px solid red;
+  position: relative;
+}
+
+div.actually-no-different-than-csl-entry {
+  margin-top:0.5em;
+  margin-left:2em;
+  text-indent:-2em;
+  border:2px solid red;
+  border-left-style:none;
+  position: relative;
+}
+
+div.csl-entry-heading:before {
+  content: "csl-entry-heading:";
+  font-weight:bold;
+  color: blue;
+}
+
+div.csl-entry-heading {
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+  font-weight:bold;
+  padding:0.4em;
+  background:#ffff66;
+}
+
+div.csl-left-label:before {
+  content: "csl-left-label:";
+  font-weight:bold;
+  color: blue;
+}
+
+div.csl-left-label {
+  width:14em;
+  float:left;
+  text-indent:1em;
+  padding:0.4em 0px 0.4em 0em;
+  border:2px solid blue;
+}
+
+div.csl-item:before {
+  content:"csl-item:";
+  font-weight:bold;
+  color: blue;
+}
+
+div.csl-item {
+  margin-left:14em;
+  padding:0.4em 0.4em 0.4em 1em;
+  background:#eeeeff;
+}
+
+div.csl-indented-block:before {
+  content:"csl-indented-block";
+  font-weight:bold;
+  color: blue;
+}
+
+div.csl-indented-block {
+  margin: 0.2em 0px 0.5em 5em;
+  padding:0.4em;
+  background:#ffeeee;
+}
+
+#timeline .offsetLabel .label {
+  text-align: left;
+  left: -20px;
+  transform: none;
+}
+
+#timeline .offsetLabelRight .label {
+  text-align:right; 
+  left: unset;
+  right:0;
+  transform: none;
+  padding-right: 0;
+}
+
+#timeline .circle.right .label {
+  text-align:right;
+}
+
+.sweepTitle {
+  margin: 0;
+}
+.sweepTitleText {
+  margin-left: 0.4rem;  
+}
+.text-truncate.readMore::after {
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  display:block;
+  margin-top: -1.1rem;
+  right:5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0d7";
+  animation: pulse 0.5s alternate infinite;
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0.1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
