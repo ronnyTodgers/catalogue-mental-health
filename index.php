@@ -65,10 +65,10 @@
               <!-- Topbar Navbar -->
               <ul class="navbar-nav ml-auto">
 
-                <!-- Dropdown - The Project -->
+                <!-- Dropdown - About the Catalogue -->
                 <li class="nav-item dropdown no-arrow">
                   <a class="nav-link dropdown-toggle" href="#" id="projectDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="mr-1 d-lg-inline text-gray-600">The Project</span>
+                    <span class="mr-1 d-lg-inline text-gray-600">About the Catalogue</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="projectDropdown">
                     <a class="dropdown-item" href="?content=1">
@@ -79,66 +79,67 @@
                       Gathering the information
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="?content=3">
-                     Using the catalogue
-                   </a>
-                   <div class="dropdown-divider"></div>
-                   <a class="dropdown-item" href="?content=4">
-                    COVID-19 and UK Cohort & Longitudinal Studies
-                  </a>
+                    <a class="dropdown-item" href="?content=11">
+                      Meet the team
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="?content=12">
+                      Funding
+                    </a>
                 </div>
               </li>  
-              <!-- Dropdown - Mental Health and wellbeing -->
+              <!-- Dropdown - Using the Catalogue -->
               <li class="nav-item dropdown no-arrow">
                 <a class="nav-link dropdown-toggle" href="#" id="mhwDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="mr-1 d-lg-inline text-gray-600">Mental Health and Wellbeing</span>
+                  <span class="mr-1 d-lg-inline text-gray-600">Using the Catalogue</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="mhwDropdown">
-                  <a class="dropdown-item" href="?content=5">
-                    Longitudinal research
+                  <a class="dropdown-item" href="?content=3">
+                     Using the catalogue
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="?content=6">
-                    Mental health topics
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="?content=7">
-                    Common measures of mental health
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="?content=8">
-                    Harmonisation and mental health research
+                  <a class="dropdown-item" href="?content=13">
+                    FAQs
                   </a>
                 </div>
               </li>  
               <!-- Dropdown - Training and ask the experts -->
               <li class="nav-item dropdown no-arrow">
                 <a class="nav-link dropdown-toggle" href="#" id="tateDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="mr-1 d-lg-inline text-gray-600">Resources</span>
+                  <span class="mr-1 d-lg-inline text-gray-600">Explore</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="tateDropdown">
-                  <a class="dropdown-item" href="?content=9">
-                   Statistical training
-                 </a>
-              </div>
-            </li>  
-            <!-- Dropdown - About us -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="auDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-1 d-lg-inline text-gray-600">About Us</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="auDropdown">
-                <a class="dropdown-item" href="?content=11">
-                  Meet the team
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="?content=12">
-                  Funding
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="?content=13">
-                  FAQ
-                </a>
+                <a class="dropdown-item" href="?content=6">
+                    Mental health topics
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="?content=14">
+                    Physical health topics
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="?content=15">
+                    Personality and temperament
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="?content=5">
+                    Longitudinal research
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="?content=7">
+                    Common measures of mental health
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="?content=4">
+                    COVID-19 and UK Cohort & Longitudinal Studies
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="?content=8">
+                    Harmonisation and mental health research
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="?content=16">
+                    Resources
+                  </a>
               </div>
             </li>  
             <!-- SearchLink -->

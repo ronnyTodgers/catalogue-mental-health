@@ -6,7 +6,7 @@
         <div class="d-sm-flex align-items-center justify-content-between w-100">
             <?php print(study_title()); ?>
         </div>
-        <a id="MHMjumpLink" href="#timeline" class="d-sm-inline-block btn btn-primary">Jump to Mental Health Measures <i class="fas fa-arrow-down"></i></a>
+        <a id="MHMjumpLink" href="#timeline" class="d-sm-inline-block btn btn-primary">Jump to study timeline <i class="fas fa-arrow-down"></i></a>
     </div>  
     <?php study_cards($_GET['studyid']); ?>
 
