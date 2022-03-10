@@ -3,7 +3,8 @@ const minify = require("gulp-minify");
 const stripDebug = require('gulp-strip-debug');
 const concat = require("gulp-concat");
 const replace = require('gulp-replace');
-const purgecss = require('gulp-purgecss')
+const purgeCss = require('gulp-purgecss');
+const cleanCss = require('gulp-clean-css');
 gulp.task('js', () => {
   return gulp
     .src([
@@ -47,10 +48,11 @@ gulp.task('css', () => {
   return gulp
     .src([
       './css/*.css'])
-      .pipe(purgecss({
+      .pipe(purgeCss({
         content: ['build/index.php', 'build/contents/*.php','js/*.js'],
       whitelistPatterns: [/.*(tooltip).*/, /studyImage/] 
       }))
+    .pipe(cleanCss())
     .pipe(gulp.dest('build/css'));
 })
 gulp.task('copy', function() {

@@ -15,14 +15,21 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <!-- Custom styles for this template-->
-  <link href="css/timeline.css?v4" rel="stylesheet">
   <link href="css/core.css?v4" rel="stylesheet">
+  <link rel="preload" href="css/timeline.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/timeline.css"></noscript>
+  <link rel="preload" href="vendor/datatables/jquery.dataTables.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="vendor/datatables/jquery.dataTables.min.css"></noscript>
+  <link rel="preload" href="vendor/datatables/jquery.dataTables.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="vendor/datatables/jquery.dataTables.min.css"></noscript>
+  <link rel="preload" href="vendor/datatables/fixedHeader.dataTables.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="vendor/datatables/fixedHeader.dataTables.min.css"></noscript>
+  <link rel="preload" href="vendor/datatables/responsive.dataTables.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="vendor/datatables/responsive.dataTables.min.css"></noscript>
+  <link rel="preload" href="vendor/bootstrap/bootstrap-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="vendor/bootstrap/bootstrap-slider.min.css"></noscript>
 
-  <link href="vendor/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-  <link href="vendor/datatables/fixedHeader.dataTables.min.css" rel="stylesheet" type="text/css">
-  <link href="vendor/datatables/responsive.dataTables.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="vendor/bootstrap/bootstrap-slider.min.css" />
+
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
@@ -34,9 +41,8 @@
   <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png" />
 
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/bootstrap-slider.min.js"></script>
-      
+<script src="vendor/jquery/jquery.min.js" defer></script>
+     
 </head>
 
   <body id="page-top">
@@ -95,7 +101,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="mhwDropdown">
                   <a class="dropdown-item" href="?content=3">
-                     Using the catalogue
+                    How to Use the Catalogue
                   </a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="?content=13">
@@ -137,7 +143,7 @@
                     Harmonisation and mental health research
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="?content=16">
+                  <a class="dropdown-item" href="?content=9">
                     Resources
                   </a>
               </div>
@@ -195,7 +201,7 @@
       </div>
       <div class="d-flex">
         <div class="copyright col-6">
-          <span>Copyright &copy; Louise Arseneault 2019</span>
+          <span>Copyright &copy; Louise Arseneault 2022</span>
         </div>
         <div class="copyright col-6 text-right">
          <span>Platform built by <a target="_blank" href="https://www.delosis.com">Delosis</a></span>
@@ -223,23 +229,24 @@
 
 
 <!-- Bootstrap core JavaScript-->
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/bootstrap-slider.min.js" defer></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
 
 <!-- Core plugin JavaScript-->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js" defer></script>
 
 <!-- Custom scripts for all pages-->
-<script src="js/sb-admin-2.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152615597-1"></script>  
-<script>
+<script src="js/cookie.js" defer></script>
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-152615597-1" defer></script>  
+<script defer>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-152615597-1', { 'anonymize_ip': true });
 </script>
-<script src="vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="vendor/datatables/dataTables.responsive.min.js"></script>
-<script src="vendor/datatables/dataTables.fixedHeader.min.js"></script>
+<script src="vendor/datatables/jquery.dataTables.min.js" defer></script>
+<script src="vendor/datatables/dataTables.responsive.min.js" defer></script>
+<script src="vendor/datatables/dataTables.fixedHeader.min.js" defer></script>
 
 </body>
 

@@ -82,7 +82,11 @@
 					</div>
 				</div>
 				<div class="homeInfoBox col-lg-6">
-					<img style="width:100%;" src="video/CMHM_homepage2.gif" />
+					<video class="covidImage" autoplay loop=true muted>
+						<source src="video/search_final_cropped.webm" type="video/webm">
+						<source src="video/search_final_cropped.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
 				</div>
 			</div>
 		</div>

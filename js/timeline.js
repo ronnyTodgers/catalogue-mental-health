@@ -329,8 +329,9 @@ function setDataTable(currentData) {
           ],
           order: [ 1, 'asc' ]
         });
-          $('#dataTable').dataTable().fnAdjustColumnSizing();
-          $('#dataTable').dataTable().css('width','100%');
+        $('#dataTable').dataTable().css('width','100%');
+        $('#dataTable').dataTable().fnAdjustColumnSizing();
+
           $('#dataTable').DataTable().on( 'responsive-display', function ( e, datatable, row, showHide, update ) {
             if(showHide) {
                row.nodes().to$().next().find("td.child").each(
@@ -356,11 +357,10 @@ function setDataTable(currentData) {
 
     } else {
           $('#dataTable').dataTable().fnClearTable(false);
-          $('#dataTable').dataTable().fnAddData(currentData, false);
+          $('#dataTable').dataTable().fnAddData(currentData, true);
     }
     $('[data-toggle="tooltip"]').tooltip({container:'body',boundary: 'window', offset:0}); 
-    $('#dataTable').dataTable().css('width','100%');
-    $('#dataTable').dataTable().fnAdjustColumnSizing();
+    $('#dataTable').dataTable().fnAdjustColumnSizing(true);
 }
 
 

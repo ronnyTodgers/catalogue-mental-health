@@ -84,8 +84,8 @@ foreach ($spreadsheet1->getSheetNames() as $sheetName) {
         for ($row = 3; $row <= $lastRow; $row++) {
             if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" ) {
  	    $data[] = [
-                'Label' => $sheet->getCell('A'.$row)->getCalculatedValue(),
-                'Title' => $sheet->getCell('B'.$row)->getCalculatedValue(),
+                'Label' => trim($sheet->getCell('A'.$row)->getCalculatedValue()),
+                'Title' => trim($sheet->getCell('B'.$row)->getCalculatedValue()),
                 'CM age' => $sheet->getCell('C'.$row)->getCalculatedValue(),
                 'Year' => $sheet->getCell('D'.$row)->getCalculatedValue(),
                 'End Year' => $sheet->getCell('E'.$row)->getCalculatedValue(),
@@ -106,7 +106,7 @@ foreach ($spreadsheet1->getSheetNames() as $sheetName) {
              ];
 	     }
         }
-    $allData[$sheet->getTitle()] = $data;
+    $allData[trim($sheet->getTitle())] = $data;
 }
 
 // Save
@@ -124,8 +124,8 @@ $sheet = $spreadsheet1->getSheet(0);
     $data = [];
         for ($row = 2; $row <= $lastRow; $row++) {
             if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" ) {
-            $data[$sheet->getCell('A'.$row)->getCalculatedValue()] = [
-                'Title' => $sheet->getCell('B'.$row)->getCalculatedValue(),
+            $data[trim($sheet->getCell('A'.$row)->getCalculatedValue())] = [
+                'Title' => trim($sheet->getCell('B'.$row)->getCalculatedValue()),
                 'Aims' => $sheet->getCell('C'.$row)->getCalculatedValue(),
                 'Institution' => $sheet->getCell('D'.$row)->getCalculatedValue(),
                 'Website' => $sheet->getCell('E'.$row)->getCalculatedValue(),
