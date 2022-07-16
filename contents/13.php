@@ -1,5 +1,5 @@
 ﻿<div class="container-fluid">
-<h1 class="h3 mb-4 text-gray-800">FREQUENTLY ASKED QUESTIONS</h1>
+<h1 class="h3 mb-4 text-gray-800">Frequently asked questions</h1>
 <div class="card faq ">
 	<!-- Card Header - Accordion -->
 	<a href="#faq1" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">

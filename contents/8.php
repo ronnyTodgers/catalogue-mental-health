@@ -1,6 +1,6 @@
 ﻿<script src="js/harmonisation.js" defer></script>
 <div class="container-fluid">
-<h1 class="h3 mb-4 text-gray-800">HARMONISATION &amp; MENTAL HEALTH RESEARCH</h1>
+<h1 class="h3 mb-4 text-gray-800">Harmonisation &amp; mental health research</h1>
 <div class="card mb-4">
 <div class="card-body">
 <p>The volume of data collected in British cohort and longitudinal studies provides unique opportunities to answer key questions about mental health and wellbeing. The potential for larger sample sizes and the opportunity to make cross-study comparisons and to maximise the use of existing data has seen growing interest in analysing data across multiple studies (Fortier et al. 2017). However, issues such as variation in measures collected, study design, sampling and data collection are barriers to comparing and integrating data from multiple cohorts (Fortier et al. 2017).</p>

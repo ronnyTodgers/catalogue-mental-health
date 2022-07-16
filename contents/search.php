@@ -7,7 +7,10 @@
 <div class="container-fluid">
     <div class="d-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 text-gray-800">Browse or search studies and measures</h1>
-        <i class='fas fa-info-circle infobutton searchInfobutton' data-toggle='tooltip' data-html='true' title='
+    </div>  
+    <div class="row mb-4" style="flex-wrap: nowrap;align-items: center;">
+        <input id="searchField" type="search" style = "margin-right:0;" class="form-control" placeholder="Search for studies, measures, instruments…">
+        <i class='fas fa-info-circle infobutton searchInfobutton' style = "margin-right:auto;" data-toggle='tooltip' data-html='true' title='
         <p><Strong>Search tips</strong></p>
             <ul style="text-align:left;">
                 <li style="text-align:left;">Each word you enter is included separately</li>
@@ -17,9 +20,6 @@
                 <li>"Quote phrases" that you want to include in your search as a phrase - if you do not they will be searched for as separate words</li>
                 <li>You can negate a search term with - e.g. SDQ -GHQ will show you studies that include the SDQ but <i>not</i> the GHQ</li>
             </ul>'></i>
-    </div>  
-    <div class="row mb-4">
-        <input id="searchField" type="search" class="form-control" placeholder="Search for studies, measures, instruments…">
     </div>
     <div class="row mb-4">
         <div class="col">

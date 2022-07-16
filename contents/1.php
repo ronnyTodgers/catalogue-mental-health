@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<h1 class="h3 mb-4 text-gray-800">BACKGROUND</h1>
+<h1 class="h3 mb-4 text-gray-800">Background</h1>
 <div class="card mb-4">
 <div class="card-body">
 <p>Awareness of mental health and wellbeing has steadily increased in recent years. Estimates of the extent and the adverse impacts of mental health problems underline the urgent need for more research to understand the causes and the consequences of mental ill health and to identify the most effective interventions. Existing longitudinal and cohort studies provide unique opportunities to answer key questions related to population mental health and wellbeing.</p>

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<h1 class="h3 mb-4 text-gray-800">GATHERING THE INFORMATION</h1>
+<h1 class="h3 mb-4 text-gray-800">Gathering the information</h1>
 <div class="card mb-4">
 <div class="card-body">
 <p>The Catalogue of mental measures is based on a review of the mental health and wellbeing measures in UK cohort and longitudinal studies.  Here we give an overview of studies that met inclusion criteria, what information can be found in the Catalogue and how this information was collected.</p>

@@ -101,7 +101,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="mhwDropdown">
                   <a class="dropdown-item" href="?content=3">
-                    How to Use the Catalogue
+                    How to use the Catalogue
                   </a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="?content=13">
@@ -136,7 +136,7 @@
                   </a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="?content=4">
-                    COVID-19 and UK Cohort & Longitudinal Studies
+                    COVID-19 and UK cohort & longitudinal studies
                   </a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="?content=8">
@@ -176,29 +176,46 @@
 
     <!-- Footer -->
     <footer class="sticky-footer">
-      <div class="copyright text-left my-auto">
-        <p>CONTACT US<br>
-          Institute of Psychiatry, Psychology & Neuroscience<br>
-          King's College London<br>
-          E: <a href="mailto:mentalhealth.fellow@kcl.ac.uk">mentalhealth.fellow@kcl.ac.uk</a>
-        </p>
-      </div>
+    <div class="footerWrapper">
+    <div class="col-12 col-sm-8 d-flex footerLeftLogoFlex">
+      <div class="contactus text-left my-auto">
+          <p>CONTACT US<br>
+            Institute of Psychiatry, Psychology & Neuroscience<br>
+            King's College London<br>
+            E: <a href="mailto:mentalhealth.fellow@kcl.ac.uk">mentalhealth.fellow@kcl.ac.uk</a>
+          </p>
+        </div>
 
-      <div class="d-flex footerLogos">
-        <div class="col-4">
-          <img class="footerLogo" usemap="#esrcmap" src="img/esrc_logo.png" />
-          <map name="esrcmap">
-              <area shape="rect" coords="0,0,500,50" target="_blank" href="https://esrc.ukri.org/">
-              <area shape="rect" coords="0,50, 500, 300" target="_blank"href="http://www.louise-arseneault.com/">
-          </map>
+        <div class="d-flex footerLogos">
+          <div class="footerLogoWrapper">
+            <a href = "https://www.kcl.ac.uk/ioppn/about/index" target = "_blank"><img class="footerLogo " src="img/kcl_logo.png" /></a>
+          </div>
+          <div class="footerLogoWrapper" >
+            <img class="footerLogo" usemap="#esrcmap" src="img/esrc_logo.png" />
+            <map name="esrcmap">
+                <area shape="rect" coords="0,0,500,50" target="_blank" href="https://esrc.ukri.org/">
+                <area shape="rect" coords="0,50, 500, 300" target="_blank"href="http://www.louise-arseneault.com/">
+            </map>
+          </div>
+          <div class="footerLogoWrapper">
+            <a href = "https://www.closer.ac.uk/" target= "_blank">
+              <img class="footerLogo" src="img/closer_logo.svg" /></a>
+          </div>
+  
         </div>
-        <div class="col-4 text-center">
-          <a href = "https://www.closer.ac.uk/" target= "_blank"><img class="footerLogo" src="img/closer_logo.svg" /></a>
-        </div>
-        <div class="col-4 text-right">
-          <a href = "https://www.kcl.ac.uk/ioppn/about/index" target = "_blank"><img class="footerLogo " src="img/kcl_logo.png" /></a>
-        </div>
+    </div>
+      <div class="col-12 col-sm-4 d-flex footerRightLogoFlex">
+        <a class="footerRightLogos" href = "https://www.hdruk.ac.uk/helping-with-health-data/health-data-research-hubs/datamind/" target= "_blank">
+          <img  src='img/DATAMIND.png'/>
+        </a>
+        <a class="footerRightLogos" href = "https://www.hdruk.ac.uk/" target= "_blank">
+        	<img src='img/HDRUK.png'/>
+        </a>
+        <a class="footerRightLogos" href = "https://www.ukri.org/councils/mrc/" target= "_blank">
+        	<img src='img/funders/MRC.png'/>
+        </a>
       </div>
+    </div>
       <div class="d-flex">
         <div class="copyright col-6">
           <span>Copyright &copy; Louise Arseneault 2022</span>

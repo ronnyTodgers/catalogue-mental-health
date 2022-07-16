@@ -1,5 +1,5 @@
-﻿<div class="container-fluid">
-<h1 class="h3 mb-4 text-gray-800">COVID-19 AND UK LONGITUDINAL & COHORT STUDIES </h1>
+<div class="container-fluid">
+<h1 class="h3 mb-4 text-gray-800">COVID-19 and UK cohort and longitudinal studies</h1>
 <div class="row">
        <div class="col-md-12">
         <div class="card shadow mb-4">
@@ -79,6 +79,11 @@ The NIHR Mental Health Translational Research Collaboration (MH-TRC) have establ
         <li>International studies which have UK partners</li>
     </ul>
     Any studies which meet these criteria are invited to <a href = "https://www.maudsleybrc.nihr.ac.uk/research/covid-19-studies/" target="_blank">register</a>, with the full list of registered list of studies available <a href = "https://www.maudsleybrc.nihr.ac.uk/research/covid-19-studies-project-search/" target="_blank">here</a>. 
+</p>
+<p>
+<b>UK LONGITUDINAL LINKAGE COLLABORATION (LLC)</b><br>
+The <a href="https://ukllc.ac.uk/" target = "_blank">UK LONGITUDINAL LINKAGE COLLABORATION</a> (UK LLC) is a new Trusted Research Environment (TRE) that hosts longitudinal study data, including mental health data, from more than 20 of the UK&rsquo;s established <a href="https://ukllc.ac.uk/partner-studies/" target = "_blank">longitudinal studies</a> that is linked to studies&rsquo; participants NHS health records. It is a unique four-nations infrastructure for secure cross-cohort analysis where researchers can apply to access linked data across all partner studies through a single application.<br><br>
+The UK LLC TRE contains pre-pandemic longitudinal data and data collected from participants during the lockdowns and throughout the pandemic. ONS Approved Researchers working on COVID-19 research may apply to access this data, which is currently free of charge.
 </p>
 
 

@@ -1,5 +1,5 @@
 ﻿<div class="container-fluid">
-<h1 class="h3 mb-4 text-gray-800">PHYSICAL HEALTH TOPICS</h1>
+<h1 class="h3 mb-4 text-gray-800">Physical health topics</h1>
 <div class="card faq">
 	<div class="card-body">
 	<p>Many of the studies on the Catalogue include measures of participants&rsquo; physical as well as mental health. Although the Catalogue cannot provide item-level information about physical health data (as it does for mental health topics), it does now provide pointers to information on the physical health of study participants collected during each sweep of data collection for every study. This information is displayed below each study's timeline in the sweep-level information section, indicated by the medical briefcase symbol <strong>( <i class="fas fa-medkit"></i> )</strong></p>

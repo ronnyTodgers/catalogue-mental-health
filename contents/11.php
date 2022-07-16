@@ -1,6 +1,6 @@
 <style> .teamPhoto { width:100%; max-height:100%; margin:auto auto; } </style>
 <div class="container-fluid">
-   <h1 class="h3 mb-4 text-gray-800">MEET THE TEAM </h1>
+   <h1 class="h3 mb-4 text-gray-800">Meet the team</h1>
    <div class="card mb-4"><div class="card-body">
     <h4>Louise Arseneault, Professor of Developmental Psychology</h4>
     <div class="row">
@@ -24,23 +24,31 @@
 <p>Bridget&rsquo;s research focuses on loneliness and mental health using mixed-methods approaches. She joined the team in July 2018 to assist in the development of the Catalogue and review the mental health measures in British longitudinal studies. Since then, she has commenced a PhD exploring loneliness and mental health in the workplace, and continues to work on the Catalogue part-time. Before joining the project, she completed a Bachelor of Arts (Honours) at the University of Sydney and a Master of Science in Sociology at the University of Oxford. Previously, Bridget has worked in research focusing on workplace mental health and the Australian forensic mental health system at the University of New South Wales, the Mental Health Commission of NSW and the University of Oxford.</p>
 </div>
 </div>
-<p>&nbsp;</p>
-<h4>Lily Strange, Research Assistant</h4>
+<h4>Elena Triantafillopoulou, Research Assistant</h4>
 <div class="row">
 <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
-<p><img class="teamPhoto" src="img/Lily.jpg" alt="" /></p>
+<p><img class="teamPhoto" src="img/Elena.jpg" alt="" /></p>
 </div>
 <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
-<p>Lily joined the team in September 2020 to assist with editing and updating the Catalogue and reviewing new documentation from cohort and longitudinal studies. She completed her BSc (Hons) in Psychology at Goldsmiths, University of London, before completing her MSc in Developmental Psychology and Psychopathology at King&rsquo;s College, London. Previously, Lily has worked as a research assistant on projects primarily focusing on children&rsquo;s behavioural and socio-emotional adjustment in relation to parenting and family relationships. Lily&rsquo;s research interests include familial processes, behavioural genetics, and the role of early adversity and socioeconomic risk in relation to mental health and wellbeing.</p>
+<p>Elena joined the team in March 2022 to assist with the ongoing maintenance and development of the mental health measures, studies, and topics included in the Catalogue. Prior to joining the group, Elena completed her graduate studies in Developmental Psychology and Psychopathology at King&rsquo;s College London (MSc with distinction) and before then, her undergraduate studies in Biology and Psychology at the University of Central Florida (BSc <i>cum laude</i>). Her research interests include the development of internalising conditions especially after early life and/or complex trauma, the intergenerational and intrafamilial transmission of symptoms, and the restoration of wellbeing through treatment.</p>
 </div>
 </div>
-<h4>Georgia Andrews, Undergraduate Research Placement Student</h4>
+<h4>Georgia Andrews, Research Assistant</h4>
 <div class="row">
 <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
 <p><img class="teamPhoto" src="img/Georgia.jpg" alt="" /></p>
 </div>
 <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
-<p>Georgia is currently undertaking her undergraduate degree in Psychology at Cardiff university, and has joined the team for her placement year. Her role is to assist in the development of the Catalogue, where she helps with the surveying of available mental health measures, assists in the development of the web platform, keeping the Catalogue updated with new information, and works to promote the use of various mental health measures through different online engagement activities.</p>
+<p>Georgia is currently undertaking her undergraduate degree in Psychology at Cardiff University, and joined the team for her placement year in September 2021. Since completing her placement in June 2022, she has now joined the team as a Research Assistant for the summer. Her role is to assist in the development of the Catalogue, where she helps with the surveying of available mental health measures, assists in the development of the web platform, keeps the Catalogue updated with new information, and works to promote the use of various mental health measures through different online engagement activities.</p>
+</div>
+</div>
+<h4>Malaika Okundi, Research Assistant</h4>
+<div class="row">
+<div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
+<p><img class="teamPhoto" src="img/Malaika.jpg" alt="" /></p>
+</div>
+<div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
+<p>Malaika joined the team in June 2022 to assist with the expansion of the Catalogue, to include new studies, and improve its accessibility and usefulness to users beyond mental health researchers. Prior to joining the catalogue, Malaika completed her bachelor’s degree in Global Health and Social Medicine - Neuroscience (BSc) at King’s College London. Previously, she has worked on a project studying the relationship between parent experiences of racism and child mental health. She continues to assist the team in thematic analysis and co-authoring research papers. Her research interests include interspecies approaches to medicine, biotechnology and its effects on society, and the mental health of minority groups.</p>
 </div>
 </div>
 <h4>Barbara Maughan, Professor of Developmental Epidemiology</h4>
@@ -51,7 +59,18 @@
 <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
 <p>Barbara Maughan&rsquo;s research focuses on psychosocial and biological risks for mental health problems in childhood, and the long-term impact of early emotional/behavioural difficulties and early adverse experiences for health and well-being later in life. She has undertaken epidemiological and longitudinal studies of&nbsp;a range of child and adolescent difficulties including conduct problems and antisocial behaviour, severe reading problems, and depression, and has studied&nbsp;risk factors at the individual, family, school and broader societal levels. She uses a combination of research strategies centring on epidemiological and longitudinal methods; she has also used natural experimental designs to highlight the impact of environmental risks.</p>
 <p>Barbara came into research from a background in social work; she completed her PhD while working at the Institute of Psychiatry and has since worked in both the MRC Child Psychiatry Unit and the Social, Genetic and Developmental Psychiatry Centre at King&rsquo;s College London. She has helped conduct the adult follow-up phases of epidemiological samples in inner London and the Isle of Wight and has also made extensive use of secondary analysis of data from the British birth cohort studies in conducting her research. She is currently Professor of Developmental Epidemiology at the Institute of Psychiatry, Psychology and Neuroscience at King&rsquo;s College London.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+<h4>Lily Strange, Research Assistant</h4>
+<div class="row">
+<div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
+<p><img class="teamPhoto" src="img/Lily.jpg" alt="" /></p>
+</div>
+<div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
+<p>Lily worked on the Catalogue from 2020 to 2022. During her time on the team, Lily added new studies to the Catalogue including ALSPAC, led the addition of information about physical health data to and added social care filters to the Catalogue. Before joining the team, Lily completed her BSc (Hons) in Psychology at Goldsmiths, University of London, before completing her MSc in Developmental Psychology and Psychopathology at King&rsquo;s College London. Previously, she has worked as a research assistant on projects primarily focusing on children&rsquo;s behavioural and socio-emotional adjustment in relation to parenting and family relationships. Lily currently works as a research assistant at the Centre for Maternal & Child Health Research at City, University of London.</p>
+</div>
+</div>
+
+
+</div>
+</div>

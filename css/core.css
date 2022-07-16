@@ -12192,6 +12192,12 @@ footer.sticky-footer .copyright {
     font-size: .8rem
 }
 
+footer.sticky-footer .contactus {
+    padding:0.5rem;
+    color:white;
+    line-height: 1.3rem;
+    font-size: 1.1rem
+}
 body.sidebar-toggled footer.sticky-footer {
     width: 100%
 }
@@ -12220,7 +12226,13 @@ body.sidebar-toggled footer.sticky-footer {
 
 .homeRow.odd2 {
     background: #00442d;
+    color:white;
 }
+.homeRow.odd2 a {
+    color: #b1e5a8;
+    font-weight: 100;
+}
+
 
 .homeInfoBox {
     text-align:center;   
@@ -12229,6 +12241,7 @@ body.sidebar-toggled footer.sticky-footer {
     font-size: 2.5rem;
     color: #b1e5a8;
     width:50px;
+    margin-right: 1rem;
 }
 
 .homeRow.odd .homeClipArt {
@@ -12244,6 +12257,8 @@ body.sidebar-toggled footer.sticky-footer {
     height:4rem;
     height:10vw;
     max-height:5rem;
+    max-width:100%;
+    margin:auto;
 }
 @media (max-width: 900px) {
     .footerLogo {
@@ -12445,3 +12460,69 @@ table.fixedHeader-floating {top:4.375rem!important; }
 .card.filterCard:not(:last-of-type) .card-header.collapsed {
     border-radius: 0;
 }
+
+img {
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+image-rendering:   -o-crisp-edges;         /* Opera */
+image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+image-rendering: crisp-edges;
+-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+.footerLeftLogoFlex {
+    flex-direction:column;
+}
+.footerRightLogoFlex {
+    flex-direction: column;
+    height: 20rem;
+    flex-shrink: 1;
+    justify-content: space-between;
+}
+.footerRightLogos {
+    max-height: 30%;
+    max-width: 100%;
+    margin: auto;
+    padding: 0.5rem;
+}
+.footerRightLogos img {
+    max-width:100%;
+    max-height:100%;
+}
+.footerWrapper {
+    display:flex;
+}
+
+.footerLogoWrapper {
+    width:30%;
+    margin:auto;
+    text-align:left;
+}
+.scroll-to-top {
+    visibility: hidden;
+    z-index: -1000;
+}
+@media (max-width: 576px) {
+    .footerWrapper {
+        display:flex;
+        flex-direction: column;
+    }
+    .footerRightLogoFlex {
+        flex-direction: row;
+        height: unset;
+        width:100%;
+        justify-content: space-between;
+    }
+    .footerRightLogos {
+        height:unset;
+        width: 30%;
+        margin:auto;
+        padding:0.5rem;
+    }
+    .scroll-to-top {
+        visibility:visible;
+        z-index:999;
+    }
+    .footerLogoWrapper{
+        text-align:center;
+    }
+}
+

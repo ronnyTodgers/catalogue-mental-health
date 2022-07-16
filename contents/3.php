@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<h1 class="h3 mb-4 text-gray-800">How to Use the Catalogue</h1>
+<h1 class="h3 mb-4 text-gray-800">How to use the Catalogue</h1>
 <div class="card mb-4">
 <div class="card-body">
 <p>The purpose of the Catalogue is to provide easy access to information about mental health and wellbeing measures collected in British cohort and longitudinal studies. It provides details of the measures and studies and is designed to serve as a resource for researchers seeking data that include mental health and wellbeing measures; planning harmonisation studies; or planning further data collection.</p>

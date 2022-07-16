@@ -153,7 +153,7 @@ function createFilters() {
     var ages=[];
     var sizes=[];
     $.each(searchData, function(key, val){
-        if(val['Related Themes']) relatedThemes = relatedThemes.concat(val['Related Themes'].split(','));
+        if(val['Related themes']) relatedThemes = relatedThemes.concat(val['Related themes'].split(','));
         if(val['Study design']) studyDesign = studyDesign.concat(val['Study design'].split(','));
         if(val['Sample characteristics']) sampleCharacteristics = sampleCharacteristics.concat(val['Sample characteristics'].split(','));
         if(val['Geographic coverage']) geographicCoverage = geographicCoverage.concat(val['Geographic coverage'].split(','));
@@ -191,9 +191,9 @@ function createFilters() {
     sampleCharacteristics = uniqueArray(sampleCharacteristics).sort();
     geographicCoverage = uniqueArray(geographicCoverage).sort();
 
-    // Put Local and National at the end
-    geographicCoverage.push(geographicCoverage.splice(geographicCoverage.indexOf("Local"), 1)[0]);    
-    geographicCoverage.push(geographicCoverage.splice(geographicCoverage.indexOf("National"), 1)[0]);    
+    // Put Local and National at the start
+    geographicCoverage.unshift(geographicCoverage.splice(geographicCoverage.indexOf("National"), 1)[0]);    
+    geographicCoverage.unshift(geographicCoverage.splice(geographicCoverage.indexOf("Local area"), 1)[0]);    
     
     //reorder study design
     arraymove(studyDesign, 0,2);
@@ -430,7 +430,7 @@ function updateFilters(firstRun) {
                         regex = regex.replace(/["]/g, '');
                      }
                      regex = new RegExp(regex,"i");
-                     return regex.test(study['Related Themes']); 
+                     return regex.test(study['Related themes']); 
                  });
         localStorage.setItem('relatedThemesState', 
             [$('#relatedAndOr').prop('checked')].concat(Array(relatedThemesFilters.join(','))));
@@ -557,7 +557,17 @@ function updateFilters(firstRun) {
 }
 
 
-
+function createFunctionWithTimeout(callback, opt_timeout) {
+    var called = false;
+    function fn() {
+      if (!called) {
+        called = true;
+        callback();
+      }
+    }
+    setTimeout(fn, opt_timeout || 250);
+    return fn;
+  }
 
 function updateSearchResults(newSearchData, noAdditions) {
     var newSearchData = newSearchData || false;
@@ -750,18 +760,23 @@ function updateSearchResults(newSearchData, noAdditions) {
     $('.searchResult').click( function() {
         const ID = $(this).attr('sid');
         if (typeof gtag == 'function') {
-            setTimeout(function() {  window.location  = '?content=study&studyid='+ID ;}, 200);
+            //setTimeout(function() {  window.location  = '?content=study&studyid='+ID ;}, 200);
             gtag('event', ID, {
                 'event_label': 'Query: ' + $('#searchField').val() + ' RelThemes: ' + localStorage.getItem('relatedThemesState') + ' Date: ' + localStorage.getItem('dateSliderState') + ' Age: ' + localStorage.getItem('ageSliderState') + ' Size: ' + localStorage.getItem('sizeSliderState'),
                 'event_category': 'SearchEnd',
                 'transport_type': 'beacon',
-                'event_callback': function(){ window.location  = '?content=study&studyid='+ID ; }
+                'event_callback': 
+                    createFunctionWithTimeout(function() {
+                         window.location  = '?content=study&studyid='+ID ; 
+                        })
             });
         } else {
              window.location  = '?content=study&studyid='+ID ;
         }
     });
 }
+
+
 
 // get the first group integer index from a regex match object
 function getFirstGroupMatch(match) {

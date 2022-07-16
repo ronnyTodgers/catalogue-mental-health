@@ -1,5 +1,5 @@
 ﻿<div class="container-fluid">
-<h1 class="h3 mb-4 text-gray-800">TRAINING &amp; RESOURCES</h1>
+<h1 class="h3 mb-4 text-gray-800">Training &amp; resources</h1>
 <div class="card mb-4">
 <div class="card-body">
 <h4>ONLINE RESOURCES&nbsp;</h4>
