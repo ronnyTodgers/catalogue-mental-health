@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<h1 class="h3 mb-4 text-gray-800">Mental Health Conditions</h1>
+<h1 class="h3 mb-4 text-gray-800">Mental health topics</h1>
 <div class="card mb-4">
 <div class="card-body">
 <p><em>Definitions and diagnostic criteria of mental health problems and neurodevelopmental conditions are primarily based on the Diagnostic and Statistical Manual of Mental Disorders 5<sup>th</sup> Edition (DSM-5). We highlight any diagnostic differences in the International Classification of Diseases 10<sup>th</sup> Revision (ICD-10).</em></p>
@@ -22,41 +22,39 @@
                     </h6>
                 </a>
                 <div class="collapse card-body" id="faq1-1">
+                    <h5>Anxiety (general or non-specific)</h5>
+                    <div style="margin-left: 1em;"><p>Anxiety is most often diagnosed as <strong>Generalized Anxiety Disorder</strong>, a condition characterised by <strong>persistent and excessive worry</strong> about a variety of daily circumstances, such as events, topics, or activities. The intensity, duration, or frequency of this worry is out of proportion to the actual likelihood or impact of the circumstance(s) and does not prevail in any specific one.</p></div>
+                    <h6>Diagnostic criteria</h6>
+                    <div style="margin-left: 1em;"><p>Main symptoms:</p>
                     <ul>
-                    <li><strong>Anxiety (general or non-specific)</strong>
-                        <p>Anxiety is most often diagnosed as <strong>Generalized Anxiety Disorder</strong>, a condition characterised by <strong>persistent and excessive worry</strong> about a variety of daily circumstances, such as events, topics, or activities. The intensity, duration, or frequency of this worry is out of proportion to the actual likelihood or impact of the circumstance(s) and does not prevail in any specific one.</p>
-                        <h6>Diagnostic criteria</h6>
-                        <p>Main symptoms:</p>
-                        <ul>
-                        <li>Excessive worry (apprehensive expectation), about several circumstances, such as performance at school (children) or at work (adults)</li>
-                        <li>Difficulty controlling the worry and keeping worried thoughts from interfering with attention to the task at hand</li>
-                        </ul>
-                        <p>Main symptoms are accompanied by at least three additional symptoms in adults, and one additional symptom in children, from the following list:</p>
-                        <ul>
-                        <li>Restlessness or feeling keyed up or on edge</li>
-                        <li>Being easily fatigued</li>
-                        <li>Difficulty concentrating or mind going blank</li>
-                        <li>Irritability</li>
-                        <li>Muscle tension</li>
-                        <li>Disturbed sleep</li>
-                        </ul>
-                        <p>The symptoms occur on most days for at least six months and cause significant impairment in several areas of functioning, such as at work or school, or in family or social life.</p>
-                        <p><em>ICD-10 symptoms for diagnostic criteria include persistent nervousness, trembling, muscular tensions, sweating, light-headedness, palpitations, dizziness, and epigastric discomfort. </em></p>
-                        <h6>Typical onset</h6>
-                        <p>During early to mid-adolescence.</p>
-                        <h6>Course</h6>
-                        <p>Symptoms tend to be chronic, and rates of full remission are low. Over the course of the condition, the focus of worry may shift from one topic to another.</p>
-                        <h6>In the Catalogue</h6>
-                        <p><u>Anxiety</u>, unless specified, refers to symptoms of Generalized Anxiety Disorder and/or general or non-specific worry.</p>
-                    </li>
-                    <li><strong>Anxiety &ndash; phobias</strong>
-                        <p>Phobias are an unreasonable and excessive form of fear, with an immediate anxiety response, triggered by a particular situation or object. Phobias tend to result in the avoidance of the feared situation or object, and/or in extreme distress when this cannot be avoided. Specific phobias can be about nature and the environment, injuries, animals, or situations.</p>
-                        <p>An example of a common phobia is agoraphobia, the fear of being in crowded or open spaces (and being unable to escape) and/or leaving home alone.</p>
-                    </li>
-                    <li><strong>Anxiety &ndash; panic disorder</strong>
-                    <p>Panic disorder is a condition characterised by recurrent and frequent panic attacks without a clear cause or trigger. The recurring panic attacks can generate a constant fear of having another panic attack, and this generated fear can then trigger further panic attacks. Panic attacks are characterised by sudden intense fear, feelings of loss of control, and accompanying physical symptoms such as shortness of breath, tightening of the chest, nausea, and dizziness.</p>
-                    </li>
+                    <li>Excessive worry (apprehensive expectation), about several circumstances, such as performance at school (children) or at work (adults)</li>
+                    <li>Difficulty controlling the worry and keeping worried thoughts from interfering with attention to the task at hand</li>
                     </ul>
+                    <p>Main symptoms are accompanied by at least three additional symptoms in adults, and one additional symptom in children, from the following list:</p>
+                    <ul>
+                    <li>Restlessness or feeling keyed up or on edge</li>
+                    <li>Being easily fatigued</li>
+                    <li>Difficulty concentrating or mind going blank</li>
+                    <li>Irritability</li>
+                    <li>Muscle tension</li>
+                    <li>Disturbed sleep</li>
+                    </ul>
+                    <p>The symptoms occur on most days for at least six months and cause significant impairment in several areas of functioning, such as at work or school, or in family or social life.</p>
+                    <p><em>ICD-10 symptoms for diagnostic criteria include persistent nervousness, trembling, muscular tensions, sweating, light-headedness, palpitations, dizziness, and epigastric discomfort. </em></p></div>
+                    <h6>Typical onset</h6>
+                    <div style="margin-left: 1em;"><p>During early to mid-adolescence.</p></div>
+                    <h6>Course</h6>
+                    <div style="margin-left: 1em;"><p>Symptoms tend to be chronic, and rates of full remission are low. Over the course of the condition, the focus of worry may shift from one topic to another.</p></div>
+                    <h6>In the Catalogue</h6>
+                    <div style="margin-left: 1em;"><p><u><a href="https://www.cataloguementalhealth.ac.uk/?content=search&query=%22anxiety%22">Anxiety</a></u>, unless specified, refers to symptoms of Generalized Anxiety Disorder and/or general or non-specific worry.</p></div><br>
+                    </li>
+                    <h5>Anxiety &ndash; phobias</h5>
+                    <div style="margin-left: 1em;"><p>Phobias are an unreasonable and excessive form of fear, with an immediate anxiety response, triggered by a particular situation or object. Phobias tend to result in the avoidance of the feared situation or object, and/or in extreme distress when this cannot be avoided. Specific phobias can be about nature and the environment, injuries, animals, or situations.</p>
+                    <p>An example of a common phobia is agoraphobia, the fear of being in crowded or open spaces (and being unable to escape) and/or leaving home alone.</p></div>
+                    </li><br>
+                    <h5>Anxiety &ndash; panic disorder</h5>
+                    <div style="margin-left: 1em;"><p>Panic disorder is a condition characterised by recurrent and frequent panic attacks without a clear cause or trigger. The recurring panic attacks can generate a constant fear of having another panic attack, and this generated fear can then trigger further panic attacks. Panic attacks are characterised by sudden intense fear, feelings of loss of control, and accompanying physical symptoms such as shortness of breath, tightening of the chest, nausea, and dizziness.</p></div>
+                    </li>
                 </div>
             </div>
             <div class="card faq ">
@@ -68,7 +66,7 @@
                 <div class="collapse card-body" id="faq1-2">
                     <p>Depression is diagnosed as <strong>Major Depressive Disorder</strong> and is characterised by <strong>a persistent feeling of sadness and loss of interest</strong> (also called anhedonia). It impacts mood and behaviour as well as various physical functions, such as appetite and sleep. People with depression often lose interest in activities they once enjoyed and have trouble performing everyday tasks. Occasionally, they may also feel that life is no longer worth living.</p>
                     <h6>Diagnostic criteria</h6>
-                    <p>Main symptoms:</p>
+                    <div style="margin-left: 1em;"><p>Main symptoms:</p>
                     <ul>
                     <li>Persistent low mood</li>
                     <li>Markedly diminished interest or pleasure in activities</li>
@@ -84,27 +82,27 @@
                     <li>Thoughts of death and/or suicide</li>
                     </ul>
                     <p>Symptoms should be present for at least two weeks, represent a change from previous functioning, and cause significant impairment in several areas of functioning, such as at work or school, or in family or social life. &nbsp;</p>
-                    <p><em>Depression is described in ICD-10 as <strong>Recurrent Depressive Disorder</strong>. It is defined by repeated depressive episodes of lowering of mood; reduction of energy; decrease in activity; reduced capacity for enjoyment, interest, and concentration; marked tiredness after even minimum effort; disturbed sleep; diminished appetite; reduced self-esteem and self-confidence; and presence of ideas of guilt or worthlessness.</em></p>
+                    <p><em>Depression is described in ICD-10 as <strong>Recurrent Depressive Disorder</strong>. It is defined by repeated depressive episodes of lowering of mood; reduction of energy; decrease in activity; reduced capacity for enjoyment, interest, and concentration; marked tiredness after even minimum effort; disturbed sleep; diminished appetite; reduced self-esteem and self-confidence; and presence of ideas of guilt or worthlessness.</em></p></div>
                     <h6>Typical onset </h6>
-                    <p>Early adolescence, especially during puberty. The onset of depression can be either sudden or gradual.</p>
+                    <div style="margin-left: 1em;"><p>Early adolescence, especially during puberty. The onset of depression can be either sudden or gradual.</p></div>
                     <h6>Course</h6>
-                    <p>The duration varies from a few weeks to several months. Some individuals with depression experience many years with few or no symptoms between discrete episodes, while others may not experience remission.</p>
+                    <div style="margin-left: 1em;"><p>The duration varies from a few weeks to several months. Some individuals with depression experience many years with few or no symptoms between discrete episodes, while others may not experience remission.</p></div>
                     <h6>In the Catalogue</h6>
-                    <p><u>Depression</u> refers to symptoms of Major Depressive Disorder or Recurrent Depressive Disorder.</p>
+                    <div style="margin-left: 1em;"><p><u><a href="https://www.cataloguementalhealth.ac.uk/?content=search&query=%22depression%22">Depression</a></u> refers to symptoms of Major Depressive Disorder or Recurrent Depressive Disorder.</p></div>
                 </div>
             </div>
             <div class="card faq mb-0 ">
                 <a href="#faq1-3" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
                     <h6 class="m-0 text-primary">
-                    Eating Disorders 
+                    Eating disorders 
                     </h6>
                 </a>
                 <div class="collapse card-body" id="faq1-3">
                     <p>Eating disorders are characterised by a <strong>persistent disturbance of eating or eating-related behaviour, that results in the altered consumption or absorption of food, and that significantly impairs physical health or psychosocial functioning</strong>.</p>
-                    <h5>Anorexia Nervosa</h5>
-                    <p>Anorexia nervosa is characterised by <strong>deliberate weight loss, induced and sustained by the individual</strong>. It is associated with distorted body image, restrictive eating, and a pathological fear of being overweight (even in those who are underweight). There is usually undernutrition of varying severity with secondary physiological changes and disturbances of bodily function.</p>
-                    <h6>Diagnostic Criteria</h6>
-                    <p>Main symptoms:</p>
+                    <h5>Anorexia nervosa</h5>
+                    <div style="margin-left: 1em;"><p>Anorexia nervosa is characterised by <strong>deliberate weight loss, induced and sustained by the individual</strong>. It is associated with distorted body image, restrictive eating, and a pathological fear of being overweight (even in those who are underweight). There is usually undernutrition of varying severity with secondary physiological changes and disturbances of bodily function.</p></div>
+                    <h6>Diagnostic criteria</h6>
+                    <div style="margin-left: 1em;"><p>Main symptoms:</p>
                     <ul>
                     <li>Persistent restriction of food intake leading to a significantly low body weight (i.e., a weight that is less than minimally normal or, for children and adolescents, less than that minimally expected)</li>
                     <li>An intense fear of gaining weight or persistent behaviour that interferes with weight gain, even though the individual is underweight</li>
@@ -115,25 +113,25 @@
                     <li><strong>Restrictive: </strong>Presentations of anorexia nervosa in which weight loss is accomplished primarily through dieting, fasting, and/or excessive exercise</li>
                     <li><strong>Binge-eating/purging:</strong> Presentations of anorexia nervosa which involve recurrent episodes of binge-eating and/or self-induced vomiting behaviour</li>
                     </ul>
-                    <p><em>The ICD-10 also characterises the condition as the &ldquo;specific psychopathology&rdquo; of persistent and intrusive overvalued dread of fatness and flabbiness of body contour. </em></p>
+                    <p><em>The ICD-10 also characterises the condition as the &ldquo;specific psychopathology&rdquo; of persistent and intrusive overvalued dread of fatness and flabbiness of body contour. </em></p></div>
                     <h6>Typical onset</h6>
-                    <p>Onset of anorexia symptoms is most common in adolescent girls and young women, but significant numbers of adolescent boys, young men, children approaching puberty, and women experiencing menopause are also affected.</p>
+                    <div style="margin-left: 1em;"><p>Onset of anorexia symptoms is most common in adolescent girls and young women, but significant numbers of adolescent boys, young men, children approaching puberty, and women experiencing menopause are also affected.</p></div>
                     <h6>Course</h6>
-                    <p>The course and outcome of anorexia nervosa are highly variable. Some individuals with anorexia nervosa recover fully after a single episode, some exhibit a fluctuating pattern of weight gain followed by relapse, and others experience a chronic course over many years.&nbsp;</p>
-                    <h5>Bulimia Nervosa</h5>
-                    <p>Bulimia nervosa is characterized by<strong> frequent episodes of binge-eating followed by </strong>inappropriate behaviours such as<strong> purging (self-induced vomiting) or excessive exercise to avoid weight gain</strong>. Individuals with bulimia nervosa typically remain within the normal weight or overweight range.</p>
+                    <div style="margin-left: 1em;"><p>The course and outcome of anorexia nervosa are highly variable. Some individuals with anorexia nervosa recover fully after a single episode, some exhibit a fluctuating pattern of weight gain followed by relapse, and others experience a chronic course over many years.&nbsp;</p></div><br>
+                    <h5>Bulimia nervosa</h5>
+                    <div style="margin-left: 1em;"><p>Bulimia nervosa is characterized by<strong> frequent episodes of binge-eating followed by </strong>inappropriate behaviours such as<strong> purging (self-induced vomiting) or excessive exercise to avoid weight gain</strong>. Individuals with bulimia nervosa typically remain within the normal weight or overweight range.</p></div>
                     <h6>Diagnostic criteria</h6>
-                    <p>Main symptoms:</p>
+                    <div style="margin-left: 1em;"><p>Main symptoms:</p>
                     <ul>
                     <li>Recurrent episodes of binge-eating. Binge eating is eating, in a discrete period, an amount of food that is &ldquo;definitely larger&rdquo; than what most individuals would eat in a similar period under similar circumstances, accompanied by a sense of lack of control.</li>
                     <li>Recurrent inappropriate compensatory behaviours (e.g., purging) to prevent weight gain</li>
                     <li>Self-evaluation that is unduly influenced by body shape and weight</li>
                     </ul>
-                    <p>Symptoms occur, on average, at least once per week for three months.</p>
+                    <p>Symptoms occur, on average, at least once per week for three months.</p></div>
                     <h6>Typical onset</h6>
-                    <p>Bulimia nervosa commonly begins in adolescence or young adulthood and is far more common in females than in males. Onset before puberty or after age 40 is uncommon.</p>
+                    <div style="margin-left: 1em;"><p>Bulimia nervosa commonly begins in adolescence or young adulthood and is far more common in females than in males. Onset before puberty or after age 40 is uncommon.</p></div>
                     <h6>Course</h6>
-                    <p>The course may be chronic or intermittent, with periods of remission alternating with recurrences of binge-eating and purging.</p>
+                    <div style="margin-left: 1em;"><p>The course may be chronic or intermittent, with periods of remission alternating with recurrences of binge-eating and purging.</p></div>
                 </div>
             </div>
 		</div>
@@ -152,13 +150,13 @@
             <div class="card faq mb-0">
                 <a href="#faq2-1" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
                     <h6 class="m-0 text-primary">
-                    Attention Deficit/Hyperactivity Disorder
+                    Attention deficit hyperactivity disorder (ADHD)
                     </h6>
                 </a>
                 <div class="collapse card-body" id="faq2-1">
                     <p>Attention deficit hyperactivity disorder (ADHD) is characterised by <strong>symptoms of inattention, impulsivity, and/or hyperactivity that interfere with functioning and development. </strong></p>
                     <h6>Diagnostic criteria</h6>
-                    <p>The main symptoms of ADHD fall under two categories: inattentive and hyperactive-impulsive. A presentation of ADHD can be predominantly inattentive, predominantly hyperactive-impulsive, or combined.</p>
+                    <div style="margin-left: 1em;"><p>The main symptoms of ADHD fall under two categories: inattentive and hyperactive-impulsive. A presentation of ADHD can be predominantly inattentive, predominantly hyperactive-impulsive, or combined.</p>
                     <p>Inattentive symptoms:</p>
                     <ul>
                     <li>Difficulty sustaining attention</li>
@@ -184,12 +182,12 @@
                     <li>Interrupts or intrudes on others</li>
                     </ul>
                     <p>For children up to age 16 years, six or more symptoms of inattention and/or six or more symptoms of hyperactivity/impulsivity are required. For older adolescents and adults (age 17 and older), five or more symptoms of each or either subtype are required. Symptoms must be present for at least 6 months, inappropriate for developmental level, present in two or more settings, and interfere with functioning.</p>
-                    <p><em>The ICD-10 defines the symptoms of ADHD under <strong>Hyperkinetic Disorder</strong> and does not outline different subtypes of the disorder. </em></p>
+                    <p><em>The ICD-10 defines the symptoms of ADHD under <strong>Hyperkinetic Disorder</strong> and does not outline different subtypes of the disorder. </em></p></div>
                     <h6>Typical onset </h6>
-                    <p>Currently, a person must experience some symptoms before age 12 to receive a DSM-5 diagnosis of ADHD. The ICD-10 requires onset of symptoms by the age of seven. Notably, there is emerging evidence from longitudinal studies suggesting that the condition could also emerge in adulthood.</p>
+                    <div style="margin-left: 1em;"><p>Currently, a person must experience some symptoms before age 12 to receive a DSM-5 diagnosis of ADHD. The ICD-10 requires onset of symptoms by the age of seven. Notably, there is emerging evidence from longitudinal studies suggesting that the condition could also emerge in adulthood.</p></div>
                     <h6>Course</h6>
-                    <p>For some individuals, symptoms reduce or remit with age, while others experience persistent symptoms and associated impairment into adulthood.</p>
-                </div>
+                    <div style="margin-left: 1em;"><p>For some individuals, symptoms reduce or remit with age, while others experience persistent symptoms and associated impairment into adulthood.</p>
+                </div></div>
             </div>
 		</div>
 	</div>
@@ -214,7 +212,7 @@
                     <p>Wellbeing is<strong> a state of optimal functioning</strong> that leads to emotional and social contentment and wellness. The expert group of the World Health Organization propose that wellbeing &ldquo;exists in two dimensions, subjective and objective. It comprises an individual&rsquo;s experience of their life as well as a comparison of life circumstances with social norms and values.&rdquo;&nbsp;</p>
                     <p>Examples of life circumstances that can constitute objective wellbeing include health, education, work, social relationships, built and natural environments, security, civic engagement and governance, housing, and work-life balance. Subjective experiences include<strong> a person&rsquo;s overall <em>sense </em>of their own wellbeing, psychological functioning, and affective states (e.g., optimism)</strong>.</p>
                     <h6>In the Catalogue</h6>
-                    <p><u>Psychological wellbeing</u> includes standard and non-standard measures that capture dimensions of subjective wellbeing, such as <strong>self-esteem</strong>,<strong> life satisfaction</strong>, <strong>happiness</strong>, and <strong>outlook on life</strong>.</p>
+                    <p><u><a href="https://www.cataloguementalhealth.ac.uk/?content=search&query=%22psychological%20wellbeing%22">Psychological wellbeing</a></u> includes standard and non-standard measures that capture dimensions of subjective wellbeing, such as <strong>self-esteem</strong>,<strong> life satisfaction</strong>, <strong>happiness</strong>, and <strong>outlook on life</strong>.</p>
                 </div>
             </div>
 		</div>
@@ -256,7 +254,7 @@
                     <li>Contact with legal authorities, such as the police or justice system</li>
                     </ul>
                     <h6>In the Catalogue</h6>
-                    <p>The <u>treatments and service use</u> included are specifically for mental health conditions.</p>
+                    <div style="margin-left: 1em;"><p>Types of <u><a href="https://www.cataloguementalhealth.ac.uk/?content=search&query=%22treatment%20and%20service%20use%22">treatment and service use</a></u> included are specifically for mental health conditions.</p></div>
                 </div>
             </div>
 		</div>
