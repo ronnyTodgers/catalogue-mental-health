@@ -131,8 +131,14 @@ function makeTimeline(fullSweeps, timelineGroup) {
   console.log(fullSweeps)
   let updateTimelineGroup = false;
   var thisGroupSweeps = fullSweeps.slice();  
-    
-  if(fullSweeps == null) { $('#timeline').parent().hide(); return false; }
+   
+  // hide the timeline if there are no entries
+  if(fullSweeps == null) {
+     console.log("hiding line!");
+     $('#timeline').parent().hide(); return false; 
+  } else {
+    $('#timeline').parent().show();
+  }
   if(timelineGroup ==null) { updateTimelineGroup = true; }
   //default to showing the first group if none is specified.
   if(fullSweeps[0].hasOwnProperty('Timeline Group') && fullSweeps[0]['Timeline Group'] !== null) {
@@ -166,6 +172,7 @@ function makeCircles(tlEntries, $line) {
   console.log("making circles");
   console.log(tlEntries);
 // order by date and then by reverse title alpha
+// why by reverse title? This seems silly.
     tlEntries = tlEntries.sort(function (el1, el2) {
         if(el1.tlDate == el2.tlDate)
         {
@@ -267,8 +274,11 @@ function makeCircles(tlEntries, $line) {
  
   if (tlEntries.length <2 ) {
     displaySweepInfo(tlEntries[0], "<br><i>No other sweeps</i>");
+    console.log("hiding line");
     $("#line").hide();
-  } 
+  } else {
+    $("#line").show();
+  }
 
  
   $(".circle").off('mouseenter').mouseenter(function() {

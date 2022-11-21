@@ -22,13 +22,14 @@ function yesNotoTickCross($str) {
 }
 
 function pretifyLinkages($str) {
+    
     $linkArr = explode(",", $str);
     if(count($linkArr)==1 && $linkArr[0] =='No') {
         $str = str_replace('No', "<span hidden>No</span><i class='fas fa-times'></i>", $str);
     } else {
         $str = '';
         foreach($linkArr as $link) {
-            $str = $str."<i class='fas fa-check'></i>  ".trim($link)."</br>";
+            if($link){ $str = $str."<i class='fas fa-check'></i>  ".trim($link)."</br>";}
         }
     }
 
@@ -37,10 +38,30 @@ function pretifyLinkages($str) {
  }
 
 function prettifyQuestions($str) {
+
     print 'Before '.$str.'\n';
     $str = preg_replace("/[\r\n]+[0-9]+[. ]+(.*)?/i","<ul><li>$1</li></ul>",$str);
     $str = preg_replace("/(\<\/ul\>\n(.*)\<ul\>*)+/","",$str);
     print 'After '.$str.'\n';
+    return $str;
+}
+
+function homogeniseBRs($str){
+    $str = str_replace('</BR>', "<BR>", $str);
+    $str = str_replace('<br>', "<BR>", $str);
+    $str = str_replace('</br>', "<BR>", $str);
+    //convert a mixture of <BR> spacers to double
+    $linkArr = explode("<BR>", $str);
+    $str='';
+    foreach($linkArr as $link) {
+        if($link){ 
+            if(str_contains($link,"<a")) { 
+                $str = $str.trim($link)."</br> </br>";
+            } else {
+                $str = $str.trim($link)."</br>";
+            }
+        }
+    }
     return $str;
 }
 
@@ -143,7 +164,7 @@ $sheet = $spreadsheet1->getSheet(0);
                 'Genetic data collected' => yesNoToTickCross($sheet->getCell('Q'.$row)->getCalculatedValue()),
                 'Linkage to administrative data' => pretifyLinkages($sheet->getCell('R'.$row)->getCalculatedValue()),
                 'Notes' => $sheet->getCell('S'.$row)->getCalculatedValue(),
-                'Reference paper' => $sheet->getCell('T'.$row)->getCalculatedValue(),
+                'Reference paper' => homogeniseBRs($sheet->getCell('T'.$row)->getCalculatedValue()),
                 'Funders' => $sheet->getCell('U'.$row)->getCalculatedValue(),
                 'Related themes' => $sheet->getCell('V'.$row)->getCalculatedValue(),
                 'Study design' => $sheet->getCell('W'.$row)->getCalculatedValue(),

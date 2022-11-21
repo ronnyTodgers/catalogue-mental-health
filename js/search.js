@@ -749,6 +749,8 @@ function updateSearchResults(newSearchData, noAdditions) {
             output += '</div><a href="?content=study&studyid='+key+'"></a></div>';
         });
     }
+
+    
     if(output=='') { output = '<p>No results, please try a different search term or remove some filters.</p>'; }
     if ($('#studyList').html() != output) { $('#studyList').html(output); }
     var searchSummary ="";

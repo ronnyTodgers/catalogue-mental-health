@@ -59,7 +59,7 @@ function study_cards() {
     $sample_card = str_replace('{CARD_TITLE}', "Sample", $basic_card);
     $data_card = str_replace('{CARD_TITLE}', "Data", $basic_card);
     $funder_card = str_replace('{CARD_TITLE}', "Funders", $flex_card);
-    $marker_card = str_replace('{CARD_TITLE}', "Reference paper", $basic_card);
+    $marker_card = str_replace('{CARD_TITLE}', "Key Papers", $basic_card);
 	$additional_card = str_replace('{CARD_TITLE}', "Additional information", $basic_card);
 	$additional_card_body = '';
     $data_card_body = '';
