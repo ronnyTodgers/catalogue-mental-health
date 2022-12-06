@@ -680,28 +680,32 @@ function updateSearchResults(newSearchData, noAdditions) {
         }
         var highlightRegex = new RegExp(highlightRegex , "ig");
 
-
+        var outputs = [];
         var output = '';
         var count = 1;
         Object.keys(searchData)
                 .sort()
                 .forEach(function(key, idx) {
                 let val = searchData[key];
-	    //$.each(searchData, function(key, val){
+            
+            //Construct a search string
             var s = "";
             for (var i in val) {
                s += i + ":{" + val[i] + "} ";
             }
+
+            var thisOutput = ''
 		    var matches = [];
+            var matchScore = 0
 		    if (searchRegex.test(s)) {
 	            if(noHighlighting) {
-                    output += '<div class="card shadow mb-4 searchResult" sid="' +
+                    thisOutput += '<div class="card shadow mb-4 searchResult" sid="' +
                         key + 
                         '"><div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary d-flex align-items-center flex-wrap">';
-                    output += '<img class="funderImage" src="img/studies/'+key+'.png" alt="" onerror=\'this.style.display="none"\'/>'+val.Title + '</h6>';
-                    output += '</div><div class="card-body">';
-                    output += '<p>' + val['Aims'] + '</p>';
-                    output += '</div></div>';
+                        thisOutput += '<img class="funderImage" src="img/studies/'+key+'.png" alt="" onerror=\'this.style.display="none"\'/>'+val.Title + '</h6>';
+                        thisOutput += '</div><div class="card-body">';
+                        thisOutput += '<p>' + val['Aims'] + '</p>';
+                        thisOutput += '</div></div>';
                 } else {
                     for (var i in val) {
                         var thisMatches = [];
@@ -714,12 +718,15 @@ function updateSearchResults(newSearchData, noAdditions) {
                             matches[i] = thisMatches; 
                         }
       	            }
+                    matchScore = Object.keys(matches).length;
+                    if ('Title' in matches) matchScore +=10;
+
                     console.log(matches);
-    		        output += '<div class="card shadow mb-4 searchResult" sid="' +
+    		        thisOutput += '<div class="card shadow mb-4 searchResult" sid="' +
                         key + 
                         '"><div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary d-flex align-items-center flex-wrap">';
-                    output += '<img class="funderImage" src="img/studies/'+key+'.png" alt="" onerror=\'this.style.display="none"\'/>'+val.Title + '</h6>';
-    		        output += '</div><div class="card-body">';
+                        thisOutput += '<img class="funderImage" src="img/studies/'+key+'.png" alt="" onerror=\'this.style.display="none"\'/>'+val.Title + '</h6>';
+                        thisOutput += '</div><div class="card-body">';
                     for ( var i in matches) {
                         matchString = '<p><b>' + i + '</b><br>' + val[i];
                         for (var match in matches[i] ) { 
@@ -729,12 +736,27 @@ function updateSearchResults(newSearchData, noAdditions) {
                         matchString = matchString.replace(/[\\|.][^<>]+$/, ' ...');
                         matchString = matchString.replace(/^[^<>]+[\\|.]/, '... ');
                         matchString = matchString.replace(/[\\|.][^<>]+[\\|.]/g, ' ... ');
-                        output += matchString + '</p>';
+                        thisOutput += matchString + '</p>';
                     }
-                    output += '</div></div>';
-                }
-		    }
+                    thisOutput += '</div></div>';
+                } 
+            thisOutput.score = matchScore;
+            outputs.push({html:thisOutput, score:matchScore, sid:key});
+		    } 
         });
+        //sort by match score and construct the final output string
+        outputs.sort(function(output1, output2){
+            if (output1.score < output2.score) return 1;
+            if (output2.score < output1.score) return -1;
+            if (output1.sid > output2.sid) return 1;
+            if (output2.sid > output1.sid) return -1;
+            return 0;
+        });
+        console.log(outputs);
+        outputs.forEach( function(o){
+            output+=o.html;
+        }
+        )
     } else {    
         Object.keys(searchData)
                 .sort()
