@@ -107,6 +107,10 @@
                   <a class="dropdown-item" href="?content=13">
                     FAQs
                   </a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/testing/api/spec">
+                    API specification
+                  </a>
                 </div>
               </li>  
               <!-- Dropdown - Training and ask the experts -->
