@@ -43,7 +43,7 @@
 			<a href="?content=search" style="font-size:x-large;padding:1rem;margin:auto;max-width:15rem;" class="btn btn-primary">Search Mental Health Measures</a>
 			<!--<a href="?content=search"><img style="max-width:15rem;" src="img/Search_button.png" alt="Browse Mental Health Measures" /></a></div>-->
 		</div>
-		<div class="homeRow odd" style="padding:1rem">
+		<!-- <div class="homeRow odd" style="padding:1rem">
 		<h4 style="font-weight:800;" class="text-center h4 mb-2">The Catalogue of Mental Health Measures is now part of DATAMIND</h4>
 			<div class="d-md-flex align-items-top justify-content-between">
 				<div class="homeInfoBox col-lg-6">
@@ -70,8 +70,8 @@
 					<p class="text-left"><span style="font-size:110%;font-weight:bolder;">Together</span><br>We aim to <b>facilitate and enable coordinated research using UK's rich mental health data.</b></p>
 				</div>
 			</div>
-		</div>
-		<div class="homeRow odd2">
+		</div> -->
+		<div class="homeRow odd">
 			<h4 id="Explore" style="font-weight:800;" class="h4 mb-2 text-center">Explore the Catalogue of Mental Health Measures</h4>
 			<div class="d-md-flex align-items-top justify-content-between">
 				<div class="homeInfoBox col-lg-6 d-flex flex-column align-items-top justify-content-around">

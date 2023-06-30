@@ -1,5 +1,5 @@
 <?php
-$studyid=$_GET["studyid"];
+$studyid=sanitize_xss($_GET["studyid"]);
 $string = file_get_contents(dirname(__DIR__)."/json/study_detail.json");
 $study_detail=json_decode($string, true);
 
@@ -22,6 +22,10 @@ function study_title() {
     return $title;
 
 
+}
+
+function sanitize_xss($value) {
+	return htmlspecialchars(strip_tags($value));
 }
 
 function prettify_funders($funder_string) {

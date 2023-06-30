@@ -1,5 +1,5 @@
-<?php include(dirname(__DIR__).'/contents/study_info.php');?>
-<input style='display:none;' type='text' id='studyid' value='<?php echo($_GET['studyid']); ?>' >
+<?php include(dirname(__DIR__).'/contents/study_info.php');$studyid=sanitize_xss($_GET["studyid"]);?>
+<input style='display:none;' type='text' id='studyid' value='<?php echo($studyid); ?>' >
 
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -8,7 +8,7 @@
         </div>
         <a id="MHMjumpLink" href="#timeline" class="d-sm-inline-block btn btn-primary">Jump to study timeline <i class="fas fa-arrow-down"></i></a>
     </div>  
-    <?php study_cards($_GET['studyid']); ?>
+    <?php study_cards($studyid); ?>
 
     <div class="row">
        <div class="col-md-12">

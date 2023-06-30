@@ -15,6 +15,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
+  <script src="vendor/jquery/jquery.min.js" ></script>
+
   <link href="css/core.css?v4" rel="stylesheet">
   <link rel="preload" href="css/timeline.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/timeline.css"></noscript>
@@ -41,7 +43,6 @@
   <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png" />
 
-<script src="vendor/jquery/jquery.min.js" defer></script>
      
 </head>
 
@@ -139,6 +140,10 @@
                     Common measures of mental health
                   </a>
                   <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="?content=16">
+                  Common measures of personality and temperament
+                  </a>
+                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="?content=4">
                     COVID-19 and UK cohort & longitudinal studies
                   </a>
@@ -209,7 +214,7 @@
         </div>
     </div>
       <div class="col-12 col-sm-4 d-flex footerRightLogoFlex">
-        <a class="footerRightLogos" href = "https://www.hdruk.ac.uk/helping-with-health-data/health-data-research-hubs/datamind/" target= "_blank">
+        <a class="footerRightLogos" href = "https://datamind.org.uk/" target= "_blank">
           <img  src='img/DATAMIND.png'/>
         </a>
         <a class="footerRightLogos" href = "https://www.hdruk.ac.uk/" target= "_blank">

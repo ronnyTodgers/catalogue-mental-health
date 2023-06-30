@@ -1,6 +1,6 @@
 <?php
 if($_GET["studyid"]) {
-   $studyid=$_GET["studyid"];
+   $studyid=sanitize_xss($_GET["studyid"]);
 } else {
    http_response_code(400); exit;
 }
@@ -10,6 +10,9 @@ $studies=json_decode($string, true);
 
 print(json_encode($studies[$studyid]));
 
+function sanitize_xss($value) {
+	return htmlspecialchars(strip_tags($value));
+}
 
 ?>
 

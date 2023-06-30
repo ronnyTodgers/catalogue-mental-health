@@ -2,7 +2,8 @@
 	$(document).ready(function(){
 	  $('.card').find('strong[id]').each(function(){
       	let ID = $(this).prop('id');
-      	$(this).after('<br><i><a href="?content=search&query=' + encodeURIComponent(ID) + '" target="_blank">See studies using this measure</a></i>')
+		let Name = $(this).html().replace(/[(].+[)]/g, '');
+      	$(this).after('<br><i><a href="?content=search&query=' + encodeURIComponent('"' + Name.trim() + '" OR "' + ID.trim() + '"') + '" target="_blank">See studies using this measure</a></i>')
       });
   });
 </script>
@@ -175,3 +176,4 @@
 </div>
 </div>
 </div>
+

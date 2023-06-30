@@ -7,14 +7,32 @@ const svgSupport = document.implementation.hasFeature(
 var treeAnimationTimeLines = {};
 $.when(
   $.get("?content=7", function(data) {
-    $(data).find('strong[id]').each(function(){
+    $(data).find('strong[id]').each(function(e){
       let ID = $(this).prop('id');
+      let Name = $(this).html().replace(/[(].+[)]/g, '');
       standardInstruments[ID] = $(this).parent()[0].outerHTML;
+      standardInstruments[Name] = $(this).parent()[0].outerHTML;
       let parasInToolTip = 0;
       $(this).parent().nextAll().each(function(){
         parasInToolTip++;
         if($(this)[0].tagName == "HR" || parasInToolTip >3 || $(this).text().indexOf('Reference')>-1) return false;
         standardInstruments[ID] += $(this)[0].outerHTML;
+        standardInstruments[Name] += $(this)[0].outerHTML;
+      });
+    });
+  }),
+  $.get("?content=16", function(data) {
+    $(data).find('strong[id]').each(function(){
+      let ID = $(this).prop('id');
+      let Name = $(this).html().replace(/[(].+[)]/g, '');
+      standardInstruments[ID] = $(this).parent()[0].outerHTML;
+      standardInstruments[Name] = $(this).parent()[0].outerHTML;
+      let parasInToolTip = 0;
+      $(this).parent().nextAll().each(function(){
+        parasInToolTip++;
+        if($(this)[0].tagName == "HR" || parasInToolTip >3 || $(this).text().indexOf('Reference')>-1) return false;
+        standardInstruments[ID] += $(this)[0].outerHTML;
+        standardInstruments[Name] += $(this)[0].outerHTML;
       });
     });
   }),
@@ -27,7 +45,7 @@ $.when(
       if(sweep['Standard Instrument']=="<i class='fas fa-check'></i>"){
         for (var standardInstrument in standardInstruments){
           if(sweep['Scale'].indexOf(standardInstrument) >-1) {
-            sweep['Scale'] = "<div style='display:flex;align-items:center;'>" + sweep['Scale'] + "<i class='fas fa-info-circle infobutton' data-toggle='tooltip' data-html='true' title='" + standardInstruments[standardInstrument] + "'></i></div>";
+            sweep['Scale'] = "<div style='display:flex;align-items:center;'>" + sweep['Scale'] + "<i style='margin-left: auto;'  class='fas fa-info-circle infobutton' data-toggle='tooltip' data-html='true' title='" + standardInstruments[standardInstrument] + "'></i></div>";
             break;
           }
         }

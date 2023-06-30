@@ -598,7 +598,11 @@ function updateSearchResults(newSearchData, noAdditions) {
     if (searchField.length >minLength) {
         searchField = searchField.replace(/ OR /gi, ' OR ');
         // quote any word which contains a - symbol ( eg GHQ-7 ) to stop it being treated as GHQ and -7
+        // UNLESS IT'S ALREADY QUOTED!
+        // convert special hyphens(–) to -
+        searchField = searchField.replace(/(–)/gi, '-');
         searchField = searchField.replace(/(\w+-\w+)/gi, '"$&"');
+        searchField = searchField.replace(/("+)/gi, '"');
         var searchArrayMap = stringSearch.simplify(stringSearch.parse(searchField));
         
         var excludedTerms = ["AND", "OR", "AU", "AS"]
