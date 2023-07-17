@@ -653,6 +653,7 @@ function updateSearchResults(newSearchData, noAdditions) {
                     arr[1].length > minLength && 
                     excludedTerms.indexOf(String(arr[1]).toUpperCase()) ==-1) {
                 console.log("adding highlight term: " +  arr[1]);
+                // Dont match terms inside links
                 regexTerms.push("(" + arr[1] + ")"); 
             }
             if (verb =="Pair" && arr[2].length > minLength && 
@@ -724,7 +725,7 @@ function updateSearchResults(newSearchData, noAdditions) {
       	            }
                     matchScore = Object.keys(matches).length;
                     if ('Title' in matches) matchScore +=10;
-
+ 
                     console.log(matches);
     		        thisOutput += '<div class="card shadow mb-4 searchResult" sid="' +
                         key + 

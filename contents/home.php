@@ -71,7 +71,7 @@
 				</div>
 			</div>
 		</div> -->
-		<div class="homeRow odd">
+		<div class="homeRow odd2">
 			<h4 id="Explore" style="font-weight:800;" class="h4 mb-2 text-center">Explore the Catalogue of Mental Health Measures</h4>
 			<div class="d-md-flex align-items-top justify-content-between">
 				<div class="homeInfoBox col-lg-6 d-flex flex-column align-items-top justify-content-around">
