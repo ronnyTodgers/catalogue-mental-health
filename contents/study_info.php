@@ -46,7 +46,7 @@ function prettify_funders($funder_string) {
 
 
 function study_cards() {
-	$overview_card_fields = ["Aims","Geographic coverage - Nations", "Geographic coverage - Regions","Institution","Start date","Links","Most recent sweep","Ongoing?"];
+	$overview_card_fields = ["Aims","Geographic coverage - Nations", "Geographic coverage - Regions","Institution","Start date","Links","Most recent sweep","Ongoing?", "Updated"];
 	$sample_card_fields =  ["Sample type","Sample details","Sample size at recruitment","Sample size at most recent sweep","Age at recruitment","Cohort year of birth","Sex"];
 	$data_card_fields = ["Linkage to administrative data","Genetic data collected","Data access", "HDR UK Innovation Gateway"];
 	$marker_card_fields = ["Reference paper"];
@@ -75,7 +75,12 @@ function study_cards() {
 	foreach ($study_detail[$studyid] as $key => $value) {
    		if($value && $key != 'Title') { 
 			if (in_array($key, $overview_card_fields)) {
+                if($key =="Updated") {
+                    $overview_card_body = $overview_card_body.'<p><b>Catalogue record last updated</b><br>'.date('d/m/Y', $value).'</p>';
+                } else {
 				$overview_card_body = $overview_card_body.'<p><b>'.$key.'</b><br>'.$value.'</p>';
+                }
+
 			}
             elseif (in_array($key, $sample_card_fields)) {
                     $sample_card_body = $sample_card_body.'<p><b>'.$key.'</b><br>'.$value.'</p>';

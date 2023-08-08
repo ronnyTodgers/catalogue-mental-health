@@ -90,8 +90,14 @@ function addStudyLink($code, $name) {
     }
     return $name;
 }
-
+$sweepsUpdated = [];
 $allData = [];
+
+$string = file_get_contents(__DIR__ . "/json/sweeps.json");
+$previousDate = filemtime(__DIR__ . "/json/sweeps.json");
+$currentDate = max(filemtime(__DIR__ . "/xlsx/sweeps.xlsx"), filemtime(__DIR__ . "/xlsx/studies.xlsx"));
+$previousData = json_decode($string, true);
+
 
 $filename = __DIR__ . '/xlsx/sweeps.xlsx';
 $reader = IOFactory::createReaderForFile($filename) -> setReadDataOnly(true);
@@ -127,6 +133,7 @@ foreach ($spreadsheet1->getSheetNames() as $sheetName) {
              ];
 	     }
         }
+    $sweepsUpdated[trim($sheet->getTitle())] = ($data != $previousData[trim($sheet->getTitle())]);
     $allData[trim($sheet->getTitle())] = $data;
 }
 
@@ -136,7 +143,15 @@ fwrite($fp, makeAllLinksNewWindow(json_encode($allData)));
 fclose($fp);
 
 
+
+print_r($sweepsUpdated);
+$string = file_get_contents(__DIR__ . "/json/study_detail.json");
+$previousData = json_decode($string, true);
+$previousDate = filemtime(__DIR__ . "/json/study_detail.json");
+
 $filename = __DIR__ . '/xlsx/studies.xlsx';
+
+
 $reader = IOFactory::createReaderForFile($filename) -> setReadDataOnly(true);
 
 $spreadsheet1 = $reader ->  load($filename);
@@ -145,6 +160,11 @@ $sheet = $spreadsheet1->getSheet(0);
     $data = [];
         for ($row = 2; $row <= $lastRow; $row++) {
             if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" ) {
+
+            if(!array_key_exists('Updated', $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())])){
+                $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())]['Updated'] = $previousDate;
+            }
+
             $data[trim($sheet->getCell('A'.$row)->getCalculatedValue())] = [
                 'Title' => trim($sheet->getCell('B'.$row)->getCalculatedValue()),
                 'Aims' => $sheet->getCell('C'.$row)->getCalculatedValue(),
@@ -171,8 +191,15 @@ $sheet = $spreadsheet1->getSheet(0);
                 'Sample characteristics' => $sheet->getCell('X'.$row)->getCalculatedValue(),
                 'Geographic coverage' => $sheet->getCell('Y'.$row)->getCalculatedValue(),
                 'Complementary data' => $sheet->getCell('Z'.$row)->getCalculatedValue(),
-                'HDR UK Innovation Gateway' => strip_tags($sheet->getCell('AA'.$row)->getCalculatedValue())
+                'HDR UK Innovation Gateway' => strip_tags($sheet->getCell('AA'.$row)->getCalculatedValue()),
+                'Updated' => $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())]['Updated']
              ];
+
+             $thisData = json_decode(makeAllLinksNewWindow(json_encode($data[trim($sheet->getCell('A'.$row)->getCalculatedValue())])), true);
+             if( $sweepsUpdated[trim($sheet->getCell('A'.$row)->getCalculatedValue())] || count(array_diff($thisData,$previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())]))){
+                print_r("Updating ". $sheet->getCell('A'.$row));
+                $data[trim($sheet->getCell('A'.$row)->getCalculatedValue())]['Updated'] = $currentDate;
+             }
              }
         }
 $fp = fopen('json/study_detail.json', 'w');
