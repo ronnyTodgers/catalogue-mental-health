@@ -9,30 +9,54 @@ $.when(
   $.get("?content=7", function(data) {
     $(data).find('strong[id]').each(function(e){
       let ID = $(this).prop('id');
-      let Name = $(this).html().replace(/[(].+[)]/g, '');
+      let Name = $(this).html().replace(/[(].+[)]/g, '').trim();
       standardInstruments[ID] = $(this).parent()[0].outerHTML;
       standardInstruments[Name] = $(this).parent()[0].outerHTML;
+      if(Name.indexOf('Short-Form') > -1) {
+        standardInstruments[Name.replace(/Short-Form/g, 'Short Form')] = $(this).parent()[0].outerHTML;
+      }
+      if(Name.indexOf('Short Form') > -1) {
+        standardInstruments[Name.replace(/Short Form/g, 'Short-Form')] = $(this).parent()[0].outerHTML;
+      }
       let parasInToolTip = 0;
       $(this).parent().nextAll().each(function(){
         parasInToolTip++;
         if($(this)[0].tagName == "HR" || parasInToolTip >3 || $(this).text().indexOf('Reference')>-1) return false;
         standardInstruments[ID] += $(this)[0].outerHTML;
         standardInstruments[Name] += $(this)[0].outerHTML;
+        if(Name.indexOf('Short-Form') > -1) {
+          standardInstruments[Name.replace(/Short-Form/g, 'Short Form')] += $(this)[0].outerHTML;
+        }
+        if(Name.indexOf('Short Form') > -1) {
+          standardInstruments[Name.replace(/Short Form/g, 'Short-Form')]+= $(this)[0].outerHTML;
+        }
       });
     });
   }),
   $.get("?content=16", function(data) {
     $(data).find('strong[id]').each(function(){
       let ID = $(this).prop('id');
-      let Name = $(this).html().replace(/[(].+[)]/g, '');
+      let Name = $(this).html().replace(/[(].+[)]/g, '').trim();
       standardInstruments[ID] = $(this).parent()[0].outerHTML;
       standardInstruments[Name] = $(this).parent()[0].outerHTML;
+      if(Name.indexOf('Short-Form') > -1) {
+        standardInstruments[Name.replace(/Short-Form/g, 'Short Form')] = $(this).parent()[0].outerHTML;
+      }
+      if(Name.indexOf('Short Form') > -1) {
+        standardInstruments[Name.replace(/Short Form/g, 'Short-Form')] = $(this).parent()[0].outerHTML;
+      }
       let parasInToolTip = 0;
       $(this).parent().nextAll().each(function(){
         parasInToolTip++;
         if($(this)[0].tagName == "HR" || parasInToolTip >3 || $(this).text().indexOf('Reference')>-1) return false;
         standardInstruments[ID] += $(this)[0].outerHTML;
         standardInstruments[Name] += $(this)[0].outerHTML;
+        if(Name.indexOf('Short-Form') > -1) {
+          standardInstruments[Name.replace(/Short-Form/g, 'Short Form')] += $(this)[0].outerHTML;
+        }
+        if(Name.indexOf('Short Form') > -1) {
+          standardInstruments[Name.replace(/Short Form/g, 'Short-Form')]+= $(this)[0].outerHTML;
+        }
       });
     });
   }),
@@ -90,7 +114,7 @@ function getJsDateFromExcel(excelDateStart, excelDateEnd) {
       ds[i] = Date.parse(excelDates[i] + '-01-01');
     } else {
       ds[i] = new Date((excelDates[i] - (25567 + 2))*86400*1000); 
-      ds[i].setDate(1);
+   //   ds[i].setDate(1);
       ds[i].setHours(0);
       ds[i].setMinutes(0);
       ds[i].setMilliseconds(0);

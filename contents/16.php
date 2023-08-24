@@ -19,12 +19,12 @@
 
 <center>
 <p><strong>COMMON MEASURES OF PERSONALITY</strong></p>
-<p><strong><a href="#BFI">Big Five Inventory (BFI)</a> - <a href="#AUDIT">Eysenck Personality Questionnaire (EPQ)</a> - <a href="#IPIP">International Personality Item Pool (IPIP)</a> - <a href="#MIDI">Midlife Development Inventory (MIDI)</a></strong></p>
+<p><strong><a href="#(BFI)">Big Five Inventory (BFI)</a> - <a href="#AUDIT">Eysenck Personality Questionnaire (EPQ)</a> - <a href="#IPIP">International Personality Item Pool (IPIP)</a> - <a href="#MIDI">Midlife Development Inventory (MIDI)</a></strong></p>
 <p><strong>COMMON MEASURES OF TEMPERAMENT</strong></p>
 <p><strong><a href="#IBQ-R">Infant Behavior Questionnaire-Revised (IBQ-R)</a> - <a href="#ECBQ">Early Childhood Behavior Questionnaire (ECBQ)</a> - <a href="#CBQ">Children&rsquo;s Behavior Questionnaire (CBQ)</a> - <a href="#Emotionality Activity Sociability Temperament Survey">EAS Temperament Survey (EAS)</a></strong></p>
 </center><hr />
-<p><strong id="BFI">Big Five Inventory (BFI)</strong></p>
-<p>The Big Five Inventory (BFI) is a 44-item self-report scale designed to assess the domains of the Five Factor Model of personality: Openness to Experience, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. Items consist of short phrases (e.g., &lsquo;is helpful and unselfish with others&rsquo;, &lsquo;does things efficiently&rsquo;), and participants rate each item on a 5-point scale ranging from 1 (disagree strongly) to 5 (agree strongly); scale scores reflect the participant's mean item response to the items on each scale. The BFI shows good psychometric properties, and significant associations have been reported between scores for the Big Five traits on the BFI and analogous factors on other established personality inventories.</p>
+<p><strong id="(BFI)">Big Five Inventory (BFI)</strong></p>
+<p>The Big Five Inventory (BFI) is a 44-item self-report scale designed to assess the domains of the Five Factor Model of personality: Openness to Experience, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. Items consist of short phrases (e.g., &lsquo;is helpful and unselfish with others&rsquo;, &lsquo;does things efficiently&rsquo;), and participants rate each item on a 5-point scale ranging from 1 (disagree strongly) to 5 (agree strongly); scale scores reflect the participant&rsquo;s mean item response to the items on each scale. The BFI shows good psychometric properties, and significant associations have been reported between scores for the Big Five traits on the BFI and analogous factors on other established personality inventories.</p>
 <p><em>Reference</em></p>
 <p>John, O. P., Donahue, E., &amp; Kentle, R. L. (1991). <em>The Big Five Inventory: Versions 4a and 54</em>. Berkley, CA: University of California, Institute of Personality Assessment and Research.</p>
 

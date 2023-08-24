@@ -32,6 +32,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-strip-debug": "^3.0.0",
+    "search-string": "^3.1.0",
     "twitter-search-query-parser": "^1.0.0"
   },
   "devDependencies": {
