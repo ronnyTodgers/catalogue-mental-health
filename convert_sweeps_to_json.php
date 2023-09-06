@@ -161,6 +161,10 @@ $sheet = $spreadsheet1->getSheet(0);
         for ($row = 2; $row <= $lastRow; $row++) {
             if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" ) {
 
+            if(!array_key_exists(trim($sheet->getCell('A'.$row)->getCalculatedValue()), $previousData)){
+                $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())] = [];
+            }
+    
             if(!array_key_exists('Updated', $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())])){
                 $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())]['Updated'] = $previousDate;
             }
