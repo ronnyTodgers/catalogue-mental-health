@@ -264,3 +264,5 @@
 <h5>Page references:</h5>
 <p>American Psychiatric Association (2013). Diagnostic and statistical manual of mental disorders (DSM-5), 5th edition. American Psychiatric Association.</p>
 <p>World Health Organization (1992). The ICD-10 classification of mental and behavioural disorders: clinical descriptions and diagnostic guidelines. World Health Organization.</p>
+</div>
+</div>

@@ -77,7 +77,7 @@
 				<div class="homeInfoBox col-lg-6 d-flex flex-column align-items-top justify-content-around">
 					<div class="d-flex align-items-center mb-1 mt-1">
 						<img class="homeClipArt" src="img/icon-studies.png" alt="" />
-						<p class="mb-0 text-left">Over 50 longitudinal studies -
+						<p class="mb-0 text-left">Over 55 longitudinal studies -
 							<a href="#Explore" class="searchLink">try searching for <i>"Born in Bradford"</i></a>
 						</p>
 					</div>
@@ -110,7 +110,7 @@
 			<div class="d-sm-flex align-items-top justify-content-between">
 				<div class="homeInfoBox col-sm-6">
 					<h4 class="h4 mb-2 text-green-800" style="text-align: center; width:80%;margin:auto;">We want to hear from you!</h4>
-					<p>The catalogue continues to grow as we add new studies, sweeps and measures. Is there something you think is missing, or would like to see on the platform? Get in touch with us by emailing <a href="mailto:mentalhealth.fellow@kcl.ac.uk">mentalhealth.fellow@kcl.ac.uk</a> with your feedback!</p>
+					<p>The catalogue continues to grow as we add new studies, sweeps and measures. Is there something you think is missing, or would like to see on the platform? Get in touch with us by emailing <a href="mailto:cataloguemhm@kcl.ac.uk">cataloguemhm@kcl.ac.uk</a> with your feedback!</p>
 				</div>
 				<div class="homeInfoBox col-sm-6">
 					<h4 class="h4 mb-2 text-green-800" style="text-align: center; width:80%;margin:auto;">Want to stay up to date?</h4>

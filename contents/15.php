@@ -117,3 +117,6 @@
 <p>Rothbart, M. K., Ahadi, S. A., Hershey, K. L., &amp; Fisher, P. (2001). Investigations of temperament at 3-7 years: The Children&rsquo;s Behavior Questionnaire. <em>Child Development</em>, 72, 1394-1408.</p>
 <p>Buss, A. H., &amp; Plomin, R. (1984). Temperament: Early developing personality traits. Hillsdale, NJ: Lawrence Erlbaum Associates, Inc.</p>
 
+</div>
+
+</div>

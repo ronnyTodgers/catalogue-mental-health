@@ -186,12 +186,14 @@
     <!-- Footer -->
     <footer class="sticky-footer">
     <div class="footerWrapper">
-    <div class="col-12 col-sm-8 d-flex footerLeftLogoFlex">
+    <div class="col-12 d-flex footerLeftLogoFlex">
       <div class="contactus text-left my-auto">
           <p>CONTACT US<br>
             Institute of Psychiatry, Psychology & Neuroscience<br>
             King's College London<br>
-            E: <a href="mailto:mentalhealth.fellow@kcl.ac.uk">mentalhealth.fellow@kcl.ac.uk</a>
+            E: <a href="mailto:cataloguemhm@kcl.ac.uk">cataloguemhm@kcl.ac.uk</a>
+    </p><p>
+            <i>  To reference the Catalogue, please use: Catalogue of Mental Health Measures (2023). Available at www.cataloguementalhealth.ac.uk</i>
           </p>
         </div>
 
@@ -210,24 +212,29 @@
             <a href = "https://www.closer.ac.uk/" target= "_blank">
               <img class="footerLogo" src="img/closer_logo.svg" /></a>
           </div>
+          <div class="footerLogoWrapper">
+        <a  href = "https://datamind.org.uk/" target= "_blank">
+          <img class="footerLogo" src='img/DATAMIND.png'/>
+          </div>
+        </a>
+        <div class="footerLogoWrapper">
+        <a  href = "https://www.hdruk.ac.uk/" target= "_blank">
+        	<img class="footerLogo" src='img/HDRUK.png'/>
+          
+        </a>
+        </div>
+        <div class="footerLogoWrapper">
+        <a  href = "https://www.ukri.org/councils/mrc/" target= "_blank">
+        	<img class="footerLogo" src='img/funders/MRC.png'/>
+        </a>
+        </div>
   
         </div>
     </div>
-      <div class="col-12 col-sm-4 d-flex footerRightLogoFlex">
-        <a class="footerRightLogos" href = "https://datamind.org.uk/" target= "_blank">
-          <img  src='img/DATAMIND.png'/>
-        </a>
-        <a class="footerRightLogos" href = "https://www.hdruk.ac.uk/" target= "_blank">
-        	<img src='img/HDRUK.png'/>
-        </a>
-        <a class="footerRightLogos" href = "https://www.ukri.org/councils/mrc/" target= "_blank">
-        	<img src='img/funders/MRC.png'/>
-        </a>
-      </div>
     </div>
       <div class="d-flex">
         <div class="copyright col-6">
-          <span>Copyright &copy; Louise Arseneault 2022</span>
+          <span>Copyright &copy; Louise Arseneault <?php echo date("Y"); ?></span>
         </div>
         <div class="copyright col-6 text-right">
          <span>Platform built by <a target="_blank" href="https://www.delosis.com">Delosis</a></span>

@@ -65,8 +65,8 @@
 <p>West of Scotland Twenty-07 Study</p>
 <p>Wirral Child Health and Development Study</p>
 </div>
-<p>If you know a study that meets our inclusion criteria but is not listed here, please do get in touch with us at&nbsp;<a href="mailto:mentalhealth.fellow@kcl.ac.uk">mentalhealth.fellow@kcl.ac.uk</a></p>
-<h4>Mental health problems in the catalogue</h4>
+<p>If you know a study that meets our inclusion criteria but is not listed here, please do get in touch with us at&nbsp;<a href="mailto:cataloguemhm@kcl.ac.uk">cataloguemhm@kcl.ac.uk</a></p>
+<h4>Mental health problems in the Catalogue</h4>
 <p>We have aimed to include a wide range of mental health and related topics in the Catalogue in order to give a full view of the data that have been collected. The topics include:</p>
 <div class="columnSection" dir="ltr" style="column-count: 2;">
 <p>ADHD</p>
@@ -104,11 +104,11 @@
 <p>Tourette&rsquo;s syndrome</p>
 <p>Treatment, service use and help-seeking behaviour&nbsp;</p>
 </div>
-<p>The catalogue focuses on measures of mental health and wellbeing. As a result, the catalogue does not at this stage include measures of:</p>
+<p>The Catalogue focuses on measures of mental health and wellbeing. As a result, the Catalogue does not at this stage include measures of:</p>
 <ul>
-<li><strong>Cognition and neurocognitive disorders</strong> Measures of cognition (e.g. intelligence and memory) and measures focusing on learning disabilities and difficulties or neurocognitive disorders (e.g. dementia) are not detailed in the catalogue. If you are interested in dementia, <a href="https://www.dementiasplatform.uk/" target="_blank" rel="noopener"> Dementias Platform UK</a> provides information on neurocognitive data in over 35 British cohorts. For a review of the cognitive measures in the British Birth Cohorts, see the CLOSER funded project <a href="https://www.closer.ac.uk/research-fund-2/data-harmonisation/assessment-harmonisation-cognitive-measures-british-birth-cohorts/" target="_blank" rel="noopener"><em>Assessment and Harmonisation of Cognitive Measures in British Birth Cohorts</em></a>.</li>
-<li><strong>Personality and temperament</strong> Measures of personality traits and temperament are not covered in the catalogue. However, measures of symptoms and diagnosis of personality disorders are included.</li>
-<li><strong>Risk factors for mental health problems </strong>The majority of the studies in the catalogue also include measures of biological and social risk factors for mental health problems, such as genes, trauma and poverty, but these are not currently listed in the catalogue.</li>
+<li><strong>Cognition and neurocognitive disorders</strong> Measures of cognition (e.g. intelligence and memory) and measures focusing on learning disabilities and difficulties or neurocognitive disorders (e.g. dementia) are not detailed in the Catalogue. If you are interested in dementia, <a href="https://www.dementiasplatform.uk/" target="_blank" rel="noopener"> Dementias Platform UK</a> provides information on neurocognitive data in over 35 British cohorts. For a review of the cognitive measures in the British Birth Cohorts, see the CLOSER funded project <a href="https://www.closer.ac.uk/research-fund-2/data-harmonisation/assessment-harmonisation-cognitive-measures-british-birth-cohorts/" target="_blank" rel="noopener"><em>Assessment and Harmonisation of Cognitive Measures in British Birth Cohorts</em></a>.</li>
+<li><strong>Personality and temperament</strong> Measures of personality traits and temperament are not covered in the Catalogue. However, measures of symptoms and diagnosis of personality disorders are included.</li>
+<li><strong>Risk factors for mental health problems </strong>The majority of the studies in the Catalogue also include measures of biological and social risk factors for mental health problems, such as genes, trauma and poverty, but these are not currently listed in the Catalogue.</li>
 </ul>
 <h4>Populations and participants</h4>
 <p>Most of the cohort and longitudinal studies included in the Catalogue recruited from the general population, while a small number focused on clinical samples. The age of study participants also varies across cohorts, with studies recruiting participants at all stages of the life course from birth to older age. Participants’ year of birth similarly differ widely, from the early twentieth century to 2020.</p>

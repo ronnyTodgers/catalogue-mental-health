@@ -6,7 +6,7 @@ $study_detail=json_decode($string, true);
 function study_title() {
 	global $study_detail;
     global $studyid;
-    $title = '<img class="studyImage" src="img/studies/'.$studyid.'.png" alt="" onerror=\'this.style.display="none"\'/>'.
+    $title = '<img class="studyImage" src="img/studies/'.$studyid.'.png?202310" alt="" onerror=\'this.style.display="none"\'/>'.
              '<h1 class="h3 text-center text-sm-left mb-0 text-green-800 mr-auto">'.$study_detail[$studyid]['Title'].'</h1>';
 
     if($study_detail[$studyid]['HDR UK Innovation Gateway']) {

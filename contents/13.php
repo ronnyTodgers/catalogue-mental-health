@@ -38,7 +38,7 @@
 			<p>First, it is good to try altering the terminology you use in your search or try using synonyms. Especially if you are looking for a topic that may be less commonly measured. For example, if you are looking for binge eating disorder, it is better to search for the disorder itself, rather than specific symptoms, such as &lsquo;vomiting&rsquo; or &lsquo;over-eating&rsquo;. Using different terminology will improve your search.</p>
 			<p>To find the most accurate terminology to use, we recommend checking the list of mental health topics covered by the Catalogue. These are located under the &lsquo;mental health topics&rsquo; page. It is a good idea to check here if the disorder you are looking for is covered in the Catalogue before you search for it.</p>
 			<p>The search engine will allow you to look for mental health and wellbeing topics, instruments, or studies only. If you are looking for related topics, you can use the filters.</p>
-			<p>If you need any help, or still can&rsquo;t find what you&rsquo;re looking for, contact us at <u><a href="mailto:mentalhealth.fellow@kcl.ac.uk">mentalhealth.fellow@kcl.ac.uk</a></u>.</p>
+			<p>If you need any help, or still can&rsquo;t find what you&rsquo;re looking for, contact us at <u><a href="mailto:cataloguemhm@kcl.ac.uk">cataloguemhm@kcl.ac.uk</a></u>.</p>
 		</div>
 	</div>
 </div>
@@ -67,7 +67,7 @@
 			</li>
 			</ul>
 			<p>You can find out more about the types of studies included on the Catalogue on the &lsquo;<a href="?content=1">background</a>&rsquo; and <a href="?content=2">&lsquo;gathering the information&rsquo;</a> pages.</p>
-			<p>We are always on the lookout for new studies to add to the Catalogue. If you think you know a study that meets our criteria, but is not listed, please get in touch! Email us at <u><a href="mailto:mentalhealth.fellow@kcl.ac.uk">mentalhealth.fellow@kcl.ac.uk</a></u>.</p>
+			<p>We are always on the lookout for new studies to add to the Catalogue. If you think you know a study that meets our criteria, but is not listed, please get in touch! Email us at <u><a href="mailto:cataloguemhm@kcl.ac.uk">cataloguemhm@kcl.ac.uk</a></u>.</p>
 		</div>
 	</div>
 </div>
