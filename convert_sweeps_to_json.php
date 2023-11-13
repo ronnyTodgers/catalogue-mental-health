@@ -107,7 +107,7 @@ $spreadsheet1 = $reader ->  load($filename);
 foreach ($spreadsheet1->getSheetNames() as $sheetName) {
 
     $sheet = $spreadsheet1->getSheetByName($sheetName);
-//    if(trim($sheet->getTitle()) != 'SEP-MD') {
+    if(trim($sheet->getTitle()) != 'SEP-MD') {
     $lastRow = $sheet->getHighestRow();
     $data = [];
         for ($row = 3; $row <= $lastRow; $row++) {
@@ -137,7 +137,7 @@ foreach ($spreadsheet1->getSheetNames() as $sheetName) {
         }
     $sweepsUpdated[trim($sheet->getTitle())] = ($data != $previousData[trim($sheet->getTitle())]);
     $allData[trim($sheet->getTitle())] = $data;
-//}
+}
 }
 
 // Save
@@ -162,7 +162,7 @@ $sheet = $spreadsheet1->getSheet(0);
     $lastRow = $sheet->getHighestRow();
     $data = [];
         for ($row = 2; $row <= $lastRow; $row++) {
-  //          if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" && $sheet->getCell('A'.$row)->getCalculatedValue() != "SEP-MD" ) {
+            if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" && $sheet->getCell('A'.$row)->getCalculatedValue() != "SEP-MD" ) {
 
             if(!array_key_exists(trim($sheet->getCell('A'.$row)->getCalculatedValue()), $previousData)){
                 $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())] = [];
@@ -207,7 +207,7 @@ $sheet = $spreadsheet1->getSheet(0);
                 print_r("Updating ". $sheet->getCell('A'.$row));
                 $data[trim($sheet->getCell('A'.$row)->getCalculatedValue())]['Updated'] = $currentDate;
              }
-  //         }
+           }
         }
 $fp = fopen('json/study_detail.json', 'w');
 fwrite($fp, makeAllLinksNewWindow(json_encode($data)));
