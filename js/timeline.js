@@ -143,10 +143,20 @@ function getJsDateFromExcel(excelDateStart, excelDateEnd) {
   return (ds[0] + ds[1]) / 2;
 }
 
-function tlEntry(startDate, endDate, title, label, cAge, comment, physHealth) {
+function tlEntry(
+  startDate,
+  endDate,
+  title,
+  label,
+  cAge,
+  comment,
+  physHealth,
+  origSweepIndex
+) {
   this.startDate = startDate;
   this.endDate = endDate;
-  this.tlDate = (this.startDate + this.endDate) / 2;
+  this.tlDate =
+    origSweepIndex == 0 ? this.startDate : (this.startDate + this.endDate) / 2;
   this.title = title;
   this.label = label;
   this.cAge = cAge;
@@ -254,7 +264,8 @@ function makeTimeline(fullSweeps, timelineGroup) {
         sweep["Label"],
         sweep["CM age"],
         sweep["Sweep Comments"],
-        sweep["Physical Health Measures"]
+        sweep["Physical Health Measures"],
+        i
       )
     );
   }
