@@ -13360,21 +13360,22 @@ footer.sticky-footer {
   padding: 0.5rem 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  background: darkgray;
+  background: #dbdbdb;
+  font-weight: 100;
 }
 
 footer.sticky-footer .copyright {
   padding: 0.5rem;
-  color: white;
+  color: black;
   line-height: 1rem;
   font-size: 0.8rem;
 }
 
 footer.sticky-footer .contactus {
   padding: 0.5rem;
-  color: white;
-  line-height: 1.3rem;
-  font-size: 1.1rem;
+  color: black;
+  line-height: 1.15rem;
+  font-size: 0.95rem;
 }
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
@@ -13432,7 +13433,6 @@ body.sidebar-toggled footer.sticky-footer {
 
 .footerLogo {
   height: 4rem;
-  height: 10vw;
   max-height: 5rem;
   max-width: 100%;
   margin: auto;
@@ -13440,12 +13440,11 @@ body.sidebar-toggled footer.sticky-footer {
 @media (max-width: 900px) {
   .footerLogo {
     height: 2rem;
-    height: 8.8vw;
   }
 }
 footer a,
 footer a:hover {
-  color: white;
+  color: black;
 }
 
 .navWrapper {
@@ -13698,10 +13697,11 @@ img {
 }
 
 .footerLogos {
-  width: 100%;
+  max-width: 400px;
+  margin-right: 0;
+  margin-left: auto;
   justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 }
 

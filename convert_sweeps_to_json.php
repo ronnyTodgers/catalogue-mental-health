@@ -1,4 +1,7 @@
 <?php
+ini_set('memory_limit', '-1');
+ini_set('error_reporting','E_ALL & ~E_NOTICE & ~E_DEPRECATED');
+
 require __DIR__ . '/vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
@@ -10,8 +13,8 @@ function makeAllLinksNewWindow($str) {
 }
 
 function textToHtmlLinks($str) {
-    $url = '~(?:(https?)://([^\s<]+)|(www\.[^\s<]+?\.[^\s<]+))(?<![\.,:])~i'; 
-    $str = preg_replace($url, '<a href="$0" target="_blank" title="$0">$0</a>', $str);
+    $url = '~(?:(https?)://(([^\s<]+)|(www\.[^\s<]+?\.[^\s<]+))(?<![\.,:]))~i'; 
+    $str = preg_replace($url, '<a href="$0" target="_blank" title="$0">\2</a>', $str);
 return $str;
 }
 
@@ -98,6 +101,34 @@ $previousDate = filemtime(__DIR__ . "/json/sweeps.json");
 $currentDate = max(filemtime(__DIR__ . "/xlsx/sweeps.xlsx"), filemtime(__DIR__ . "/xlsx/studies.xlsx"));
 $previousData = json_decode($string, true);
 
+//Do funders first as it throws an error with missing images and prevents all the studies being marked as updated
+
+$filename = __DIR__ . '/xlsx/funders.xlsx';
+$reader = IOFactory::createReaderForFile($filename) -> setReadDataOnly(true);
+
+$spreadsheet1 = $reader ->  load($filename);
+$sheet = $spreadsheet1->getSheet(0);
+    $lastRow = $sheet->getHighestRow();
+    $data = [];
+        for ($row = 3; $row <= $lastRow; $row++) {
+            $funderCode = $sheet->getCell('B'.$row)->getCalculatedValue();
+            if( $funderCode != "" ) {
+                if(!file_exists(__DIR__. '/img/funders/'. $funderCode .'.png')) {
+                    throw new Exception('Image missing for '. $funderCode );
+                }
+                $data[$funderCode] = [
+                'Funder name' => $sheet->getCell('A'.$row)->getCalculatedValue(),
+                'Has image' => "Y",
+                'Address' => $sheet->getCell('C'.$row)->getCalculatedValue()
+             ];
+             }
+        }
+$fp = fopen('json/funders.json', 'w');
+fwrite($fp, makeAllLinksNewWindow(json_encode($data)));
+fclose($fp);
+
+
+
 
 $filename = __DIR__ . '/xlsx/sweeps.xlsx';
 $reader = IOFactory::createReaderForFile($filename) -> setReadDataOnly(true);
@@ -107,7 +138,7 @@ $spreadsheet1 = $reader ->  load($filename);
 foreach ($spreadsheet1->getSheetNames() as $sheetName) {
 
     $sheet = $spreadsheet1->getSheetByName($sheetName);
-    if(trim($sheet->getTitle()) != 'SEP-MD') {
+    if(trim($sheet->getTitle()) != 'NATSAL') {
     $lastRow = $sheet->getHighestRow();
     $data = [];
         for ($row = 3; $row <= $lastRow; $row++) {
@@ -162,7 +193,7 @@ $sheet = $spreadsheet1->getSheet(0);
     $lastRow = $sheet->getHighestRow();
     $data = [];
         for ($row = 2; $row <= $lastRow; $row++) {
-            if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" && $sheet->getCell('A'.$row)->getCalculatedValue() != "SEP-MD" ) {
+            if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" && $sheet->getCell('A'.$row)->getCalculatedValue() != "NATSAL" ) {
 
             if(!array_key_exists(trim($sheet->getCell('A'.$row)->getCalculatedValue()), $previousData)){
                 $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())] = [];
@@ -213,29 +244,6 @@ $fp = fopen('json/study_detail.json', 'w');
 fwrite($fp, makeAllLinksNewWindow(json_encode($data)));
 fclose($fp);
 
-$filename = __DIR__ . '/xlsx/funders.xlsx';
-$reader = IOFactory::createReaderForFile($filename) -> setReadDataOnly(true);
-
-$spreadsheet1 = $reader ->  load($filename);
-$sheet = $spreadsheet1->getSheet(0);
-    $lastRow = $sheet->getHighestRow();
-    $data = [];
-        for ($row = 3; $row <= $lastRow; $row++) {
-            $funderCode = $sheet->getCell('B'.$row)->getCalculatedValue();
-            if( $funderCode != "" ) {
-                if(!file_exists(__DIR__. '/img/funders/'. $funderCode .'.png')) {
-                    throw new Exception('Image missing for '. $funderCode );
-                }
-                $data[$funderCode] = [
-                'Funder name' => $sheet->getCell('A'.$row)->getCalculatedValue(),
-                'Has image' => "Y",
-                'Address' => $sheet->getCell('C'.$row)->getCalculatedValue()
-             ];
-             }
-        }
-$fp = fopen('json/funders.json', 'w');
-fwrite($fp, makeAllLinksNewWindow(json_encode($data)));
-fclose($fp);
 
 $filename = __DIR__ . '/xlsx/COVID_timeline.xlsx';
 $reader = IOFactory::createReaderForFile($filename) -> setReadDataOnly(true);
@@ -266,5 +274,36 @@ $sheet = $spreadsheet1->getSheet(0);
 $fp = fopen('json/covid_timeline.json', 'w');
 fwrite($fp, makeAllLinksNewWindow(json_encode($data)));
 fclose($fp);
+
+//////////////////////////////////////////
+//
+// THE UPCOMING STUDY PAGE
+//
+//////////////////////////////////////////
+
+$filename = __DIR__ . '/xlsx/upcoming_studies.xlsx';
+$reader = IOFactory::createReaderForFile($filename) -> setReadDataOnly(true);
+
+$spreadsheet1 = $reader ->  load($filename);
+$sheet = $spreadsheet1->getSheet(0);
+    $lastRow = $sheet->getHighestRow();
+    $data = [];
+        for ($row = 2; $row <= $lastRow; $row++) {
+            if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" && $sheet->getCell('A'.$row)->getCalculatedValue() != "NATSAL" ) {
+                $data[trim($sheet->getCell('A'.$row)->getCalculatedValue())] = [
+                    'Title' => trim($sheet->getCell('B'.$row)->getCalculatedValue()),
+                    'Age at recruitment' => $sheet->getCell('C'.$row)->getCalculatedValue(),
+                    'Notes' => $sheet->getCell('D'.$row)->getCalculatedValue(),
+                    'Study design' => $sheet->getCell('E'.$row)->getCalculatedValue(),
+                    'Website' => textToHtmlLinks($sheet->getCell('F'.$row)->getCalculatedValue()),
+                    'Start date' => $sheet->getCell('G'.$row)->getCalculatedValue(),
+                    'Funders' => $sheet->getCell('H'.$row)->getCalculatedValue(),
+                ];
+           }
+        }
+$fp = fopen('json/upcoming_studies.json', 'w');
+fwrite($fp, makeAllLinksNewWindow(json_encode($data)));
+fclose($fp);
+
 
 ?>

@@ -26,10 +26,9 @@ foreach ($sweeps as $key => $value) {
 }
 
 
-natcasesort($studies);
+@natcasesort($studies);
 //var_dump($studies);
 print(json_encode($studies));
 
 
 ?>
-
