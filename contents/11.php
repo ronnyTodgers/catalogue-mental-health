@@ -107,6 +107,50 @@
                         data science and the mental health of populations in low- and middle-income countries.</p>
                 </div>
             </div>
+            <h4>Daniel Yu, Research Placement Student</h4>
+            <div class="row">
+                <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
+                    <p><img class="teamPhoto" src="img/Daniel.jpg" alt="" /></p>
+                </div>
+                <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
+                    <p>Daniel worked on the Catalogue from September 2022 to September 2023 as a placement student
+                        during his academic year and as a research assistant over the summer. During his time on the
+                        team, his role was to assist with the development of the Catalogue by surveying available mental
+                        health and wellbeing measures included in eligible studies, developing the web platform to
+                        attract users from a broad range of disciplines, monitoring analytics describing the
+                        Catalogue&rsquo;s use, and promoting the use of mental health measures through various online
+                        engagement activities. Daniel is now back at the University of Bath for the final year of his
+                        undergraduate degree in Psychology.</p>
+                </div>
+            </div>
+
+            <h2>Alumni</h2>
+            <h4>Barbara Maughan, Emeritus Professor of Developmental Epidemiology</h4>
+            <div class="row">
+                <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
+                    <p><img class="teamPhoto" src="img/Barbara.jpg" alt="" /></p>
+                </div>
+                <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
+                    <p>Barbara Maughan&rsquo;s research focuses on psychosocial and biological risks for mental health
+                        problems in childhood and the long-term impact of early emotional/behavioural difficulties and
+                        early adverse experiences for health and wellbeing later in life. She has undertaken
+                        epidemiological and longitudinal studies of a range of child and adolescent difficulties,
+                        including conduct problems and antisocial behaviour, severe reading problems, and depression.
+                        She has studied individual, family, school and broader societal risk factors. She uses a
+                        combination of research strategies centring on epidemiological and longitudinal methods; she has
+                        also used natural experimental designs to highlight the impact of environmental risks.</p>
+                    <p>Barbara came into research from a background in social work; she completed her PhD while working
+                        at the Institute of Psychiatry and has since worked in both the MRC Child Psychiatry Unit and
+                        the <a
+                            href="https://www.kcl.ac.uk/mental-health-and-psychological-sciences/about/departments/social-genetic-and-developmental-psychiatry">Social,
+                            Genetic and Developmental Psychiatry Centre</a> at King&rsquo;s College London. She has
+                        helped conduct the adult follow-up phases of epidemiological samples in inner London and the
+                        Isle of Wight and has also made extensive use of secondary analysis of data from the British
+                        birth cohort studies in conducting her research.</p>
+                    <p>In early 2023, Barabara became Emeritus Professor of Developmental Epidemiology at the Institute
+                        of Psychiatry, Psychology and Neuroscience at King&rsquo;s College London.</p>
+                </div>
+            </div>
             <h4>Maria Jose Rodriguez Pinzon, Placement Research Assistant</h4>
             <div class="row">
                 <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
@@ -140,34 +184,8 @@
 
 
 
-            <h4>Barbara Maughan, Emeritus Professor of Developmental Epidemiology</h4>
-            <div class="row">
-                <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
-                    <p><img class="teamPhoto" src="img/Barbara.jpg" alt="" /></p>
-                </div>
-                <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
-                    <p>Barbara Maughan&rsquo;s research focuses on psychosocial and biological risks for mental health
-                        problems in childhood and the long-term impact of early emotional/behavioural difficulties and
-                        early adverse experiences for health and wellbeing later in life. She has undertaken
-                        epidemiological and longitudinal studies of a range of child and adolescent difficulties,
-                        including conduct problems and antisocial behaviour, severe reading problems, and depression.
-                        She has studied individual, family, school and broader societal risk factors. She uses a
-                        combination of research strategies centring on epidemiological and longitudinal methods; she has
-                        also used natural experimental designs to highlight the impact of environmental risks.</p>
-                    <p>Barbara came into research from a background in social work; she completed her PhD while working
-                        at the Institute of Psychiatry and has since worked in both the MRC Child Psychiatry Unit and
-                        the <a
-                            href="https://www.kcl.ac.uk/mental-health-and-psychological-sciences/about/departments/social-genetic-and-developmental-psychiatry">Social,
-                            Genetic and Developmental Psychiatry Centre</a> at King&rsquo;s College London. She has
-                        helped conduct the adult follow-up phases of epidemiological samples in inner London and the
-                        Isle of Wight and has also made extensive use of secondary analysis of data from the British
-                        birth cohort studies in conducting her research.</p>
-                    <p>In early 2023, Barabara became Emeritus Professor of Developmental Epidemiology at the Institute
-                        of Psychiatry, Psychology and Neuroscience at King&rsquo;s College London.</p>
-                </div>
-            </div>
 
-            <h2>Alumni</h2>
+
             <h4>Lily Strange, Research Assistant</h4>
             <div class="row">
                 <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
@@ -202,22 +220,7 @@
             </div>
 
 
-            <h4>Daniel Yu, Research Placement Student</h4>
-            <div class="row">
-                <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
-                    <p><img class="teamPhoto" src="img/Daniel.jpg" alt="" /></p>
-                </div>
-                <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
-                    <p>Daniel worked on the Catalogue from September 2022 to September 2023 as a placement student
-                        during his academic year and as a research assistant over the summer. During his time on the
-                        team, his role was to assist with the development of the Catalogue by surveying available mental
-                        health and wellbeing measures included in eligible studies, developing the web platform to
-                        attract users from a broad range of disciplines, monitoring analytics describing the
-                        Catalogue&rsquo;s use, and promoting the use of mental health measures through various online
-                        engagement activities. Daniel is now back at the University of Bath for the final year of his
-                        undergraduate degree in Psychology.</p>
-                </div>
-            </div>
+
 
         </div>
     </div>

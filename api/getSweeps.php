@@ -13,4 +13,3 @@ function sanitize_xss($value) {
 }
 
 ?>
-

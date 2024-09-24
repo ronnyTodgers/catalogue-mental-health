@@ -1,8 +1,39 @@
 /* purgecss start ignore */
 .searchResult {
-  max-height: 25vh;
+  max-height: 100vh;
   min-height: 250px;
   cursor: pointer;
+}
+.searchInfoWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.searchInfoItem {
+  max-height: 3rem;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  width: 32%;
+}
+
+@media (max-width: 990px) {
+  .searchInfoItem {
+    width: 49%;
+  }
+}
+
+@media (max-width: 600px) {
+  .searchInfoItem {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    text-align: right;
+  }
+  .searchInfoItem > :first-child {
+    text-align: left;
+  }
 }
 
 /*ie11 hack*/
@@ -29,9 +60,23 @@ table.dtr-column.dataTable > tbody > tr > th.control::before {
   opacity: 80;
 }
 
+.scale-div {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.scale-text {
+  margin-right: auto;
+}
+
 .filterSlider .slider-selection,
 .filterSlider .slider-handle {
   background: #34915e;
+}
+
+#dataTable .child {
+  padding: 1rem;
 }
 
 .searchResult .card-body {

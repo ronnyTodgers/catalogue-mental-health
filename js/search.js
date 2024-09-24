@@ -5,6 +5,7 @@ var ageSlider;
 var dateSlider;
 
 var searchSwaps = [];
+searchSwaps["E-Risk"] = ["erisk"];
 searchSwaps["ADHD"] = [
   "Hyperactivity",
   "Inattention",
@@ -328,6 +329,38 @@ if (!String.prototype.replaceAll) {
   };
 }
 
+function getDataAccess(val) {
+  if (val.includes("Data request")) return "Data request";
+  if (val.includes("ontact")) return "Contact study team";
+  if (val.includes("Project proposal")) return "Project proposal";
+  if (val.includes("UK Data Service")) return "Downloadable";
+  if (val.includes("CSDD")) return "Downloadable";
+  if (val.includes("ESS")) return "Downloadable";
+
+  return val;
+}
+function isOverflown(element) {
+  return (
+    element.scrollHeight > element.clientHeight ||
+    element.scrollWidth > element.clientWidth
+  );
+}
+
+function applyReadMore() {
+  $(".searchInfoItem").each(function () {
+    $(this).addClass("text-truncate");
+    $(this).off("click");
+    if (isOverflown($(this)[0])) {
+      $(this).addClass("readMore");
+      $(this).click(function () {
+        $(this).toggleClass("text-truncate");
+      });
+    } else {
+      $(this).removeClass("readMore");
+    }
+  });
+}
+
 function uniqueArray(arr) {
   arr = arr.filter(function (item, i, ar) {
     return item !== "" && ar.indexOf(item) === i;
@@ -346,7 +379,13 @@ function populateSearchFromUrl() {
   }
 }
 
-function parseNumbers(numStr, assumeDates, returnLargest, discountDates) {
+function parseNumbers(
+  numStr,
+  assumeDates,
+  returnLargest,
+  discountDates,
+  formatLocale
+) {
   var returnLargest = returnLargest || false;
   var assumeDates = assumeDates || false;
   numStr = String(numStr);
@@ -357,7 +396,7 @@ function parseNumbers(numStr, assumeDates, returnLargest, discountDates) {
 
   if (!numbers) {
     console.log(numStr);
-    return null;
+    return formatLocale ? numStr : null;
   }
 
   // ensure all numbers are actually numbers and convert 2 digit dates to 4 digit
@@ -376,8 +415,8 @@ function parseNumbers(numStr, assumeDates, returnLargest, discountDates) {
     });
   }
   if (returnLargest) {
-    console.log(numbers);
-    return Math.max.apply(null, numbers);
+    const num = Math.max.apply(null, numbers);
+    return formatLocale ? num.toLocaleString() : num;
   } else {
     return numbers.sort(function (a, b) {
       return a - b;
@@ -1200,22 +1239,22 @@ function updateSearchResults(newSearchData, noAdditions) {
         }
 
         var thisOutput = "";
-        var matches = [];
+        var matches = {};
         var matchScore = 0;
         if (searchRegex.test(s)) {
           if (noHighlighting) {
             thisOutput +=
               '<div class="card shadow mb-4 searchResult" sid="' +
               key +
-              '"><div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary d-flex align-items-center flex-wrap">';
+              '"><div class="card-header py-3 d-flex align-items-center justify-content-between"><h6 class="m-0 font-weight-bold text-primary">';
             thisOutput +=
+              val.Title +
+              "</h6>" +
               '<img class="funderImage" src="img/studies/' +
               key +
-              '.png?202310" alt="" onerror=\'this.style.display="none"\'/>' +
-              val.Title +
-              "</h6>";
+              '.png?202310" alt="" onerror=\'this.style.display="none"\'/>';
             thisOutput += '</div><div class="card-body">';
-            thisOutput += "<p>" + val["Aims"] + "</p>";
+            thisOutput += "<p>" + val["Summary"] + "</p>";
             thisOutput += "</div></div>";
           } else {
             for (var i in val) {
@@ -1240,28 +1279,31 @@ function updateSearchResults(newSearchData, noAdditions) {
             thisOutput +=
               '<div class="card shadow mb-4 searchResult" sid="' +
               key +
-              '"><div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary d-flex align-items-center flex-wrap">';
+              '"><div class="card-header py-3 d-flex align-items-center justify-content-between"><h6 class="m-0 font-weight-bold text-primary">';
             thisOutput +=
+              val.Title +
+              "</h6>" +
               '<img class="funderImage" src="img/studies/' +
               key +
-              '.png?202310" alt="" onerror=\'this.style.display="none"\'/>' +
-              val.Title +
-              "</h6>";
+              '.png?202310" alt="" onerror=\'this.style.display="none"\'/>';
             thisOutput += '</div><div class="card-body">';
-            if (!matches.length) {
-              thisOutput += "<p>" + val["Aims"] + "</p>";
+            if (!Object.keys(matches).length) {
+              thisOutput += "<p>" + val["Summary"] + "</p>";
             }
             for (var i in matches) {
               matchString = "<p><b>" + i + "</b><br>" + val[i];
               for (var match in matches[i]) {
-                var matchRegex = new RegExp(matches[i][match], "ig");
+                var matchRegex = new RegExp(
+                  "([>][^<]+)(" + matches[i][match] + ")",
+                  "ig"
+                );
                 matchString = matchString.replace(
                   matchRegex,
-                  '<span class="highlighted">$&</span>'
+                  '$1<span class="highlighted">$2</span>'
                 );
               }
-              matchString = matchString.replace(/[\\|.][^<>]+$/, " ...");
-              matchString = matchString.replace(/^[^<>]+[\\|.]/, "... ");
+              matchString = matchString.replace(/[\\|.][^<>]+$/g, " ...");
+              matchString = matchString.replace(/^[^<>]+[\\|.]/g, "... ");
               matchString = matchString.replace(/[\\|.][^<>]+[\\|.]/g, " ... ");
               thisOutput += matchString + "</p>";
             }
@@ -1291,15 +1333,46 @@ function updateSearchResults(newSearchData, noAdditions) {
         output +=
           '<div class="card shadow mb-4 searchResult" sid="' +
           key +
-          '"><div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary d-flex align-items-center flex-wrap">';
+          '"><div class="card-header py-3 d-flex align-items-center justify-content-between"><h6 class="m-0 font-weight-bold text-primary">';
         output +=
+          val.Title +
+          "</h6>" +
           '<img class="funderImage" src="img/studies/' +
           key +
-          '.png?202310" alt="" onerror=\'this.style.display="none"\'/>' +
-          val.Title +
-          "</h6>";
+          '.png?202310" alt="" onerror=\'this.style.display="none"\'/>';
         output += '</div><div class="card-body">';
-        output += "<p>" + val["Aims"] + "</p>";
+        output += "<p>" + val["Summary"] + "</p>";
+        output += "<div class='searchInfoWrapper'>";
+        output +=
+          "<p class='searchInfoItem'><b>Study design </b>" +
+          val["Study design"] +
+          "</p>";
+        output +=
+          "<p class='searchInfoItem'><b>Start year </b>" +
+          parseNumbers(String(val["Start date"]), true);
+        +"</p>";
+        output +=
+          "<p class='searchInfoItem'><b>Sample size at recruitment </b>" +
+          parseNumbers(
+            String(val["Sample size at recruitment"]).replaceAll(",", ""),
+            false,
+            true,
+            true,
+            true
+          ) +
+          "</p>";
+        output +=
+          "<p class='searchInfoItem'><b>Coverage </b>" +
+          val["Geographic coverage - Nations"] +
+          "</p>";
+        output +=
+          "<p class='searchInfoItem'><b>Age at recruitment </b>" +
+          val["Age at recruitment"] +
+          "</p>";
+        output +=
+          "<p class='searchInfoItem'><b>Data access </b>" +
+          getDataAccess(val["Data access"]) +
+          "</p></div>";
         output +=
           '</div><a href="?content=study&studyid=' + key + '"></a></div>';
       });

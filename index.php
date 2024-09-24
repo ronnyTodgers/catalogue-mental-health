@@ -1,3 +1,20 @@
+<?php 
+ob_start();
+if(empty($_GET['content'])) {
+    include ("contents/home.php");
+      } elseif (file_exists("contents/".$_GET["content"].".php")) {
+        include("contents/".$_GET["content"].".php"); 
+        
+      } else {
+        include ("contents/not_yet.php");
+      }
+$pageContents = ob_get_contents();
+ob_end_clean();
+$pattern = "/<h1(.*?)>(.*?)<\/h1>/";
+    preg_match_all($pattern, $pageContents, $matches);
+    $subTitle = $matches[2] ? $matches[2][0] : false;
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +25,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Catalogue of Mental Health Measures</title>
+    <title>Catalogue of Mental Health Measures<?php if($subTitle) echo(" - ".$subTitle); ?></title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -21,30 +38,20 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
 
-    <link href="css/core.css?v4" rel="stylesheet">
-    <link rel="preload" href="css/timeline.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="css/core.css?v5" rel="stylesheet">
+    <link rel="preload" href="css/timeline.css?v5" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="css/timeline.css">
     </noscript>
-    <link rel="preload" href="vendor/datatables/jquery.dataTables.min.css" as="style"
+    <link rel="preload" href="vendor/datatables/dataTables.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="vendor/datatables/jquery.dataTables.min.css">
     </noscript>
-    <link rel="preload" href="vendor/datatables/jquery.dataTables.min.css" as="style"
+    <link rel="preload" href="vendor/datatables/dataTables.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="vendor/datatables/jquery.dataTables.min.css">
-    </noscript>
-    <link rel="preload" href="vendor/datatables/fixedHeader.dataTables.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="vendor/datatables/fixedHeader.dataTables.min.css">
-    </noscript>
-    <link rel="preload" href="vendor/datatables/responsive.dataTables.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="vendor/datatables/responsive.dataTables.min.css">
     </noscript>
     <link rel="preload" href="vendor/bootstrap/bootstrap-slider.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
@@ -199,15 +206,8 @@
 
                 <!-- Begin Page Content -->
                 <!-- Page Heading -->
+                <?php echo($pageContents); ?>
 
-                <?php if(file_exists("contents/".$_GET["content"].".php")) {
-        include("contents/".$_GET["content"].".php"); 
-      } elseif (empty($_GET['content'])) {
-        include ("contents/home.php");
-      } else {
-        include ("contents/not_yet.php");
-      }
-      ?>
                 <!-- /.container-fluid -->
 
             </div>
@@ -218,8 +218,8 @@
                 <div class="footerWrapper">
                     <div class="row col-12 flex-space-between d-flex flex-row align-items-center footerLeftLogoFlex">
                         <div class="contactus text-left my-auto d-flex align-items-center flex-row flex-grow-1">
-                            <a href="https://www.kcl.ac.uk/ioppn/about/index" target="_blank"><img class=" "
-                                    src="img/kcl_logo.png" /></a>
+                            <a href="https://www.kcl.ac.uk/ioppn/about/index" target="_blank"><img style="height:5rem"
+                                    class=" " src="img/kcl_logo.png" /></a>
                             <p class="ml-4 mb-0"><b>CONTACT US</b><br>
                                 Institute of Psychiatry, Psychology & Neuroscience<br>
                                 King's College London<br>
@@ -260,9 +260,9 @@
                     </div>
                     <div class="copyright my-0">
                         <p class="my-1">
-                            <a href="/testing/api/spec" target="_blank" style="font-weight: 100;">
+                            <a href="/testing/api/spec" target="_blank" style="font-weight: 400;">
                                 API specification</a> |
-                            <a href="/sitemap.xml" target="_blank" style="font-weight: 100;">
+                            <a href="/sitemap.xml" target="_blank" style="font-weight: 400;">
                                 Site map</a>
                         </p>
 
@@ -325,9 +325,8 @@
         'anonymize_ip': true
     });
     </script>
-    <script src="vendor/datatables/jquery.dataTables.min.js" defer></script>
-    <script src="vendor/datatables/dataTables.responsive.min.js" defer></script>
-    <script src="vendor/datatables/dataTables.fixedHeader.min.js" defer></script>
+    <script src="vendor/datatables/dataTables.min.js" defer></script>
+
 
 </body>
 

@@ -9,6 +9,7 @@ const svgSupport = document.implementation.hasFeature(
   "http://www.w3.org/TR/SVG11/feature#BasicStructure",
   "1.1"
 );
+
 var treeAnimationTimeLines = {};
 $.when(
   $.get("?content=7", function (data) {
@@ -63,22 +64,6 @@ $.when(
     }
   )
 ).then(function () {
-  for (var i = 0; i < fullSweeps.length; i++) {
-    var sweep = fullSweeps[i];
-    if (sweep["Standard Instrument"] == "<i class='fas fa-check'></i>") {
-      for (var standardInstrument in standardInstruments) {
-        if (sweep["Scale"].indexOf(standardInstrument) > -1) {
-          sweep["Scale"] =
-            "<div style='display:flex;align-items:center;'>" +
-            sweep["Scale"] +
-            "<i style='margin-left: auto;'  class='fas fa-info-circle infobutton' data-toggle='tooltip' data-html='true' title='" +
-            standardInstruments[standardInstrument] +
-            "'></i></div>";
-          break;
-        }
-      }
-    }
-  }
   $(document).ready(function () {
     makeTimeLineGroups(fullSweeps);
     makeTimeline(fullSweeps);
@@ -155,8 +140,8 @@ function tlEntry(
 ) {
   this.startDate = startDate;
   this.endDate = endDate;
-  this.tlDate =
-    origSweepIndex == 0 ? this.startDate : (this.startDate + this.endDate) / 2;
+  this.tlDate = this.startDate;
+  //origSweepIndex == 0 ? this.startDate : (this.startDate + this.endDate) / 2;
   this.title = title;
   this.label = label;
   this.cAge = cAge;
@@ -259,7 +244,7 @@ function makeTimeline(fullSweeps, timelineGroup) {
     sweeps.push(
       new tlEntry(
         getJsDateFromExcel(sweep["Year"]),
-        getJsDateFromExcel(sweep["End Year"]),
+        sweep["End Year"] ? getJsDateFromExcel(sweep["End Year"]) : null,
         sweep["Title"],
         sweep["Label"],
         sweep["CM age"],
@@ -281,9 +266,10 @@ function makeCircles(tlEntries, $line) {
   console.log(tlEntries);
   // order by date and then by reverse title alpha
   // why by reverse title? This seems silly.
+  // tlDate is now the start date - secondary search is the end date - with null being placed AFTER any value as it indicates still running
   tlEntries = tlEntries.sort(function (el1, el2) {
     if (el1.tlDate == el2.tlDate) {
-      return el1.title > el2.title ? -1 : el1.title < el2.title ? 1 : 0;
+      return el1.endDate < el2.endDate ? -1 : el2.endDate ? 1 : -1;
     } else {
       return el1.tlDate < el2.tlDate ? -1 : 1;
     }
@@ -445,7 +431,7 @@ function formatLabels(label, type) {
 function setDataTable(currentData) {
   console.log("setting Data table with");
   console.log(currentData);
-  if (!$.fn.DataTable.isDataTable("#dataTable")) {
+  if (!$.fn.DataTable || !$.fn.DataTable.isDataTable("#dataTable")) {
     $("#dataTable").DataTable({
       data: currentData,
       responsive: {
@@ -454,51 +440,148 @@ function setDataTable(currentData) {
           target: "tr",
         },
       },
+      autoWidth: true,
       paging: false,
       searchDelay: 350,
       fixedHeader: { footer: true },
       columns: [
         {
           title: "",
+
           data: null,
           defaultContent: "",
           class: "control",
           orderable: false,
           searchable: false,
         },
-        { title: "Topic", data: "Topic" },
-        { title: "Scale", data: "Scale" },
+        { title: "Topic", data: "Topic", responsivePriority: 1 },
+        {
+          title: "Scale",
+          data: "Scale",
+          autoWidth: true,
+          responsivePriority: 1,
+          render: function (data, type, row, meta) {
+            const wrapper = document.createElement("div");
+            wrapper.className = "scale-div";
+            const titleWrapper = document.createElement("div");
+            titleWrapper.className = "scale-text";
+            wrapper.append(titleWrapper);
+            titleWrapper.append(data);
+            if (row["Standard Instrument"] === "Yes")
+              for (var standardInstrument in standardInstruments) {
+                if (
+                  data.indexOf(standardInstrument) > -1 ||
+                  (standardInstrument.includes("||") &&
+                    (data.indexOf(standardInstrument.split("||")[0]) > -1 ||
+                      data.indexOf(standardInstrument.split("||")[1]) > -1))
+                ) {
+                  const infoButton = document.createElement("i");
+                  infoButton.setAttribute("data-toggle", "tooltip");
+                  infoButton.setAttribute("data-html", true);
+                  infoButton.setAttribute(
+                    "title",
+                    standardInstruments[standardInstrument]
+                  );
+
+                  infoButton.classList.add("fas");
+                  infoButton.classList.add("fa-info-circle");
+                  infoButton.classList.add("infobutton");
+                  wrapper.append(infoButton);
+                  break;
+                }
+              }
+            const qData = row["Questions"];
+            const qArrayIterator = [
+              ...qData.matchAll(/(\d+)\.\s+(.*?)((<(\/ )?br>)|$)/gim),
+            ];
+            if (qArrayIterator.length) {
+              const harmonyPlug = document.createElement("harmony-export");
+              harmonyPlug.setAttribute("data-toggle", "tooltip");
+              harmonyPlug.setAttribute("data-html", true);
+              harmonyPlug.setAttribute(
+                "title",
+                "Harmonise this scale at harmonydata.ac.uk"
+              );
+              harmonyPlug.questions = qArrayIterator.map((m) => {
+                return { question_no: m[1], question_text: m[2] };
+              });
+              harmonyPlug.instrument_name = data;
+              wrapper.append(harmonyPlug);
+            }
+            return wrapper;
+          },
+        },
         {
           title:
             '<div title="The focus of a measure is the person who the measure is about">Focus</div>',
+          autoWidth: true,
           data: "Focus",
+          responsivePriority: 1,
         },
         {
           title:
             '<div title="The informant is the person who provides the information">Informant</div>',
+          autoWidth: true,
           data: "Informant",
+          responsivePriority: 1,
         },
         {
           title:
             '<div title="Standard instruments are measures which have published indication of validity and/or reliability. Standard instruments have often used in multiple studies.">Standard Instrument</div>',
           data: "Standard Instrument",
+          className: "dt-center",
+          width: "100px",
+          autoWidth: true,
+          responsivePriority: 1,
+          render: function (data, type, row, meta) {
+            return (
+              "<span hidden>" +
+              data +
+              '</span><i class="fas fa-' +
+              (data === "Yes" ? "check" : "times") +
+              '"></i>'
+            );
+          },
         },
-        { title: "Reporting term", data: "Reporting term", class: "none" },
-        { title: "Subscales", data: "Subscales", class: "none" },
-        { title: "Questions", data: "Questions", class: "none" },
-        { title: "Response scale", data: "Response scale", class: "none" },
-        { title: "Comments", data: "Comments", class: "none" },
+        {
+          title: "Reporting term",
+          data: "Reporting term",
+          className: "none",
+        },
+        {
+          title: "Subscales",
+          data: "Subscales",
+          className: "none",
+        },
+        {
+          title: "Questions",
+          data: "Questions",
+          className: "none",
+          responsivePriority: 10001,
+        },
+        {
+          title: "Response scale",
+          data: "Response scale",
+          className: "none",
+          responsivePriority: 10001,
+        },
+        {
+          title: "Comments",
+          data: "Comments",
+          className: "none",
+          responsivePriority: 10001,
+        },
       ],
       order: [1, "asc"],
     });
-    $("#dataTable").dataTable().css("width", "100%");
-    $("#dataTable").dataTable().fnAdjustColumnSizing();
+    $("#dataTable").css("width", "100%");
+    $("#dataTable").DataTable().responsive.recalc().columns.adjust().draw();
 
     $("#dataTable")
       .DataTable()
       .on("responsive-display", function (e, datatable, row, showHide, update) {
         if (showHide) {
-          row
+          /* row
             .nodes()
             .to$()
             .next()
@@ -506,7 +589,7 @@ function setDataTable(currentData) {
             .each(function () {
               $(this).attr("colspan", $(this).attr("colspan") - 1);
               $(this).before("<td></td>");
-            });
+            }); */
           $("li[data-dt-row='" + row.index() + "'] .dtr-data").each(
             function () {
               if ($(this).text() == "") {
@@ -517,23 +600,28 @@ function setDataTable(currentData) {
         }
       });
 
-    $("#dataTable_filter").insertAfter($("#timeline > h6"));
-    $("#dataTable_filter  input")
+    $(".dt-search").insertAfter($("#timeline > h6"));
+    $(".dt-search  input")
       .addClass("form-control")
       .attr("placeholder", "Search sweeps for ...")
-      .appendTo($("#dataTable_filter"));
-    $("#dataTable_filter > label").remove();
+      .appendTo($(".dt-search"));
+    $(".dt-search > label").remove();
     $("#dataTable").DataTable().on("search.dt", showTrees);
   } else {
-    $("#dataTable").dataTable().fnClearTable(false);
-    $("#dataTable").dataTable().fnAddData(currentData, true);
+    $("#dataTable")
+      .DataTable()
+      .clear()
+      .rows.add(currentData)
+
+      .columns.adjust()
+      .draw()
+      .responsive.recalc();
   }
+
   $('[data-toggle="tooltip"]').tooltip({
     container: "body",
-    boundary: "window",
     offset: 0,
   });
-  $("#dataTable").dataTable().fnAdjustColumnSizing(true);
 }
 
 function showTrees() {
@@ -660,9 +748,9 @@ function displaySweepInfo(tlEntry, suffix) {
       " " +
       dates[0].getFullYear() +
       " - " +
-      monthNames[dates[1].getMonth()] +
-      " " +
-      dates[1].getFullYear();
+      (!!tlEntry.endDate
+        ? monthNames[dates[1].getMonth()] + " " + dates[1].getFullYear()
+        : "Ongoing");
   }
 
   $("#sweepDates > span").html(dateStr);
@@ -700,7 +788,7 @@ function selectDate($circle, report) {
     $('[data-toggle="tooltip"]').tooltip({
       container: "body",
       boundary: "window",
-      offset: 0,
+      offset: 100,
     });
   }
   if (report) {

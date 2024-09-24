@@ -2,7 +2,8 @@
 $(document).ready(function() {
     $('.card').find('strong[id]').each(function() {
         let ID = $(this).prop('id');
-        $(this).after('<br><i><a href="?content=search&query=' + encodeURIComponent(ID) +
+        $(this).after('<br><i><a href="?content=search&query=' + encodeURIComponent(ID.replace("||",
+                " OR ")) +
             '" target="_blank">See studies using this measure</a></i>')
     });
 });
@@ -46,7 +47,7 @@ $(document).ready(function() {
                             SMFQ)</a> - <a href="#PHQ">Patient Health Questionnaire Depression Scale (PHQ)</a> - <a
                             href="#PCL">PTSD Checklist (PCL)</a> - <a href="#PGSI">Problem Gambling Severity Index
                             (PGSI)</a> - <a href="#RCADS">Revised Children&rsquo;s Anxiety and Depression Scale
-                            (RCADS)</a> - <a href="#SF">Short Form Health Survey (SF-36, SF-12)</a> - <a
+                            (RCADS)</a> - <a href="#SF-36||SF-12">Short Form Health Survey (SF-36, SF-12)</a> - <a
                             href="#SDQ">Strengths &amp; Difficulties Questionnaire (SDQ)</a> - <a
                             href="#WEMWBS">Warwick-Edinburgh Mental Wellbeing Scale (WEMWBS, SWEMWBS)</a></strong></p>
                 <p><strong>COMMON MEASURES OF PERSONALITY</strong></p>
@@ -334,7 +335,8 @@ $(document).ready(function() {
                 <em>DSM-IV</em> versions of the checklist and the addition of new symptoms in <em>DSM-5</em>. The change
                 in the rating scale (from 1-5 to 0-4), combined with the increase from 17 to 20 items means
                 that <strong>PCL-5 scores are not compatible with PCL for <em>DSM-IV</em> scores and cannot be used
-                    interchangeably.</strong></p>
+                    interchangeably.</strong>
+            </p>
             <p><em>References<br /></em>Weathers, F. W., Litz, B. T., Huska, J. A., &amp; Keane, T. M. (1994). <em>PTSD
                     Checklist&mdash;Civilian version</em>. Boston National Center for PTSD, Behavioral Science Division.
             </p>
@@ -364,7 +366,7 @@ $(document).ready(function() {
                 (2000). Assessment of symptoms of DSM-IV anxiety and depression in children: A Revised Child Anxiety and
                 Depression Scale. <em>Behaviour Research and Therapy</em>, 38, 835-855.</p>
             <hr />
-            <p><strong id="SF">Short-Form Health Survey (SF-36, SF-12)</strong></p>
+            <p><strong id="SF-36||SF-12">Short-Form Health Survey (SF-36, SF-12)</strong></p>
             <p>The SF-36 is a 36 item self-report measure of health-related quality of life in the past 4 weeks. It
                 assesses eight health concepts, which include <em>general mental health (psychological distress and
                     well-being)</em> and&nbsp;<em>limitations in usual role activities because of emotional
@@ -528,7 +530,8 @@ $(document).ready(function() {
             <p><em>Reference</em></p>
             <p>Putnam, S. P., Helbig, A. L., Gartstein, M. A., Rothbart, M. K., &amp; Leerkes, E. (2014). Development
                 and assessment of short and very short forms of the Infant Behavior Questionnaire&ndash;Revised.
-                <em>Journal of Personality Assessment</em>, 96, 445&ndash;458.</p>
+                <em>Journal of Personality Assessment</em>, 96, 445&ndash;458.
+            </p>
 
             <hr />
             <p><strong id="IPIP">International Personality Item Pool (IPIP)</strong></p>
@@ -542,7 +545,8 @@ $(document).ready(function() {
             <p><em>Reference</em></p>
             <p>Goldberg, L. R., Johnson, J. A., Eber, H. W., Hogan, R., Ashton, M. C., Cloninger, C. R., &amp; Gough, H.
                 G. (2006). The international personality item pool and the future of public domain personality measures.
-                <em>Journal of Research in Personality</em>, 40, 84&ndash;96.</p>
+                <em>Journal of Research in Personality</em>, 40, 84&ndash;96.
+            </p>
 
             <hr />
             <p><strong id="MIDI">Midlife Development Inventory (MIDI)</strong></p>

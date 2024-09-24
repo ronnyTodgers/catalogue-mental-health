@@ -3,9 +3,10 @@
 
     <div class="card mb-4">
         <div class="card-body">
+
             <p>This page highlights some of the <b>upcoming longitudinal and cohort studies</b> based in the UK.</p>
             <p>
-                While these studies are <b>not currently longitudinal</b>, they will be valuable sources of data for
+                While these studies are <b>not currently longitudinal</b>, they are already valuable sources of data for
                 mental
                 health research, and will be featured on the Catalogue as they collect more data over time. </p>
             <p>

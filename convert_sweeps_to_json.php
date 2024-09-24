@@ -127,7 +127,7 @@ $fp = fopen('json/funders.json', 'w');
 fwrite($fp, makeAllLinksNewWindow(json_encode($data)));
 fclose($fp);
 
-
+echo("Funders done");
 
 
 $filename = __DIR__ . '/xlsx/sweeps.xlsx';
@@ -138,7 +138,7 @@ $spreadsheet1 = $reader ->  load($filename);
 foreach ($spreadsheet1->getSheetNames() as $sheetName) {
 
     $sheet = $spreadsheet1->getSheetByName($sheetName);
-    if(trim($sheet->getTitle()) != 'NATSAL') {
+    if(trim($sheet->getTitle()) != 'STUDYTOEXCLUDE') {
     $lastRow = $sheet->getHighestRow();
     $data = [];
         for ($row = 3; $row <= $lastRow; $row++) {
@@ -158,7 +158,7 @@ foreach ($spreadsheet1->getSheetNames() as $sheetName) {
                 'Subscales' => $sheet->getCell('L'.$row)->getCalculatedValue(),
                 'Questions' => addBRs($sheet->getCell('M'.$row)->getCalculatedValue()),
                 'Response scale' => addBRs($sheet->getCell('N'.$row)->getCalculatedValue()),
-                'Standard Instrument' => yesNoToTickCross($sheet->getCell('O'.$row)->getCalculatedValue()),
+                'Standard Instrument' => $sheet->getCell('O'.$row)->getCalculatedValue(),
                 'Comments' => $sheet->getCell('P'.$row)->getCalculatedValue(),
                 'Sweep Comments' => $sheet->getCell('R'.$row)->getCalculatedValue(),
                 'Timeline Group' => $sheet->getCell('Q'.$row)->getCalculatedValue(),
@@ -166,7 +166,8 @@ foreach ($spreadsheet1->getSheetNames() as $sheetName) {
              ];
 	     }
         }
-    $sweepsUpdated[trim($sheet->getTitle())] = ($data != $previousData[trim($sheet->getTitle())]);
+    $sweepsUpdated[trim($sheet->getTitle())] = !$previousData[trim($sheet->getTitle())] || count(array_diff($data, $previousData[trim($sheet->getTitle())])) != 0;
+    echo (trim($sheet->getTitle()));
     $allData[trim($sheet->getTitle())] = $data;
 }
 }
@@ -177,7 +178,7 @@ fwrite($fp, makeAllLinksNewWindow(json_encode($allData)));
 fclose($fp);
 
 
-
+echo("Sweeps done");
 print_r($sweepsUpdated);
 $string = file_get_contents(__DIR__ . "/json/study_detail.json");
 $previousData = json_decode($string, true);
@@ -193,7 +194,7 @@ $sheet = $spreadsheet1->getSheet(0);
     $lastRow = $sheet->getHighestRow();
     $data = [];
         for ($row = 2; $row <= $lastRow; $row++) {
-            if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" && $sheet->getCell('A'.$row)->getCalculatedValue() != "NATSAL" ) {
+            if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" && $sheet->getCell('A'.$row)->getCalculatedValue() != "STUDYTOEXCLUDE" ) {
 
             if(!array_key_exists(trim($sheet->getCell('A'.$row)->getCalculatedValue()), $previousData)){
                 $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())] = [];
@@ -230,12 +231,19 @@ $sheet = $spreadsheet1->getSheet(0);
                 'Geographic coverage' => $sheet->getCell('Y'.$row)->getCalculatedValue(),
                 'Complementary data' => $sheet->getCell('Z'.$row)->getCalculatedValue(),
                 'HDR UK Innovation Gateway' => strip_tags($sheet->getCell('AA'.$row)->getCalculatedValue()),
+                'Summary' => $sheet->getCell('AC'.$row)->getCalculatedValue(),
                 'Updated' => $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())]['Updated']
              ];
 
              $thisData = json_decode(makeAllLinksNewWindow(json_encode($data[trim($sheet->getCell('A'.$row)->getCalculatedValue())])), true);
-             if( $sweepsUpdated[trim($sheet->getCell('A'.$row)->getCalculatedValue())] || count(array_diff($thisData,$previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())]))){
+             // To ignore the addition of the summary field - this should not force every date to update
+             $CheckThisData = $thisData;
+             unset($CheckThisData["Summary"]);
+             unset($CheckThisData["Updated"]);
+
+             if( $sweepsUpdated[trim($sheet->getCell('A'.$row)->getCalculatedValue())] || count(array_diff($CheckThisData,$previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())]))){
                 print_r("Updating ". $sheet->getCell('A'.$row));
+                print_r(array_diff($CheckThisData,$previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())]));
                 $data[trim($sheet->getCell('A'.$row)->getCalculatedValue())]['Updated'] = $currentDate;
              }
            }
@@ -244,7 +252,7 @@ $fp = fopen('json/study_detail.json', 'w');
 fwrite($fp, makeAllLinksNewWindow(json_encode($data)));
 fclose($fp);
 
-
+echo("Studies done");
 $filename = __DIR__ . '/xlsx/COVID_timeline.xlsx';
 $reader = IOFactory::createReaderForFile($filename) -> setReadDataOnly(true);
 
@@ -280,7 +288,7 @@ fclose($fp);
 // THE UPCOMING STUDY PAGE
 //
 //////////////////////////////////////////
-
+echo("Covid done");
 $filename = __DIR__ . '/xlsx/upcoming_studies.xlsx';
 $reader = IOFactory::createReaderForFile($filename) -> setReadDataOnly(true);
 
@@ -289,7 +297,7 @@ $sheet = $spreadsheet1->getSheet(0);
     $lastRow = $sheet->getHighestRow();
     $data = [];
         for ($row = 2; $row <= $lastRow; $row++) {
-            if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" && $sheet->getCell('A'.$row)->getCalculatedValue() != "NATSAL" ) {
+            if( $sheet->getCell('A'.$row)->getCalculatedValue() != "" && $sheet->getCell('A'.$row)->getCalculatedValue() != "STUDYTOEXCLUDE" ) {
                 $data[trim($sheet->getCell('A'.$row)->getCalculatedValue())] = [
                     'Title' => trim($sheet->getCell('B'.$row)->getCalculatedValue()),
                     'Age at recruitment' => $sheet->getCell('C'.$row)->getCalculatedValue(),
@@ -304,6 +312,6 @@ $sheet = $spreadsheet1->getSheet(0);
 $fp = fopen('json/upcoming_studies.json', 'w');
 fwrite($fp, makeAllLinksNewWindow(json_encode($data)));
 fclose($fp);
-
+echo("Upcoming done");
 
 ?>

@@ -14,7 +14,7 @@
 							$thisCard = str_replace("{THUMB}", $thumb, $thisCard);
 							$thisCard = str_replace("{PDF}", $newsletter, $thisCard);
 
-							print('<div class="col-md-6 col-lg-4 col-sm-6">');
+							print('<div class="col-lg-4 col-md-6 col-sm-6">');
 							print($thisCard);
 							print('</div>');
 						}

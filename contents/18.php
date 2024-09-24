@@ -6,12 +6,14 @@
                 <div class="col-md-12 col-lg-6">
                     <div class="card shadow mb-0 h-100">
                         <div class="card-header py-3 d-flex align-items-center flex-row">
-                            <a href="https://ukllc.ac.uk/"><img src="img/LLC.png" style="max-height: 4rem;" /></a>
+                            <a target="_blank" href="https://ukllc.ac.uk/"><img src="img/LLC.png"
+                                    style="max-height: 4rem;" /></a>
                             <h6 class="m-0 ml-4 font-weight-bold text-primary">UK Longitudinal Linkage Collaboration
                             </h6>
                         </div>
                         <div class="card-body">
-                            The <a href="https://ukllc.ac.uk/">UK Longitudinal Linkage Collaboration (UK LLC)</a> is the
+                            The <a target="_blank" href="https://ukllc.ac.uk/">UK Longitudinal Linkage Collaboration (UK
+                                LLC)</a> is the
                             national Trusted Research
                             Environment for longitudinal research including many of the UK’s most established
                             longitudinal studies. The mission of the UK LLC is to provide a data linkage resource for
@@ -23,13 +25,14 @@
                 <div class="col-md-12 col-lg-6">
                     <div class="card shadow mb-0 h-100">
                         <div class="card-header py-3 d-flex align-items-center flex-row">
-                            <a href="https://discovery.closer.ac.uk/"><img src="img/Closer.png"
+                            <a target="_blank" href="https://discovery.closer.ac.uk/"><img src="img/Closer.png"
                                     style="max-height: 4rem;" /></a>
                             <h6 class="m-0 ml-4 font-weight-bold text-primary">CLOSER Discovery
                             </h6>
                         </div>
                         <div class="card-body">
-                            <a href="https://discovery.closer.ac.uk/">CLOSER Discovery</a> is a research tool that
+                            <a target="_blank" href="https://discovery.closer.ac.uk/">CLOSER Discovery</a> is a research
+                            tool that
                             enables
                             searching
                             for variables measured in the UK’s leading longitudinal population studies and testing
@@ -74,13 +77,14 @@
                 <div class="col-md-12 col-lg-6">
                     <div class="card shadow mb-0 h-100">
                         <div class="card-header py-3 d-flex align-items-center flex-row">
-                            <a href="https://harmonydata.ac.uk/">
+                            <a target="_blank" href="https://harmonydata.ac.uk/">
                                 <img src="img/Harmony.svg" style="height: 4rem;" /></a>
                             <h6 class="m-0 ml-4 font-weight-bold text-primary">Harmony
                             </h6>
                         </div>
                         <div class="card-body">
-                            <a href="https://harmonydata.ac.uk/">Harmony</a> is a tool that can compare the
+                            <a target="_blank" href="https://harmonydata.ac.uk/">Harmony</a> is a tool that can compare
+                            the
                             compatibility of different measures and questionnaire items of mental health. This tool
                             enables the retrospective harmonisation of measures and items used in different studies,
                             supporting cross-study comparisons and the maximisation of their data usability.
@@ -90,14 +94,15 @@
                 <div class="col-md-12 col-lg-6">
                     <div class="card shadow mb-0 h-100">
                         <div class="card-header py-3 d-flex align-items-center flex-row">
-                            <a href="https://www.landscaping-longitudinal-research.com/"><img src="img/Landscaping.png"
-                                    style="max-height: 4rem;" /></a>
+                            <a style="flex-shrink: 1" target="_blank"
+                                href="https://www.landscaping-longitudinal-research.com/"><img src="img/Landscaping.png"
+                                    style="max-height: 4rem;max-width:100%" /></a>
                             <h6 class="m-0 ml-4 font-weight-bold text-primary">Landscaping International Longitudinal
                                 Datasets project website
                             </h6>
                         </div>
                         <div class="card-body">
-                            The <a href="https://www.landscaping-longitudinal-research.com/">Landscaping
+                            The <a target="_blank" href="https://www.landscaping-longitudinal-research.com/">Landscaping
                                 International Longitudinal Datasets</a>
                             project was commissioned by the Wellcome Trust to conduct a global mapping of
                             longitudinal datasets with the potential for transformative research on depression,
@@ -110,13 +115,14 @@
                 <div class="col-md-12 col-lg-6">
                     <div class="card shadow mb-0 h-100">
                         <div class="card-header py-3 d-flex align-items-center flex-row">
-                            <a href="https://www.maelstrom-research.org/"><img src="img/maelstrom.png"
+                            <a target="_blank" href="https://www.maelstrom-research.org/"><img src="img/maelstrom.png"
                                     style="max-height: 4rem;" /></a>
                             <h6 class="m-0 ml-4 font-weight-bold text-primary">Maelstrom Catalogue
                             </h6>
                         </div>
                         <div class="card-body">
-                            <a href="https://www.maelstrom-research.org">The Maelstrom Catalogue</a> is a searchable
+                            <a target="_blank" href="https://www.maelstrom-research.org">The Maelstrom Catalogue</a> is
+                            a searchable
                             platform
                             that
                             contains comprehensive information about epidemiological research networks and studies,
@@ -124,8 +130,31 @@
                             data generated by these research networks.
                         </div>
                     </div>
+
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="card shadow mb-0 h-100">
+                        <div style="min-height: 6rem;" class="card-header py-3 d-flex align-items-center flex-row">
+                            <h6 class="m-0 ml-4 font-weight-bold text-primary">
+                                Melbourne Children’s LifeCourse Initiative
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            The <a target="_blank" href="https://lifecourse.melbournechildrens.com/">Melbourne
+                                Children’s LifeCourse Initiative</a>
+                            platform includes information about the core
+                            longitudinal cohorts of the the LifeCourse Initiative and the measures collected in each.
+                            The platform features a metadata catalogue with timelines of the cohorts and the data they
+                            have collected. It also contains a measurement library with the measures used in the cohorts
+                            to capture topics such as mental health and allergies.
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+

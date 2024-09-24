@@ -41,7 +41,7 @@ gulp.task("contents", () => {
         ""
       )
     )
-    .pipe(replace(/js\/([^.]+)\.js/g, "js/$1-min.js"))
+    .pipe(replace(/\"js\/([^.]+)\.js/g, '"js/$1-min.js'))
     .pipe(gulp.dest("build/contents/"));
 });
 gulp.task("index", () => {
@@ -58,7 +58,7 @@ gulp.task("css", () => {
         content: ["build/index.php", "build/contents/*.php", "js/*.js"],
         extractors: [
           {
-            extractor: purgeFromHTML,
+            extractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
             extensions: ["php"],
           },
           {
@@ -66,7 +66,7 @@ gulp.task("css", () => {
             extensions: ["vue", "js"],
           },
         ],
-        whitelistPatterns: [/.*(tooltip).*/, /studyImage/],
+        whitelistPatterns: [/.*(tooltip).*/, /.*(col).*/, /studyImage/],
       })
     )
     .pipe(cleanCss())

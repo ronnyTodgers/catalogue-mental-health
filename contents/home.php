@@ -40,7 +40,7 @@
             </div>
             <div class="homeInfoBox col-md-4">
                 <p><i class="homeClipArt fas fa-tree"></i></p>
-                <p>Measures detailed in the catalogue include indicators of mental health problems, treatment, service
+                <p>Measures detailed in the Catalogue include indicators of mental health problems, treatment, service
                     use, impairment and psychological wellbeing.</p>
             </div>
         </div>
@@ -119,7 +119,7 @@
                 <div class="homeInfoBox col-sm-6">
                     <h4 class="h4 mb-2 text-green-800" style="text-align: center; width:80%;margin:auto;">We want to
                         hear from you!</h4>
-                    <p>The catalogue continues to grow as we add new studies, sweeps and measures. Is there something
+                    <p>The Catalogue continues to grow as we add new studies, sweeps and measures. Is there something
                         you think is missing, or would like to see on the platform? Get in touch with us by emailing <a
                             href="mailto:cataloguemhm@kcl.ac.uk">cataloguemhm@kcl.ac.uk</a> with your feedback!</p>
                 </div>
@@ -127,7 +127,7 @@
                     <h4 class="h4 mb-2 text-green-800" style="text-align: center; width:80%;margin:auto;">Want to stay
                         up to date?</h4>
                     <p class="mb-0">Join our mailing list to receive updates when new studies, measures and resources
-                        are added to the catalogue!</p>
+                        are added to the Catalogue!</p>
                     <iframe width="540" height="320"
                         src="https://c356a603.sibforms.com/serve/MUIEAJhBh4WdtGeQHhREoa2YYy8rgw07Rq9cQyy5bn6M9mS98u0EscwqQM-f0-M9k6OW_k0JI3VCmHwjoTyBQN22c6pVyKU6YU2XQcvs47IAsvhMOszWtcxb7Kf9VqYNqNu9lOhDSrASNCb2BKW2Gu9S0Wjw2clfAjNGfw64twHtPW_SL0wR3fvlGOdQM6Nz-NuOp1w651FrHmbi"
                         frameborder="0" scrolling="no" allowtransparency="true" allowfullscreen
