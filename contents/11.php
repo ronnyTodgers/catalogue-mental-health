@@ -17,54 +17,51 @@
                     </p>
                 </div>
                 <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
-                    <p>Louise Arseneault’s research focuses on the study of harmful behaviours such as violence and
-                        substance dependence, their developmental origins, their inter-connections with mental health,
-                        and their consequences for victims. She is taking a developmental approach to investigate how
-                        the consequences of violence begin in childhood and persist to mid-life, by studying bullying
-                        victimisation and child maltreatment. Louise also studies the impact of social relationships
-                        including social support, loneliness and social isolation on mental health. Her research aims
-                        are to answer questions relevant to psychology and psychiatry by harnessing and combining three
-                        different research approaches: developmental research, epidemiological methods and genetically
-                        sensitive designs. Louise’s work incorporates social as well as biological measurements across
-                        the lifespan.</p>
-                    </p>
+                    <p>Louise Arseneault&rsquo;s research focuses on the study of harmful behaviours such as violence
+                        and substance dependence, their developmental origins, their inter-connections with mental
+                        health and their consequences for victims. She is taking a developmental approach to investigate
+                        how the consequences of violence begin in childhood and persist to mid-life, by studying
+                        bullying victimisation and child maltreatment. Louise also studies the impact of social
+                        relationships including social support, loneliness and social isolation on mental health. Her
+                        research aims are to answer questions relevant to psychology and psychiatry by harnessing and
+                        combining three different research approaches: developmental research, epidemiological methods
+                        and genetically sensitive designs, incorporating social and biological measurements across the
+                        lifespan.</p>
                     <p>Louise completed her PhD in biomedical sciences at the University of Montreal and moved to the UK
                         for post-doctoral training at the <a
                             href="https://www.kcl.ac.uk/mental-health-and-psychological-sciences/about/departments/social-genetic-and-developmental-psychiatry">Social,
-                            Genetic and Developmental Psychiatry Centre</a>.&nbsp;She has been working with well-known
-                        longitudinal cohorts such as the <a
-                            href="https://statistique.quebec.ca/en/enquetes/realisees/quebec-longitudinal-study-of-child-development-2nd-edition-qlscd">Montreal
-                            Longitudinal Cohorts</a>, the <a href="https://dunedinstudy.otago.ac.nz/studies">Dunedin
-                            Multidisciplinary Health and Development Study</a>, the <a
-                            href="https://www.cataloguementalhealth.ac.uk/?content=study&studyid=ERisk">Environmental
-                            Risk (E-Risk) Longitudinal Twin Study</a> and the <a
-                            href="https://www.cataloguementalhealth.ac.uk/?content=study&studyid=NCDS">National
-                            Child Development Survey (NCDS)</a></p>
+                            Genetic and Developmental Psychiatry Centre</a>. She has been working with well-known
+                        longitudinal cohorts such as the</p>
                     <p>For five years, Louise was the <a href="https://www.ukri.org/councils/esrc/">Economic and Social
-                            Research Council (ESRC)</a> Mental Health Leadership Fellow. Louise&rsquo;s role as a Fellow
-                        with the ESRC included providing intellectual leadership and strategic advice in the priority
-                        area of mental health. It was a broad agenda including engaging research communities, promoting
-                        collaborations, advocating for mental health research, championing the co-design and
-                        co-production of research and providing advice to the ESRC and other research councils. She
-                        provided advice on how social science research can best address the challenges that mental
-                        health poses for our society, communities and individuals.</p>
+                            Research Council (ESRC)</a> Mental Health Leadership Fellow during which she provided
+                        intellectual leadership and strategic advice in the priority area of mental health. It was a
+                        broad agenda including engaging research communities, promoting collaborations, advocating for
+                        mental health research, championing the co-design and co-production of research and providing
+                        advice to the ESRC and other research councils. She provided advice on how social science
+                        research can best address the challenges that mental health poses for our society, communities
+                        and individuals.</p>
                     <p>In 2022-2023, Louise led the <a
                             href="https://www.landscaping-longitudinal-research.com/">Landscaping International
-                            Longitudinal Datasets</a> project, funded by the <a href="https://wellcome.org/">Wellcome
-                            Trust</a> and in collaboration with <a href="https://www.mqmentalhealth.org/home/">MQ Mental
-                            Health Research</a>, the <a href="https://theodi.org/">Open Data Institute</a>, the <a
+                            Longitudinal Datasets</a> project, commissioned by the <a
+                            href="https://wellcome.org/">Wellcome Trust</a> and in collaboration with <a
+                            href="https://www.mqmentalhealth.org/home/">MQ Mental Health Research</a>, the <a
+                            href="https://theodi.org/">Open Data Institute</a>, the <a
                             href="https://www.centreforglobalmentalhealth.org/">Centre for Global Mental Health</a> and
-                        <a href="https://datamind.org.uk/">Datamind</a>. The Lanscaping project was a worldwide search
-                        for longitudinal datasets with potential for transformative mental health research.
+                        <a href="https://datamind.org.uk/">DATAMIND</a>. The Landscaping project involved a worldwide
+                        search for longitudinal datasets with potential for transformative mental health research.
+                        Following its completion, Louise has been leading the subsequent&nbsp;creation and development
+                        of the Wellcome-funded <a href="https://atlaslongitudinaldatasets.ac.uk">Atlas of Longitudinal
+                            Datasets</a> platform.
                     </p>
                 </div>
             </div>
-            <h4>Bridget Bryan, Research Assistant &amp; PhD Candidate</h4>
+            <h4>Bridget Bryan, Postdoctoral researcher</h4>
             <div class="row">
                 <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
                     <p><img class="teamPhoto" src="img/Bridget.jpg" alt="" /></p>
                 </div>
                 <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
+
                     <p>Bridget&rsquo;s research examines experiences of loneliness and mental health in the workplace
                         using qualitative and quantitative methods. She joined the team in July 2018 to review the
                         mental health measures in British longitudinal studies and assist in the development of the
@@ -72,10 +69,14 @@
                         University of Sydney and a Master of Science in Sociology at the University of Oxford.
                         Previously, Bridget has worked in research focusing on workplace mental health and the
                         Australian forensic mental health system at the University of New South Wales, the Mental Health
-                        Commission of NSW and the University of Oxford.</p>
+                        Commission of NSW and the University of Oxford. She also worked with the team on the <a
+                            href="https://www.landscaping-longitudinal-research.com/">Landscaping International
+                            Longitudinal Datasets</a> project in 2023. In the summer of 2024, Bridget completed her PhD,
+                        focused on loneliness and social isolation in the workplace. She now works as a postdoctoral
+                        researcher on the Atlas of Longitudinal Datasets.</p>
                 </div>
             </div>
-            <h4>Elena Triantafillopoulou, Research Assistant</h4>
+            <h4>Elena Triantafillopoulou, Research assistant</h4>
             <div class="row">
                 <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
                     <p><img class="teamPhoto" src="img/Elena.jpg" alt="" /></p>
@@ -87,40 +88,49 @@
                         King&rsquo;s College London (MSc with distinction) and before then, her undergraduate studies in
                         Biology and Psychology at the University of Central Florida (BSc <em>cum laude</em>). Her
                         research interests include the development of mental health conditions following early life
-                        and/or complex trauma and the restoration of wellbeing through treatment.</p>
+                        and/or complex trauma and the restoration of wellbeing through treatment. Elena also worked on
+                        the <a href="https://www.landscaping-longitudinal-research.com/">Landscaping International
+                            Longitudinal Datasets</a> project, focusing on the Americas regions. She has since supported
+                        the formation and development of the Atlas of Longitudinal Datasets, and now splits her time
+                        between the Catalogue and the Atlas.</p>
                 </div>
             </div>
-            <h4>Malaika Okundi, Research Assistant</h4>
+            <h4>Malaika Okundi, Research assistant</h4>
             <div class="row">
                 <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
                     <p><img class="teamPhoto" src="img/Malaika.jpg" alt="" /></p>
                 </div>
                 <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
-                    <p>Malaika joined the team in June 2022 to assist with the expansion of the Catalogue to include new
+                    <p>Malaika joined the team in June 2022 to assist with expanding the Catalogue to include new
                         studies and improve its accessibility and usefulness to users beyond mental health researchers.
-                        Prior to joining the Catalogue, Malaika completed her Bachelor of Science in Global Health and
+                        Before joining the Catalogue, Malaika completed her Bachelor of Science in Global Health and
                         Social Medicine (Neuroscience) at King&rsquo;s College London. She also works on the <a
-                            href="https://www.acamh.org/podcasts/transmission-of-experiences-of-racism-anxiety-depression/">Transmission
+                            href="https://www.acamh.org/podcasts/transmission-of-experiences-of-racism-anxiety-depression">Transmission
                             of experiences of Racism, Anxiety and Depression in families (TRADE)</a> Project, studying
                         the relationship between parent experiences of racism and child mental health. Her research
                         interests include interspecies approaches to medicine, biotechnology and its effects on society,
-                        data science and the mental health of populations in low- and middle-income countries.</p>
+                        data science and the mental health of populations in low- and middle-income countries. Malaika
+                        also worked on the <a href="https://www.landscaping-longitudinal-research.com">Landscaping
+                            International Longitudinal Datasets</a> project, focusing on the Africa, Middle East &amp;
+                        Asia regions, and now leads the dissemination for the Catalogue alongside working on the
+                        formation and development of the Atlas of Longitudinal Datasets.</p>
                 </div>
             </div>
-            <h4>Daniel Yu, Research Placement Student</h4>
+            <h4>Daniel Yu, Research assistant</h4>
             <div class="row">
                 <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
                     <p><img class="teamPhoto" src="img/Daniel.jpg" alt="" /></p>
                 </div>
                 <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
-                    <p>Daniel worked on the Catalogue from September 2022 to September 2023 as a placement student
-                        during his academic year and as a research assistant over the summer. During his time on the
-                        team, his role was to assist with the development of the Catalogue by surveying available mental
-                        health and wellbeing measures included in eligible studies, developing the web platform to
-                        attract users from a broad range of disciplines, monitoring analytics describing the
-                        Catalogue&rsquo;s use, and promoting the use of mental health measures through various online
-                        engagement activities. Daniel is now back at the University of Bath for the final year of his
-                        undergraduate degree in Psychology.</p>
+                    <p>Daniel rejoined the team in July 2024, having worked on the Catalogue from September 2022 to
+                        September 2023 as a placement student during the academic year and as a research assistant over
+                        the summer. Prior to rejoining, he completed a Bachelor of Science (Honours) in Psychology at
+                        the University of Bath. His role included ensuring the accuracy of existing reviews of studies,
+                        adding information on new data collections of existing studies, and beginning the addition of
+                        linked cohorts to the Catalogue. Daniel also worked on the <a
+                            href="https://www.landscaping-longitudinal-research.com/">Landscaping International
+                            Longitudinal Datasets</a> project, and now splits his time between the Catalogue and the
+                        Atlas of Longitudinal Datasets.</p>
                 </div>
             </div>
 
@@ -146,45 +156,65 @@
                             Genetic and Developmental Psychiatry Centre</a> at King&rsquo;s College London. She has
                         helped conduct the adult follow-up phases of epidemiological samples in inner London and the
                         Isle of Wight and has also made extensive use of secondary analysis of data from the British
-                        birth cohort studies in conducting her research.</p>
+                        birth cohort studies in conducting her research. Barbara supported the formation of the
+                        Catalogue.</p>
                     <p>In early 2023, Barabara became Emeritus Professor of Developmental Epidemiology at the Institute
                         of Psychiatry, Psychology and Neuroscience at King&rsquo;s College London.</p>
                 </div>
             </div>
-            <h4>Maria Jose Rodriguez Pinzon, Placement Research Assistant</h4>
+            <h4>Maria Jose Rodriguez Pinzon, Undergraduate placement student &amp;
+                research assistant</h4>
             <div class="row">
                 <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
                     <p><img class="teamPhoto" src="img/Maria.jpg" alt="" /></p>
                 </div>
                 <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
-                    <p>Maria Jose is currently studying Psychology with a Placement undergraduate degree at Cardiff
-                        University. She has joined the team during her placement year to aid the expansion and
-                        development of the Catalogue. Her role includes ensuring the accuracy of existing reviews of
-                        studies and their mental health measures, expanding the web platform to enhance its impact, and
-                        advancing the use of longitudinal mental health datasets across various disciplines. Maria Jose
-                        will also contribute to the continuation of the consistency, and accessibility reviews.</p>
+
+                    <p>Maria Jose worked on the Catalogue as a placement student during the academic year and as a
+                        research assistant for part of the summer. Her role included ensuring the accuracy of existing
+                        reviews of studies and their mental health measures, and adding studies such as <a
+                            href="https://www.cataloguementalhealth.ac.uk/?content=study&amp;studyid=IMAGINE-ID">Imagine
+                            ID</a>. Maria Jose also contributed to the formation and development of the Atlas of
+                        Longitudinal Datasets. She has now returned to Cardiff University to finish her undergraduate
+                        Psychology degree.</p>
+
+
                 </div>
             </div>
-            <h4>Hannah Lewis, Placement Research Assistant</h4>
+            <h4>Hannah Lewis, Undergraduate placement student &amp;
+                research assistant</h4>
             <div class="row">
                 <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
                     <p><img class="teamPhoto" src="img/Hannah.jpg" alt="" /></p>
                 </div>
                 <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
-                    <p>Hannah is currently studying BSc Sport and Exercise Psychology at Loughborough University and has
-                        joined the team for her placement year. During the first two years of her degree, Hannah found
-                        an interest in the mental health field within Psychology. Her role within the team is to support
-                        the ongoing expansion of the Catalogue by updating studies and adding new studies through data
-                        review and documentation analysis. Hannah will also support the development of the Catalogue by
-                        ensuring consistency and accessibility while promoting mental health understanding through
-                        online engagement.
-                    </p>
+                    <p>Hannah joined the Catalogue team as part of her placement year and continued working over the
+                        summer as a research assistant. Her role within the team was to support the ongoing expansion of
+                        the Catalogue by updating and adding new studies through data review and documentation analysis,
+                        including <a
+                            href="https://www.cataloguementalhealth.ac.uk/?content=study&amp;studyid=CRIS">CRIS</a>. She
+                        also supported the tracking of impact and engagement to the Catalogue. Hannah also contributed
+                        to the formation and development of the Atlas of Longitudinal Datasets. She has now returned to
+                        Loughborough University to complete the final year of her undergraduate Sport &amp; Exercise
+                        Psychology degree.</p>
                 </div>
             </div>
 
+            <h4>Georgia Andrews, Undergraduate placement student &amp; research assistant</h4>
+            <div class="row">
+                <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
+                    <p><img class="teamPhoto" src="img/Georgia.jpg" alt="" /></p>
+                </div>
+                <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
+                    <p>Georgia worked on the Catalogue from September 2021 to September 2022 as a placement student
+                        during her academic year and as a research assistant over the summer. During her time on the
+                        team, Georgia added several new studies to the Catalogue, oversaw the expansion of the FAQ page,
+                        and led the addition of personality and temperament measures to the Catalogue. Georgia graduated
+                        with First Class Honours in undergraduate psychology from Cardiff University in July 2022.</p>
 
 
-
+                </div>
+            </div>
 
             <h4>Lily Strange, Research Assistant</h4>
             <div class="row">
@@ -205,19 +235,7 @@
                 </div>
             </div>
 
-            <h4>Georgia Andrews, Research Assistant</h4>
-            <div class="row">
-                <div class="col-md-4 col-lg-2 col-sm-12 col-xs-12">
-                    <p><img class="teamPhoto" src="img/Georgia.jpg" alt="" /></p>
-                </div>
-                <div class="col-md-8 col-lg-10 col-sm-12 col-xs-12">
-                    <p>Georgia worked on the Catalogue from September 2021 to September 2022 as a placement student
-                        during her academic year and as a research assistant over the summer. During her time on the
-                        team, Georgia added several new studies to the Catalogue, oversaw the expansion of the FAQ page,
-                        and led the addition of personality and temperament measures to the Catalogue. Georgia graduated
-                        with First Class Honours in undergraduate psychology from Cardiff University in July 2022.</p>
-                </div>
-            </div>
+
 
 
 

@@ -5,10 +5,10 @@
             <div class="row">
                 <?php
 				$card = file_get_contents(dirname(__DIR__)."/contents/newsletter_card.content");
-						$newletters = preg_grep('~\.pdf$~', scandir("./newsletters/"));
+				$newletters = preg_grep('~newsletter.+\.pdf$~', scandir("./newsletters/"));
 						foreach (array_reverse($newletters) as $newsletter){
 							$title = preg_replace('/CMHM newsletter [0-9]+ ([A-Z a-z 0-9]+)[.]pdf/', '${1}', $newsletter);
-							$thumb = str_replace('.pdf', '.png', $newsletter);
+							$thumb = str_replace('.pdf', '.jpeg', $newsletter);
 
 							$thisCard = str_replace("{CARD_TITLE}", ucwords($title), $card);
 							$thisCard = str_replace("{THUMB}", $thumb, $thisCard);
@@ -22,5 +22,4 @@
             </div>
         </div>
     </div>
-
 </div>

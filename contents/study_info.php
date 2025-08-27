@@ -9,19 +9,11 @@ function study_title() {
     $title = '<img class="studyImage" src="img/studies/'.$studyid.'.png?202310" alt="" onerror=\'this.style.display="none"\'/>'.
              '<h1 class="h3 text-center text-sm-left mb-0 text-green-800 mr-auto">'.$study_detail[$studyid]['Title'].'</h1>';
 
-    if($study_detail[$studyid]['HDR UK Innovation Gateway']) {
-        $title = $title.
-                '<a target="_blank" class="hdrLink" href="'.
-                $study_detail[$studyid]['HDR UK Innovation Gateway'].
-                '"><img class="studyImage" style="min-width:10rem;" src="img/HDRgateway.png" alt="HDR Gateway"/></a>';
-    } else {
-        // add in an empty div to ensure flexbox behaves normally either way
-        $title = $title.
-                '<div>&nbsp</div>';
-    }
+    // add in an empty div to ensure flexbox behaves normally either way
+    $title = $title.
+            '<div>&nbsp</div>';
+
     return $title;
-
-
 }
 
 function sanitize_xss($value) {
@@ -48,10 +40,11 @@ function prettify_funders($funder_string) {
 function study_cards() {
 	$overview_card_fields = ["Aims","Geographic coverage - Nations", "Geographic coverage - Regions","Institution","Start date","Links","Most recent sweep","Ongoing?", "Updated"];
 	$sample_card_fields =  ["Sample type","Sample details","Sample size at recruitment","Sample size at most recent sweep","Age at recruitment","Cohort year of birth","Sex"];
-	$data_card_fields = ["Linkage to administrative data","Genetic data collected","Data access", "HDR UK Innovation Gateway"];
+	$data_card_fields = ["Linkage to administrative data","Genetic data collected","Data access", "isInLLC"];
+    $data2_card_fields = ["AtlasLink", "CloserLink","IsInLLC", "HDR UK Innovation Gateway" ];
 	$marker_card_fields = ["Reference paper"];
 	$funder_card_fields = ["Funders"];
-    $excluded_fields = ["Study design","Sample characteristics","Geographic coverage","Complementary data", "Physical Health Measures"];
+    $excluded_fields = ["Study design","Sample characteristics","Geographic coverage", "Complementary data", "Physical Health Measures", "Summary", "SortOrder"];
 
 
 	global $studyid;
@@ -62,10 +55,12 @@ function study_cards() {
     $overview_card = str_replace('{CARD_TITLE}', "Overview", $basic_card);
     $sample_card = str_replace('{CARD_TITLE}', "Sample", $basic_card);
     $data_card = str_replace('{CARD_TITLE}', "Data", $basic_card);
+    $data2_card = str_replace('{CARD_TITLE}', "Other useful resources", $flex_card);
     $funder_card = str_replace('{CARD_TITLE}', "Funders", $flex_card);
     $marker_card = str_replace('{CARD_TITLE}', "Key Papers", $basic_card);
 	$additional_card = str_replace('{CARD_TITLE}', "Additional information", $basic_card);
 	$additional_card_body = '';
+    $data2_card_body = '';
     $data_card_body = '';
     $sample_card_body = '';
     $marker_card_body = '';
@@ -83,7 +78,7 @@ function study_cards() {
 
 			}
             elseif (in_array($key, $sample_card_fields)) {
-                    $sample_card_body = $sample_card_body.'<p><b>'.$key.'</b><br>'.$value.'</p>';
+                    $sample_card_body = $sample_card_body.'<p><b>'.$key.'</b><br>'.str_replace(array('[[', ']]'), '', $value).'</p>';
             }
             elseif (in_array($key, $funder_card_fields)) {
                     $funder_card_body = $funder_card_body.prettify_funders($value);
@@ -92,18 +87,52 @@ function study_cards() {
                     $marker_card_body = $marker_card_body.'<p>'.$value.'</p>';
             }
             elseif (in_array($key, $data_card_fields)) {
-                    if($key == 'HDR UK Innovation Gateway') {
-                        $data_card_body = $data_card_body.'<p><b>'.$key.'</b><br>'.
-                        '<a target="_blank" class="hdrLink" href="'.$value.'"><img class="studyImage" style="min-width:10rem;" src="img/HDRgateway.png" alt="HDR Gateway"/></a>';
+                    if($key == 'isInLLC' && $value) {
+                        $data_card_body = $data_card_body.
+                        '<a target="_blank" class="hdrLink d-flex justify-content-around" href="https://explore.ukllc.ac.uk/"><img class="studyImage" style="min-width:10rem;" src="img/LLC.png" alt="UKLLC"/></a>';
                     } else {
                         $data_card_body = $data_card_body.'<p><b>'.$key.'</b><br>'.$value.'</p>';
                     }
             }
-            elseif (!in_array($key, $excluded_fields)) {
+            elseif (in_array($key, $data2_card_fields)) {
+                $logo ='';
+                $alt='';
+                if($key == 'HDR UK Innovation Gateway') {
+                    $logo = "img/HDRgateway.png";
+                    $alt ='HDR Gateway';
+                } elseif ($key == 'AtlasLink') {
+                    $logo = "img/AtlasLogo.png";
+                    $alt ='Atlas of Longitudinal Datasets';
+                 } elseif ($key == 'CloserLink') {
+                    $logo = "img/Closer.png";
+                    $alt ='Closer';
+                }
+                $data2_card_body = $data2_card_body.
+                        '<a target="_blank" class="hdrLink d-flex justify-content-around" href="https://'.$value.'"><img class="funderImage" style="min-width:10rem;" src="'.$logo.'" alt="'.$alt.'"/></a>';
+            }
+             elseif (!in_array($key, $excluded_fields)) {
                 $additional_card_body = $additional_card_body.'<p><b>'.$key.'</b><br>'.$value.'</p>';
-			}
-   		}
+			}}
 	}
+    if($data2_card_body != '') {
+    print('<div class="row"><div class="col-md-6">');
+    print(str_replace('{CARD_BODY}', $overview_card_body, $overview_card));
+    print('</div><div class="col-md-6">');
+    print(str_replace('{CARD_BODY}', $sample_card_body, $sample_card));
+	print('</div></div><div class="row"><div class="col-md-6 col-lg-3 col-sm-6">');
+    print(str_replace('{CARD_BODY}', $data_card_body, $data_card));
+    print('</div><div class="col-md-6 col-lg-3 col-sm-6">');
+    print(str_replace('{CARD_BODY}', $data2_card_body, $data2_card));
+    print('</div><div class="col-md-6 col-lg-3 col-sm-6">');
+    print(str_replace('{CARD_BODY}', $marker_card_body, $marker_card));
+    print('</div><div class="col-md-6 col-lg-3 col-sm-6">');
+    print(str_replace('{CARD_BODY}', $funder_card_body, $funder_card));
+	print('</div>');
+     print('<div class="col-md-12">');
+    print(str_replace('{CARD_BODY}', $additional_card_body, $additional_card));
+    print('</div></div>');
+    } else {
+
 	print('<div class="row"><div class="col-md-6">');
     print(str_replace('{CARD_BODY}', $overview_card_body, $overview_card));
     print('</div><div class="col-md-6">');
@@ -117,7 +146,7 @@ function study_cards() {
     print('</div><div class="col-md-6 col-lg-3 col-sm-6">');
     print(str_replace('{CARD_BODY}', $funder_card_body, $funder_card));
 	print('</div></div>');
-
+    }
 
 }
 

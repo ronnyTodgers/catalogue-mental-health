@@ -26,7 +26,9 @@ foreach ($sweeps as $key => $value) {
 }
 
 
-@natcasesort($studies);
+uasort($studies, function($a, $b) {
+    return intval($a['SortOrder']) <=> intval($b['SortOrder']);
+});
 //var_dump($studies);
 print(json_encode($studies));
 

@@ -1,5 +1,5 @@
 ﻿<div class="container-fluid">
-    <h1 class="h3 mb-4 text-gray-800">Funding</h1>
+    <h1 class="h3 mb-4 text-gray-800">Funders</h1>
     <div class="card mb-4">
         <div class="card-body">
             <p>The Catalogue is part of DATAMIND, an HDR UK data hub. The Catalogue was previously funded by CLOSER, and
@@ -19,7 +19,7 @@
         <div class="card-body">
             <p>The Catalogue collaborates with DATAMIND and the DATAMIND Super Research Advisory group (SRAG).
             </p>
-            <div class="m-4 d-flex justify-content-around align-items-center">
+            <div class="m-4 d-flex flex-wrap justify-content-around align-items-center">
                 <img style="max-height:120px;height:20%;" src='img/DATAMIND.png' />
                 <img style="max-height:120px;height:20%;" src='img/SRAG-logo.png' />
             </div>

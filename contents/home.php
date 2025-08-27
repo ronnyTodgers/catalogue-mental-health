@@ -77,14 +77,14 @@
 				</div>
 			</div>
 		</div> -->
-        <div class="homeRow odd2">
+        <div class="homeRow odd2 px-4">
             <h4 id="Explore" style="font-weight:800;" class="h4 mb-2 text-center">Explore the Catalogue of Mental Health
                 Measures</h4>
             <div class="d-md-flex align-items-top justify-content-between">
                 <div class="homeInfoBox col-lg-6 d-flex flex-column align-items-top justify-content-around">
                     <div class="d-flex align-items-center mb-1 mt-1">
                         <img class="homeClipArt" src="img/icon-studies.png" alt="" />
-                        <p class="mb-0 text-left">Over 55 longitudinal studies -
+                        <p class="mb-0 text-left">Over 60 longitudinal studies -
                             <a href="#Explore" class="searchLink">try searching for <i>"Born in Bradford"</i></a>
                         </p>
                     </div>

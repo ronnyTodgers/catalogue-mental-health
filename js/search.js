@@ -392,6 +392,12 @@ function parseNumbers(
   if (!returnLargest && numStr.toLowerCase().startsWith("birth")) {
     numStr = "0";
   }
+  const specified = numStr.match(/\[\[\d+\]\]/g);
+
+  if (specified) {
+    const specifiedNumber = Number(specified[0].replaceAll(/[\[\]]/g, ""));
+    return formatLocale ? specifiedNumber.toLocaleString() : specifiedNumber;
+  }
   var numbers = numStr.match(/\d+/g);
 
   if (!numbers) {
@@ -414,6 +420,7 @@ function parseNumbers(
       return num < 1960 || num > 2030;
     });
   }
+
   if (returnLargest) {
     const num = Math.max.apply(null, numbers);
     return formatLocale ? num.toLocaleString() : num;
@@ -496,7 +503,8 @@ function createFilters() {
     let size = parseNumbers(
       String(val["Sample size at recruitment"]).replaceAll(",", ""),
       false,
-      true
+      true, false
+      
     );
     if (size !== null) {
       sizes = sizes.concat(size);
@@ -1228,7 +1236,6 @@ function updateSearchResults(newSearchData, noAdditions) {
     var output = "";
     var count = 1;
     Object.keys(searchData)
-      .sort()
       .forEach(function (key, idx) {
         let val = searchData[key];
 
@@ -1317,8 +1324,8 @@ function updateSearchResults(newSearchData, noAdditions) {
     outputs.sort(function (output1, output2) {
       if (output1.score < output2.score) return 1;
       if (output2.score < output1.score) return -1;
-      if (output1.sid > output2.sid) return 1;
-      if (output2.sid > output1.sid) return -1;
+      if (output1.SortOrder > output2.SortOrder) return 1;
+      if (output2.SortOrder > output1.SortOrder) return -1;
       return 0;
     });
     console.log(outputs);
@@ -1327,7 +1334,13 @@ function updateSearchResults(newSearchData, noAdditions) {
     });
   } else {
     Object.keys(searchData)
-      .sort()
+       .sort((k1,k2)=>{
+        const s1 = searchData[k1]
+        const s2 = searchData[k2]
+        if(s1.SortOrder && s2.SortOrder && s1.SortOrder > s2.SortOrder) return 1
+        if(s1.SortOrder && s2.SortOrder && s1.SortOrder < s2.SortOrder) return -1
+        return s1.Title > s2.Title
+      })
       .forEach(function (key, idx) {
         let val = searchData[key];
         output +=
@@ -1394,7 +1407,10 @@ function updateSearchResults(newSearchData, noAdditions) {
   }
   searchSummary += "Studies found: " + $("#studyList .card").length;
   $("#searchSummary").html(searchSummary);
-  $(".searchResult").click(function () {
+  $(".searchResult").click(function (e) {
+    if ($(e.target).closest(".toggle-definition").length > 0) {
+      return;
+    }
     const ID = $(this).attr("sid");
     if (typeof gtag == "function") {
       //setTimeout(function() {  window.location  = '?content=study&studyid='+ID ;}, 200);

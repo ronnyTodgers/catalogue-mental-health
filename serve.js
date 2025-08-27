@@ -1,6 +1,9 @@
 const express = require("express");
 const morgan = require("morgan");
 const sphp = require("sphp");
+const path = require("path");
+
+const ROOT_DIR = path.join(__dirname) + '/build/';
 
 // Create Express Server
 const app = express();
@@ -11,16 +14,19 @@ consolestream = {
   },
 };
 
+app.use(morgan("dev", { stream: consolestream }));
+// Handle PHP files first
+app.use("/", sphp.express(ROOT_DIR));
+// Then serve static files
+app.use("/", express.static(ROOT_DIR));
+
+// Redirect root to index.php
 app.get("/", function (req, res) {
-  res.sendFile("./index.php");
+  res.redirect("/index.php");
 });
 
-app.use(morgan("dev", { stream: consolestream }));
-app.use("/", sphp.express("./"));
-app.use("/", express.static("./"));
-
 // Configuration
-const PORT = 3000;
+const PORT = 3111;
 const HOST = "localhost";
 // Logging
 

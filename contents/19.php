@@ -28,8 +28,8 @@ function prettify_funders($funder_string) {
     return $funder_string;
 }
 function study_title($key, $study) {
-    $title = '<img class="studyImage" src="img/studies/'.$key.'.png?202310" alt="" onerror=\'this.style.display="none"\'/>'.
-             '<h6 class="m-0 ml-4 font-weight-bold text-primary">'.$study['Title'].'</h6>';
+    $title =  '<h6 class="m-0 mr-auto font-weight-bold text-primary">'.$study['Title'].'</h6>'.
+    '<img style="margin:5px;max-height:5rem;padding:8px" class="studyImage m-0 ml-auto" src="img/studies/'.$key.'.png?202310" alt="" onerror=\'this.style.display="none"\'/>';
 
    
         // add in an empty div to ensure flexbox behaves normally either way

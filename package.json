@@ -3,7 +3,8 @@
   "name": "THE CATALOGUE OF MENTAL HEALTH MEASURES",
   "version": "1.8",
   "scripts": {
-    "start": "gulp watch"
+    "start": "gulp watch",
+    "scrape-glossary": "node scripts/scrape-glossary.js"
   },
   "description": "An open source Bootstrap 4 admin theme.",
   "keywords": [
@@ -25,11 +26,13 @@
     "@fortawesome/fontawesome-free": "5.8.1",
     "body-parser": "^1.20.3",
     "bootstrap": "4.3.1",
+    "cheerio": "^1.0.0-rc.12",
     "express": "^4.21.0",
     "express-session": "^1.18.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-image-resize": "^0.13.1",
     "gulp-minify": "^3.1.0",
     "gulp-purgecss": "^4.0.2",
     "gulp-rename": "^2.0.0",
@@ -37,6 +40,7 @@
     "gulp-strip-debug": "^3.0.0",
     "js-base64": "^3.7.7",
     "morgan": "^1.10.0",
+    "node-fetch": "^2.6.9",
     "purgecss-from-html": "^6.0.0-alpha.0",
     "search-string": "^3.1.0",
     "sphp": "^0.6.3",
@@ -44,6 +48,7 @@
     "ws": "^8.18.0"
   },
   "devDependencies": {
+    "gulp-exec": "^5.0.0",
     "gulp-pdf-thumbnail": "^1.0.0",
     "merge-stream": "^2.0.0"
   }

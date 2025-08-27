@@ -618,9 +618,25 @@ function setDataTable(currentData) {
       .responsive.recalc();
   }
 
-  $('[data-toggle="tooltip"]').tooltip({
+  // Initialize tooltips specifically for the info buttons in the table
+  // Use the same template as glossary.js for consistent styling
+  $("#dataTable .infobutton[data-toggle='tooltip']").tooltip({
+    template:
+      '<div class="tooltip glossary-tooltip" role="tooltip">' +
+      '<div class="arrow"></div>' +
+      '<div class="tooltip-inner"></div>' +
+      "</div>",
+    html: true, // Already set implicitly by the render function, but good to be explicit
     container: "body",
-    offset: 0,
+    placement: "auto", // Match glossary.js
+    boundary: "window", // Match glossary.js
+    // Removed offset: 0 as it's not in glossary.js
+  });
+
+  // Initialize any other potential tooltips on the page with default settings (if needed)
+  // This selector excludes the ones we just initialized
+  $('[data-toggle="tooltip"]:not(#dataTable .infobutton)').tooltip({
+    container: "body", // Basic initialization
   });
 }
 

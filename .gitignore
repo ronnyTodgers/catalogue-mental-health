@@ -1,6 +1,8 @@
 node_modules
 build/
-xlsx/Old/
+xlsx/Old
 vendor/
 api/next
 build copy/
+contents.zip
+xlsx/xlsx.zip

@@ -5,8 +5,10 @@ const concat = require("gulp-concat");
 const replace = require("gulp-replace");
 const purgeCss = require("gulp-purgecss");
 const cleanCss = require("gulp-clean-css");
-const pdfThumbnail = require("gulp-pdf-thumbnail");
+const pdfThumbnail = require("gulp-pdf-thumbnail"); // Re-added
 const purgeFromHTML = require("purgecss-from-html");
+const imageResize = require("gulp-image-resize"); // Re-added
+// Removed exec
 
 gulp.task("js", () => {
   return gulp
@@ -25,10 +27,17 @@ gulp.task("search", () => {
     .pipe(gulp.dest("build/js"));
 });
 
+// Reverted PDF task to use original plugins, but only for CMHM* newsletters
 gulp.task("pdf", () => {
   return gulp
-    .src(["./newsletters/*.pdf"])
+    .src(["./newsletters/CMHM*.pdf"]) // Only process PDFs starting with CMHM
     .pipe(pdfThumbnail())
+    .pipe(
+      imageResize({
+        imageMagick: true,
+        format: "jpeg",
+      })
+    )
     .pipe(gulp.dest("img"));
 });
 
@@ -83,6 +92,8 @@ gulp.task("copy", function () {
         "./video/**/*",
         "./json/**/*",
         "vendor/images/**/*",
+        "vendor/datatables/dataTables.min.css",
+        "vendor/datatables/dataTables.min.js",
         "vendor/datatables/jquery.dataTables.min.css",
         "vendor/datatables/fixedHeader.dataTables.min.css",
         "vendor/datatables/responsive.dataTables.min.css",

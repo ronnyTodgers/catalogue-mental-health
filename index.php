@@ -39,6 +39,7 @@ $pattern = "/<h1(.*?)>(.*?)<\/h1>/";
     <script src="vendor/jquery/jquery.min.js"></script>
 
     <link href="css/core.css?v5" rel="stylesheet">
+    <link href="css/glossary.css" rel="stylesheet">
     <link rel="preload" href="css/timeline.css?v5" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="css/timeline.css">
@@ -158,6 +159,10 @@ $pattern = "/<h1(.*?)>(.*?)<\/h1>/";
                                         <a class="dropdown-item" href="?content=9">
                                             Online methods training
                                         </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="?content=20">
+                                            Input from the public
+                                        </a>
                                         <!--   <a class="dropdown-item" href="/testing/api/spec">
                                             API specification
                                         </a> -->
@@ -214,8 +219,8 @@ $pattern = "/<h1(.*?)>(.*?)<\/h1>/";
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer">
-                <div class="footerWrapper">
+            <footer class="sticky-footer px-4">
+                <div class="footerWrapper ">
                     <div class="row col-12 flex-space-between d-flex flex-row align-items-center footerLeftLogoFlex">
                         <div class="contactus text-left my-auto d-flex align-items-center flex-row flex-grow-1">
                             <a href="https://www.kcl.ac.uk/ioppn/about/index" target="_blank"><img style="height:5rem"
@@ -226,27 +231,27 @@ $pattern = "/<h1(.*?)>(.*?)<\/h1>/";
                                 E: <a href="mailto:cataloguemhm@kcl.ac.uk">cataloguemhm@kcl.ac.uk</a>
                             </p>
                         </div>
-                        <div class="d-flex footerLogos mx-auto flex-grow-0">
-                            <div class="row mx-auto">
-                                <div class="footerLogoWrapper">
+                        <div class="d-flex footerLogos mx-auto flex-grow-0 pr-4">
+                            <div class="row flex-nowrap" style="align-items: end; justify-content:end">
+                                <div class="footerLogoWrapper flex-grow-0 flex-shrink-2">
                                     <a href="https://www.hdruk.ac.uk/" target="_blank">
-                                        <img class="footerLogo" src='img/HDRUK.png' />
+                                        <img style="height:2.5rem; margin-top:auto" src='img/HDRUK.png' />
 
                                     </a>
                                 </div>
-                                <div class="footerLogoWrapper">
+                                <div class="footerLogoWrapper flex-grow-2 w-50">
                                     <a href="https://www.closer.ac.uk/" target="_blank">
-                                        <img class="footerLogo" src="img/closer_logo.svg" /></a>
+                                        <img style="height:4.5rem" src="img/closer_logo.svg" /></a>
                                 </div>
                             </div>
-                            <div class="row mx-auto">
-                                <div class="footerLogoWrapper">
+                            <div class="row mx-auto flex-nowrap">
+                                <div class="footerLogoWrapper flex-grow-0 ">
                                     <a href="https://www.ukri.org/councils/mrc/" target="_blank">
-                                        <img class="footerLogo" src='img/funders/MRC.png' />
+                                        <img style="height:3rem" src='img/funders/MRC.png' />
                                     </a>
                                 </div>
-                                <div class="footerLogoWrapper">
-                                    <img class="footerLogo" usemap="#esrcmap" src="img/esrc_logo.png" />
+                                <div class="footerLogoWrapper flex-grow-2 w-50">
+                                    <img style="height:4.5rem" usemap="#esrcmap" src="img/esrc_logo.png" />
                                     <map name="esrcmap">
                                         <area shape="rect" coords="0,0,500,50" target="_blank"
                                             href="https://esrc.ukri.org/">
@@ -326,7 +331,7 @@ $pattern = "/<h1(.*?)>(.*?)<\/h1>/";
     });
     </script>
     <script src="vendor/datatables/dataTables.min.js" defer></script>
-
+    <script src="js/glossary.js" defer></script>
 
 </body>
 

@@ -1,0 +1,229 @@
+/* Glossary term styling */
+.glossary-term {
+  border-bottom: 1px solid #a8ca9f;
+  background-color: rgba(168, 202, 159, 0.1);
+  cursor: help;
+  transition: background-color 0.2s;
+}
+
+.glossary-term:hover {
+  background-color: rgba(168, 202, 159, 0.2);
+}
+
+/* Tooltip styling */
+.glossary-tooltip {
+  max-width: 450px;
+  pointer-events: auto !important;
+  background: none !important;
+  border: none !important;
+  margin: 0px;
+  opacity: 0.95 !important;
+  box-shadow: none !important;
+  transition: max-width 0.3s ease-in-out;
+}
+
+/* Make the tooltip wider when showing the full definition */
+.glossary-tooltip.expanded {
+  max-width: 600px;
+}
+
+.glossary-tooltip .tooltip-inner {
+  max-width: 100%;
+  border: #333 0.5px solid;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  padding-bottom: 18px;
+  text-align: left;
+  background-color: rgba(255, 255, 255);
+  color: #333;
+  border: #333 0.01px solid;
+  border-radius: 12px;
+}
+
+/* --- More/Less CSS --- */
+.tooltip-content .definition-content {
+  line-height: 1.5;
+  margin-bottom: 8px;
+  transition: max-height 0.3s ease-out; /* Re-enable transition */
+  overflow: hidden;
+}
+
+/* Initial state for expandable tooltips */
+/* Target the inner div directly */
+.tooltip-content.expandable:not(.expanded) .definition-content {
+  max-height: 100px;
+  position: relative; /* Re-enable for fade effect */
+}
+
+/* Fade-out effect */
+.tooltip-content.expandable:not(.expanded) .definition-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(to bottom, transparent, white);
+  pointer-events: none;
+}
+
+/* Expanded state */
+/* Target the inner div directly */
+.tooltip-content.expandable.expanded .definition-content {
+  max-height: 70vh; /* Increased max-height using viewport units */
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Hide the fade-out effect when expanded */
+.tooltip-content.expandable.expanded .definition-content::after {
+  display: none;
+}
+
+/* Hide the 'More...' link when expanded */
+.tooltip-content.expandable.expanded .read-more-link a[data-state="full"] {
+  /* Keep the link, just change text */
+}
+.tooltip-content.expandable.expanded .read-more-link a[data-state="short"] {
+  /* This state shouldn't exist when expanded, but just in case */
+}
+/* --- End More/Less CSS --- */
+
+/* Simpler arrow styling that works better across browsers */
+.glossary-tooltip .arrow {
+  display: block;
+  position: absolute;
+  width: 0.8rem;
+  height: 0.4rem;
+}
+
+.glossary-tooltip .arrow::before {
+  content: "";
+  display: block;
+  border-width: 0;
+  border-style: solid;
+  position: absolute;
+}
+
+/* Top arrow */
+.bs-tooltip-top .arrow,
+.bs-tooltip-auto[x-placement^="top"] .arrow {
+  bottom: 0;
+}
+
+.bs-tooltip-top .arrow::before,
+.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-width: 0.4rem;
+  border-right-width: 0.4rem;
+  border-left-width: 0.4rem;
+  border-bottom-width: 0;
+  border-top-color: #fff;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  bottom: 0;
+}
+
+/* Bottom arrow */
+.bs-tooltip-bottom .arrow,
+.bs-tooltip-auto[x-placement^="bottom"] .arrow {
+  top: 0;
+}
+
+.bs-tooltip-bottom .arrow::before,
+.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-width: 0.4rem;
+  border-right-width: 0.4rem;
+  border-left-width: 0.4rem;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  top: 0;
+}
+
+/* Left arrow */
+.bs-tooltip-left .arrow,
+.bs-tooltip-auto[x-placement^="left"] .arrow {
+  right: 0;
+  width: 0.4rem;
+  height: 0.8rem;
+}
+
+.bs-tooltip-left .arrow::before,
+.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-width: 0.4rem;
+  border-top-width: 0.4rem;
+  border-bottom-width: 0.4rem;
+  border-right-width: 0;
+  border-left-color: #fff;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  right: 0;
+}
+
+/* Right arrow */
+.bs-tooltip-right .arrow,
+.bs-tooltip-auto[x-placement^="right"] .arrow {
+  left: 0;
+  width: 0.4rem;
+  height: 0.8rem;
+}
+
+.bs-tooltip-right .arrow::before,
+.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-width: 0.4rem;
+  border-top-width: 0.4rem;
+  border-bottom-width: 0.4rem;
+  border-left-width: 0;
+  border-right-color: #fff;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  left: 0;
+}
+
+.tooltip-content {
+  position: relative;
+}
+
+.read-more-link {
+  margin-top: 10px;
+  font-size: 0.9em;
+  text-align: right;
+}
+
+.read-more-link a {
+  color: #339933;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.read-more-link a:hover {
+  color: #246b24;
+  text-decoration: underline;
+}
+
+.datamind-logo {
+  margin-top: 12px;
+  text-align: right;
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 40px;
+  right: 0;
+  gap: 12px;
+  margin-bottom: 3px;
+  justify-content: flex-end;
+}
+
+.datamind-logo img {
+  height: 35px;
+  width: auto;
+  vertical-align: middle;
+  transition: opacity 0.2s;
+}
+
+.datamind-logo a:hover img {
+  opacity: 0.8;
+}

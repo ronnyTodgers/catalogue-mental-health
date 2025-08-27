@@ -16,6 +16,11 @@
   width: 32%;
 }
 
+.dt-info {
+  margin-left: 1.25rem;
+  margin-bottom: 0.3rem;
+}
+
 @media (max-width: 990px) {
   .searchInfoItem {
     width: 49%;

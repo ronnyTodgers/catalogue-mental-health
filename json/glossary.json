@@ -1,0 +1,298 @@
+{
+  "term_1": {
+    "term": "Accelerated cohort study",
+    "definition": "Unlike cohort studies that follow one group of people of the same age over time, these studies track several groups, each starting at different ages. This way, researchers can learn about a wide age range faster than just watching one group grow older. However, a downside is that not all information will be available at every age in each group."
+  },
+  "term_2": {
+    "term": "Baseline Measurements",
+    "definition": "The information that is collected from a group at the beginning of a study. This information is sometimes used to divide the population into different groups for analysis."
+  },
+  "term_3": {
+    "term": "Biomarkers",
+    "definition": "Biomarkers are signals in the body that reveal information about our health. They can be things like proteins, genes, or measurements like blood pressure. Scientists use biomarkers to understand how our body is functioning, track health conditions, and evaluate the effectiveness of treatments. For instance, checking cholesterol levels is a common way to get insights into heart health."
+  },
+  "term_4": {
+    "term": "CLOSER (Cohorts and Longitudinal Studies Enhancement Resources)",
+    "definition": "The interdisciplinary partnership that serves as a centralised \"home\" for UK longitudinal research, bringing together leading social and biomedical longitudinal population studies, the UK Data Service, and The British Library. While CLOSER supports longitudinal research across various domains, the <a href=\"#UK Longitudinal Linkage Collaboration (UK LLC)\">UK Longitudinal Linkage Collaboration (UK LLC)</a> specialises in providing a trusted environment for data linkage in longitudinal studies."
+  },
+  "term_5": {
+    "term": "Cohort",
+    "definition": "A group of people who share something in common, like being born in the same year or having had a similar experience."
+  },
+  "term_6": {
+    "term": "Cohort Study",
+    "definition": "A type of research where a group of people with something in common (like birth year, similar health conditions or where they live) are followed over time, to see how various factors may affect their health or what happens to them. This approach helps researchers understand what might affect people's lives and how past experiences can have an impact later on."
+  },
+  "term_7": {
+    "term": "Concordance",
+    "definition": "Concordance is like checking if two things match or agree. If they do, there's high concordance; if not (if there are differences) there is low concordance. It helps check data consistency when comparing or combining information."
+  },
+  "term_8": {
+    "term": "Cross-Sector Research",
+    "definition": "This involves gathering information from different \"sectors\" of public or private services, like health care, education, finance, housing services, etc. By combining data and perspectives from different sectors, we can study issues more broadly, understand various viewpoints, solve current problems, and make better plans."
+  },
+  "term_9": {
+    "term": "Cross-study Research",
+    "definition": "Research that involves analysing and comparing data from different research projects (studies) to understand things more better in larger or different populations. This type of research can help us identify patterns that might not be obvious in a single study."
+  },
+  "term_10": {
+    "term": "Data Discoverability",
+    "definition": "The ease with which researchers can find and use existing data that could help answer their research question. It involves making data more \"discoverable\" by making it easier to find and access information about it (e.g. on a website). This helps researchers to locate and use relevant information and data for their studies."
+  },
+  "term_11": {
+    "term": "Data Harmonisation",
+    "definition": "Data harmonisation is like organising different puzzle pieces, so they fit together. It's about making sure data from different studies can be compared or used together easily by standardising and aligning them. This could be by asking some of the same questions in every study. This helps researchers combine information from various places to get a more well-rounded picture."
+  },
+  "term_12": {
+    "term": "Demographics",
+    "definition": "Facts and figures that tell us about a group of people. This includes things like their age, gender, ethnicity, education, and income. Knowing this information is important for studying and understanding different populations."
+  },
+  "term_13": {
+    "term": "Epidemiological Study",
+    "definition": "A type of research study that looks at how diseases or health events vary, and what factors influence them in a population. These studies help us understand (and maybe therefore improve) health problems in communities."
+  },
+  "term_14": {
+    "term": "Equivalence",
+    "definition": "Equivalence means things are the same or equal. In data or studies, it ensures that different measurements or datasets can be compared or used interchangeably because they have a similar meaning."
+  },
+  "term_15": {
+    "term": "Household panel",
+    "definition": "A household panel is a study where a group of households is regularly checked on and asked questions over time. Researchers do this to learn about how these families live, how things change for them, and about their habits. They might ask about things like how much money the family makes, what they spend it on, or how their lifestyle changes. This helps to understand trends and changes in people's lives over a long period."
+  },
+  "term_16": {
+    "term": "Linked cohort study",
+    "definition": "A linked cohort study is when data about a group of people is connected from different sources, like medical or census records, to follow them over time. For instance, the Social and Economic Predictors of Severe Mental Disorders Study (SEP-MD) links UK Census data to clinical records and death registrations."
+  },
+  "term_17": {
+    "term": "Longitudinal (or Follow-up) Study",
+    "definition": "A type of research study where participants are followed and observed over a long period. As the study goes on, information is collected at different time points. This data helps in understanding how certain things change or develop over time. For instance, a study could follow students from when they start school to understand how their grades and friendships change as they grow up, and how this may relate to their mental health."
+  },
+  "term_18": {
+    "term": "Mental health measure",
+    "definition": "This refers to a question or a series of questions designed to identify and assess mental health conditions or symptoms. These measures help in understanding a person's mental well-being, tracking changes over time, and can aid in diagnosis and treatment planning"
+  },
+  "term_19": {
+    "term": "Outcome measures",
+    "definition": "An outcome is the way something turns out, or a result or consequence. <strong>Outcome measures</strong> are the important consequences studied in research. For example, when studying depression, researchers might see if a treatment makes symptoms better or worse, affects the amount of time people take off work, or alters their quality of life. (See also outcomes of research.)"
+  },
+  "term_20": {
+    "term": "Outcomes of research:",
+    "definition": "An outcome is the way something turns out, or a result or consequence. The <strong>outcomes of research</strong> include its results (what a study found out). They might also include the impact of those results: for example, successful research might change the way a condition is normally treated, for the better. (See also outcome measures)"
+  },
+  "term_21": {
+    "term": "Prospective Cohort Study",
+    "definition": "A prospective <a href=\"#Cohort Study\">cohort study</a>&nbsp;is where researchers pick the group and start collecting information before anything significant happens. Then, they keep checking in with the group regularly. This helps researchers see how different things influence the group's health or outcomes later in life."
+  },
+  "term_22": {
+    "term": "Prospective Harmonisation",
+    "definition": "Planning ahead to make sure data from different studies can work together easily. It involves setting up a common way to collect and organise information right from the start. This makes it easier for researchers to combine and analyse the data later on."
+  },
+  "term_23": {
+    "term": "Qualitative data",
+    "definition": "Qualitative data is information that is not in numerical form. It includes detailed descriptions, often about people's experiences, opinions, or behaviours. This type of data is collected through methods like interviews, observations, or surveys with open-ended questions when you cannot just say yes or no. It helps to understand the 'why' and 'how' of certain behaviours or phenomena, giving insights that numbers alone can't provide. Examples of qualitative data might be someone's views about a new product, stories from their childhood, or opinions about a social issue."
+  },
+  "term_24": {
+    "term": "Quantitative data",
+    "definition": "Quantitative data means information that we measure or count using numbers. It's about things like height, weight, temperature, or counting how many people are in a group. Researchers use this type of data to find patterns and make predictions by looking at the numerical information."
+  },
+  "term_25": {
+    "term": "Rarer Outcomes",
+    "definition": "Life or health outcomes that are uncommon. Large-scale, diverse and/or linked data can be used to capture and study these types of outcomes."
+  },
+  "term_26": {
+    "term": "Repeated cross-sectional study",
+    "definition": "Regularly conducted studies that gather information from new groups of people each time, using many of the same questions. This approach helps to understand how trends or conditions in the general population change over time, although it doesn't track the changes in specific individuals. For example, the European Social Survey, conducted every two years, interviews fresh samples from over 20 European countries, allowing analysis of behaviours and changes across society. These studies are particularly useful for examining changes in the population across different \"waves\" of a study, even though they don't focus on individual changes."
+  },
+  "term_27": {
+    "term": "Retrospective cohort study",
+    "definition": "A&nbsp;cohort study&nbsp;that looks at a cohort (group) of people using data that has already been collected, looking back in time. See also&nbsp;<a href=\"#Prospective Cohort Study\">prospective cohort study.</a>"
+  },
+  "term_28": {
+    "term": "Retrospective harmonisation",
+    "definition": "Organising data from different studies to work together after the data has been collected. It involves making information fit seamlessly, even if it wasn't collected in the same way initially. This helps researchers analyse the combined data."
+  },
+  "term_29": {
+    "term": "Standardisation",
+    "definition": "Standardisation is like having a common set of rules. In data or research, it means using the same practices or criteria to make things consistent and comparable. It helps ensure reliability and makes it easier to compare information."
+  },
+  "term_30": {
+    "term": "UK Longitudinal Linkage Collaboration (UK LLC)",
+    "definition": "The UK's national Trusted Research Environment for <a href=\"https://ukllc.ac.uk/\">longitudinal research</a>, bringing together data from various studies for collaborative research."
+  },
+  "term_31": {
+    "term": "Clinical Research Network (CRN)",
+    "definition": "A network that helps coordinate and support research studies in the National Health Service. The CRN's primary goal is to enhance the quality and quantity of clinical research conducted across the NHS by providing the infrastructure, expertise, and resources needed to carry out research studies effectively. The CRN helps doctors and scientists work together on research projects. They find patients who want to be part of these projects and make sure the research is done correctly.<br>\n<br>\nBy gathering this information, they can learn more about how different treatments and medicines work. They can find out what works best for patients and help doctors make better decisions about how to treat people. This teamwork and data collection also lead to new ideas for treatments and medicines in the future."
+  },
+  "term_32": {
+    "term": "Clinical Trial",
+    "definition": "A trial refers to a research study conducted to test a new treatment, like a medicine or talking therapy. When it comes to testing medicines, clinical trials are known as Clinical Trials of Investigational Medicinal Products (CTIMPs), and they have additional special rules and regulations that need to be followed. These rules ensure the safety and effectiveness of the new treatment being tested before it can be made available to the general public and the safety of the people participating in the trials."
+  },
+  "term_33": {
+    "term": "Clinical trial data",
+    "definition": "Information collected during research studies that evaluate the safety and effectiveness of medical treatments or interventions."
+  },
+  "term_34": {
+    "term": "Digitally enhanced trials",
+    "definition": "Clinical studies that use digital technologies to improve the way trials are conducted. These technologies can include apps, wearable devices, and online platforms that make it easier to recruit participants, collect data, and deliver interventions. By incorporating digital tools, trials become more efficient and accessible, leading to better healthcare outcomes."
+  },
+  "term_35": {
+    "term": "Early Career Researchers (ECRs)",
+    "definition": "People who are in the early stages of their research careers, typically within a few years of completing their doctoral degree or equivalent."
+  },
+  "term_36": {
+    "term": "E-cohorts",
+    "definition": "E-cohorts are well defined groups created based on electronic data which enable analysis and comparison."
+  },
+  "term_37": {
+    "term": "Epidemiological or Observational Research",
+    "definition": "Research in which data about people is analysed. Although this might be participatory research (the researchers meet people and collect data from them specifically for the study), this kind of research often uses routinely collected data from large numbers of people (i.e. from contacts with GPs). Using information from a very large number of people often makes the research better able to find answers. However, conclusions from routinely collected data are tentative, because â€œcorrelation does not imply causationâ€. If event A is associated (correlated) with event B, is that because A causes B, because B causes A, because X causes both A and B, or was it a chance finding? Strong conclusions may require randomised controlled trials."
+  },
+  "term_38": {
+    "term": "Genetic studies",
+    "definition": "Research that investigates individual genes and their roles in inheritance and disease whereas <a href=\"#Genomic Studies\">genomics</a> aims at the collective characterisation and quantification of all an organism's genes, their interrelations and influence on the organism."
+  },
+  "term_39": {
+    "term": "Genome",
+    "definition": "The genome is the entire collection of DNA, which is like a genetic blueprint, found in an organism. In humans, nearly all cells carry a full copy of the genome. This genetic information holds all the details necessary for a person's growth, development, and the traits they inherit. It's like a comprehensive set of instructions that guide how a person is built and how their body functions."
+  },
+  "term_40": {
+    "term": "Genomic Studies",
+    "definition": "Research that investigates the molecular biology concerned with the structure, function, evolution, and mapping of genomes. A genome is an organism's complete set of DNA, including all of its genes as well as its hierarchical, three-dimensional structural. It involves studying the DNA and genetic makeup to understand how genes influence traits, diseases, and other characteristics."
+  },
+  "term_41": {
+    "term": "Genotyping",
+    "definition": "Genotyping means studying a person's DNA to find specific differences in their genes that can affect traits or health conditions. It helps scientists and doctors learn more about a person's genetic characteristics and potential risks for certain diseases."
+  },
+  "term_42": {
+    "term": "Informed Consent",
+    "definition": "â€œInformed Consentâ€ is when people are asked to be part of something, whether it's an official research study or not. When someone wants you to be involved in something, they should tell you everything you need to know about itâ€\"what's going on, what could go right or wrong, and what will happen to the information you share. This helps you decide if you want to join in or not, based on having all the facts.<br>\n<br>\nThis can extend to situations where people collaborate to understand and tackle problems, even if they aren't following a strict research study format. And \"Informed Consent\" is still important in these situations to make sure everyone knows what they're getting into and can make their own choices.<br>\n<br>\nNormally, medical research studies where people take part (â€˜<a href=\"#Participatory Research\">participatory research</a>') may only involve those who consent. Informed consent here is an internationally agreed ethical principle of <a href=\"#Participatory Research\">participatory research</a>. â€œInformedâ€ means that before deciding, the person should understand all relevant aspects of the study, including its aims and potential risks and benefits<br>\n<br>\nConsent might not always be necessary in non-participatory epidemiological research that uses anonymised, routinely collected data. This kind of research doesn't require direct participation from people, as researchers work with data that has already been gathered. If it's ensured that nobody can be identified from the research, consent might not be needed. It's important to know that consent can change over time. People can decide to stop participating in research whenever they want, and they won't be treated badly for it. This highlights how vital it is for researchers to keep talking with participants openly. This way, participants can freely decide what's best for them and feel like their choices matter."
+  },
+  "term_43": {
+    "term": "Longitudinal Population Studies (LPS)",
+    "definition": "Ongoing studies that follow the same group of individuals over time to gain insights into their health and well-being."
+  },
+  "term_44": {
+    "term": "Long-read sequencing",
+    "definition": "Is a method used to read longer sections of a person's genetic code all at once. This technique provides more detailed information about complex parts of the genetic material, giving scientists a better understanding of the individual's genes. It's like reading a longer paragraph in a book, which helps us see the whole picture and discover more about someone's unique genetic makeup."
+  },
+  "term_45": {
+    "term": "Medical Research",
+    "definition": "A process to investigate a health-related question. Often to see if it can improve care and <br>\ntreatment for patients or systems in the NHS. <br>\n<br>\nResearch is conducted in research â€œstudiesâ€ or â€œprojectsâ€."
+  },
+  "term_46": {
+    "term": "Medical Research Council (MRC)",
+    "definition": "The UK's Medical Research Council (MRC) is a government organisation that funds and supports scientists. These scientists' study medical topics to discover better ways to keep us healthy and treat illnesses. Since 1913, they've been involved in this effort, uncovering important information that supports medical professionals in caring for us. The MRC funds DATAMIND."
+  },
+  "term_47": {
+    "term": "Mental Capacity",
+    "definition": "The ability of a person to make an informed decision. In the UK, the law sets out what this means. Research involving people whose mental capacity is impaired has to follow special rules to keep participants safe. People's ability to understand things can change based on their health and situation. When they agree to something, it's important to check if they understand because this can sometimes be tricky to figure out. That's why it's necessary to assess their understanding right when they agree."
+  },
+  "term_48": {
+    "term": "Microarray (array for short)",
+    "definition": "A DNA microarray is like a super microscope slide with thousands of tiny spots, and each spot has a specific DNA sequence or gene. It's a tool used in the lab to check the activity of many genes all at once. This helps scientists understand which genes are active and how they might be influencing things in our bodies."
+  },
+  "term_49": {
+    "term": "Natural experiments",
+    "definition": "Research studies that use real-world events or policy differences between nations or areas to understand their different impacts on populations. These studies don't involve direct intervention or manipulation by researchers."
+  },
+  "term_50": {
+    "term": "Nucleotides",
+    "definition": "Are the small building blocks that make up our genetic code. They are like the letters in a secret code, and they come in four different types: A, T, C, and G in DNA, and A, U, C, and G in RNA. These nucleotides join together in a specific order to create the instructions that tell our bodies how to grow, develop, and function. They are the basic units of our genetic information, which is passed down from parents to children, shaping who we are."
+  },
+  "term_51": {
+    "term": "Opt in",
+    "definition": "Where people choose to be â€œinâ€ to participate, or not included (e.g. choosing to volunteer for research). If they don't make that active choice, they won't be included or involved in the research. So, it's all about individuals deciding to be \"in\" and participate, rather than being automatically included."
+  },
+  "term_52": {
+    "term": "Opt out",
+    "definition": "When people have to specifically decide not to be part of research, or share data that already exists they will automatically be included. For example, when it comes to using their anonymous health data for research, if people don't actively opt out, their data will be included. So it's about people having to take action to be \"<a href=\"<#National\" data=\"\" opt-out=\"\" (ndo)=\"\">out</a>\" and exclude themselves."
+  },
+  "term_53": {
+    "term": "Participatory Research",
+    "definition": "\"Participatory Research\" can have different meanings depending on the situation. In one sense, it's when regular people take part in research. This kind of research usually involves meeting with researchers, and providing information or undergoing tests like questionnaires or brain scans. It can even include testing new treatments. In these studies, only those who agree to join are included. This is part of participatory research, and it's important that everyone knows all about it. This is where \"<a href=\"#Informed Consent\">Informed Consent</a>\" comes in. Informed consent is a big rule in participatory research. It means before someone says yes to joining a study, they need to understand everything important about it, like what the study wants to find out and what could be good or bad about it. Informed consent makes sure people decide with full knowledge.<br>\n<br>\nSometimes, people who can't make decisions for themselves might be part of participatory research. But this only happens if the study is about the condition that makes it hard for them to decide, like dementia. This way, they can still be part of research that fits their situation."
+  },
+  "term_54": {
+    "term": "Patient/ Public Engagement in Research (PPE)",
+    "definition": "Engagement\" means sharing information and knowledge about research with patients and the public. This can be done through conversations with researchers, websites, written papers, or public events where the public and/or patients are invited to attend, participate and learn. The goal is to communicate research findings and insights to a wider audience."
+  },
+  "term_55": {
+    "term": "Patient/ Public Involvement in Research (PPI)",
+    "definition": "\"Involvement\" means that research is done alongside \"with\" or \"by\" patients or members of the public (e.g. as advisors or researchers). In contrast to research â€œtoâ€, â€œaboutâ€ or â€œforâ€ them. This is very different to participation in research.<br>\n<br>\nPatient and Public Involvement (PPI) means that people who have personal experience of a specific condition or situation are included in the planning, conduct, and application of research studies. They have a say in how the research is designed and carried out, ensuring that it meets their needs and is more relevant to their real-life experiences. By involving patients and the public, research becomes more focused on what matters to them, leading to better outcomes and benefits for everyone involved. <br>\n<br>\nTo ensure patients and the public have a direct voice in the running and direction of DATAMIND, a Super Research Advisory Group (SRAG) was created. It is composed of people from various backgrounds, including service users and carers from across the UK, who have an interest in data. Many have connections to similar Research Advisory Groups in their local areas and to local communities interested in mental health problems. The SRAG plays a vital role in DATAMIND and contributes to all aspects of the project."
+  },
+  "term_56": {
+    "term": "Peer Review",
+    "definition": "After completing research, the findings are usually sent to a scientific journal as a manuscript or paper. The journal's editor then shares the paper with other experts in the field, called peer reviewers or referees and sometimes public/lay/lived experience reviewers, e.g. BMJ (British Medical Journal).<br>\n<br>\nThese reviewers assess the research by looking at things like the methods used and whether the conclusions are supported by the results. They may suggest changes before recommending publication, or they may advise against publishing. Peer review is considered the â€œgold standardâ€ for research, but it doesn't guarantee that the research is always correct. It serves as a thorough evaluation process to ensure the quality and validity of scientific studies before they are shared publicly."
+  },
+  "term_57": {
+    "term": "Phenotype",
+    "definition": "A phenotype is a set of traits or characteristics that can be observed or measured related to a particular concept or diagnosis. It includes things like physical descriptions (e.g., age, height, weight), health conditions, medications, and other measurable factors."
+  },
+  "term_58": {
+    "term": "Phenotype Library",
+    "definition": "A repository or collection of standardised definitions and measurements of specific characteristics or traits used in research."
+  },
+  "term_59": {
+    "term": "Public Benefit",
+    "definition": "When NHS data is used for research, the patients who participate in the research don't usually get immediate benefits from it. However, the research is done with the hope that it will benefit the general public and patients in the future. The main purpose of this research is to learn more about the causes, characteristics, or effects of a disease or condition, and how to best treat it. This knowledge can then be used to help others who may have similar health problems in the future.<br>\n<br>\nExample might include:<ul><br>\n<li>Looking at who does and doesn't get a particular condition, to discover what might put people at risk.<br>\n</li><li>Studying people with a disease or condition in detail, to understand their problems or to develop new ideas about how to help them.<br>\n</li><li>Conducting a trial of a new treatment with volunteers who have a particular condition, to see if it works.<br>\n</li><li>Studying people who have had a certain treatment, to see how well it works or what side effects it has.</li></ul><br>\nThese days, the published results of research funded by UK public bodies must be made available freely to everyone. Nearly all peer-reviewed medical research can be found at PubMed (<a href=\"https://pubmed.ncbi.nlm.nih.gov/\" target=\"_blank\" rel=\"noopener\">https://pubmed.ncbi.nlm.nih.gov/</a>)."
+  },
+  "term_60": {
+    "term": "Randomised Controlled Trials (RCTs)",
+    "definition": "An experiment to test an intervention, such as a new medication. In a typical study, people with a condition are randomly assigned to two conditions. One group is given the new medication and the other are given a placebo (dummy) medication as the â€œcontrolâ€ condition. Having a control group is important because some changes may not be due to the medication but would have happened anyway.<br>\n<br>\nIn a â€œdouble-blindâ€ trial, neither the patients nor their clinicians know which is which. This is the best way to test if a treatment works. It's done this way to make sure that the results are not influenced by people's expectations or biases. By comparing the outcomes of the two groups, researchers can determine if the new treatment is effective or not. <br>\n<br>\nAll fair tests (RCTs) follow strict rules and involve everyone in the research process. This way, everyone takes part. The process includes comprehensive <a href=\"#Quality Control Complete\">quality control</a> and <a href=\"#Quantitative Analysis\">rigorous quantitative analysis</a>."
+  },
+  "term_61": {
+    "term": "Relatedness",
+    "definition": "Relatedness refers to how genetically similar or connected individuals are to each other. It's like knowing if people in a study are siblings or cousins, which can affect how their genetic information is analysed and interpreted."
+  },
+  "term_62": {
+    "term": "RNA sequencing",
+    "definition": "Is like taking a snapshot of the messages that our genes are sending out. It helps scientists understand which genes are active and producing proteins at a specific moment. This method provides valuable insights into how our genes work and how they affect our health and well-being. It's like eavesdropping on the genetic conversations happening inside our cells."
+  },
+  "term_63": {
+    "term": "Treatment response",
+    "definition": "Refers to how a person reacts or responds to a specific treatment or intervention. It describes the outcome or result of the treatment and helps assess its effectiveness in addressing a particular condition or improving a person's health."
+  },
+  "term_64": {
+    "term": "HPO (Human Phenotyping Ontology)",
+    "definition": "A worldwide standard list of terms used to describe different human characteristics and symptoms in a consistent way. For example, it helps researchers categorise traits like \"short height\" or symptoms like \"hearing problems\" to study <a href=\"#Genetic Conditions\">genetic conditions</a>.<br>\n<br>"
+  },
+  "term_65": {
+    "term": "WGS (Whole Genome Sequencing)",
+    "definition": "A process that reads the entire <a href=\"#DNA\">DNA</a> sequence of a person. It can be used to find genetic changes linked to diseases."
+  },
+  "term_66": {
+    "term": "Cognition",
+    "definition": "The mental process of learning and understanding things, like thinking and remembering. Studying cognition helps us understand how people solve problems and learn new skills, and how this can go wrong."
+  },
+  "term_67": {
+    "term": "DNA samples",
+    "definition": "Pieces of <a href=\"#DNA\">DNA</a> collected from people, such as from their saliva or blood, for testing or research. For example, DNA samples can be used to check for genetic diseases or to trace ancestry."
+  },
+  "term_68": {
+    "term": "Epidemiology/ Epidemiological",
+    "definition": "This is the study of how often diseases occur and why they affect different groups of people. It includes understanding the age at which diseases typically start, which populations are more likely to be affected, and whether certain diseases are becoming more common over time. This knowledge helps us understand who is most at risk and how diseases impact the population as well as plan action to manage them. For example, epidemiologists track infectious disease outbreaks to learn how to prevent diseases from spreading and allocate resources like vaccinations when needed, or mental health trends to understand what might be causing changes and what to do about it."
+  },
+  "term_69": {
+    "term": "Genes",
+    "definition": "Units of <a href=\"#DNA\">DNA</a>, arranged in different sequences, that determine traits and characteristics. For example, genes influence things like eye colour and risk for certain diseases passed from parent to child."
+  },
+  "term_70": {
+    "term": "Measures",
+    "definition": "In any study, we need to decide what we are measuring and how. For example, we might measure waist circumference to assess obesity or use a heart rate monitor to track fitness. These are the <a href=\"#Measures\">measures</a> we are interested in, and it's important that everyone in the study uses the same methods to ensure consistent and unbiased results."
+  },
+  "term_71": {
+    "term": "Phenotype data",
+    "definition": "Information about an organism's traits, like height, eye color, or mental health. For example, phenotype data is used to study how certain traits are inherited or could be used to personalise treatments."
+  },
+  "term_72": {
+    "term": "Genetic Conditions",
+    "definition": "Conditions caused by changes in a person's <a href=\"#DNA\">DNA</a>, which can be inherited from parents or occur spontaneously. These conditions often affect how the body grows or functions. For example, genetic conditions, like cystic fibrosis, are studied to understand how inherited traits impact health and to develop treatments."
+  },
+  "term_73": {
+    "term": "DNA",
+    "definition": "DNA or deoxyribonucleic acid is&nbsp;a molecule, present in all our cells, that contains the genetic code that is unique to every individual. Think of this code as an instruction manual for making all the proteins that form our bodies and help them thrive. The information coded in DNA is hereditary, meaning that it passes from parent to child. DNA testing is often used in research to study genetic conditions or ancestry. See <strong>genes</strong>."
+  },
+  "term_74": {
+    "term": "Bias",
+    "definition": "An unfair influence or distortion that can affect the accuracy of study results or decisions. Bias can happen at various stages of research, including study design, data collection, or analysis. It can make results less reliable or applicable to certain groups of people. For example, if a study only includes young participants, it might create bias because the results may not apply to older people. This could lead to treatments or findings that are less effective or safe for older populations. Bias can also occur in how questions are asked, how data is analysed, or even in how results are interpreted. Researchers work to minimise bias to ensure the study is fair and results are accurate for everyone involved."
+  }
+}

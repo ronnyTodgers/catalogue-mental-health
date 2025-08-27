@@ -102,7 +102,7 @@ $currentDate = max(filemtime(__DIR__ . "/xlsx/sweeps.xlsx"), filemtime(__DIR__ .
 $previousData = json_decode($string, true);
 
 //Do funders first as it throws an error with missing images and prevents all the studies being marked as updated
-
+echo("Funders srarting");
 $filename = __DIR__ . '/xlsx/funders.xlsx';
 $reader = IOFactory::createReaderForFile($filename) -> setReadDataOnly(true);
 
@@ -114,6 +114,7 @@ $sheet = $spreadsheet1->getSheet(0);
             $funderCode = $sheet->getCell('B'.$row)->getCalculatedValue();
             if( $funderCode != "" ) {
                 if(!file_exists(__DIR__. '/img/funders/'. $funderCode .'.png')) {
+                    echo ('Image missing for '. $funderCode );
                     throw new Exception('Image missing for '. $funderCode );
                 }
                 $data[$funderCode] = [
@@ -231,7 +232,11 @@ $sheet = $spreadsheet1->getSheet(0);
                 'Geographic coverage' => $sheet->getCell('Y'.$row)->getCalculatedValue(),
                 'Complementary data' => $sheet->getCell('Z'.$row)->getCalculatedValue(),
                 'HDR UK Innovation Gateway' => strip_tags($sheet->getCell('AA'.$row)->getCalculatedValue()),
-                'Summary' => $sheet->getCell('AC'.$row)->getCalculatedValue(),
+                'AtlasLink' => strip_tags($sheet->getCell('AC'.$row)->getCalculatedValue()),
+                'CloserLink' => strip_tags($sheet->getCell('AD'.$row)->getCalculatedValue()),
+                'SortOrder' => $sheet->getCell('AE'.$row)->getCalculatedValue(), 
+                'isInLLC' => $sheet->getCell('AB'.$row)->getCalculatedValue()==="Yes",
+                'Summary' => $sheet->getCell('AG'.$row)->getCalculatedValue(),
                 'Updated' => $previousData[trim($sheet->getCell('A'.$row)->getCalculatedValue())]['Updated']
              ];
 
@@ -270,7 +275,7 @@ $sheet = $spreadsheet1->getSheet(0);
                 ),
                 'Start date' => $sheet->getCell('D'.$row)->getCalculatedValue(),
                 'End date' => $sheet->getCell('E'.$row)->getCalculatedValue(),
-                'Measures' => addBrs($sheet->getCell('F'.$row)->getCalculatedValue()),
+                'Measures' => ($sheet->getCell('F'.$row)->getCalculatedValue()),
                 'Participants' => $sheet->getCell('G'.$row)->getCalculatedValue(),
                 'Methodology' => $sheet->getCell('H'.$row)->getCalculatedValue(),
                 'Data access' => textToHtmlLinks(addBrs($sheet->getCell('I'.$row)->getCalculatedValue())),
